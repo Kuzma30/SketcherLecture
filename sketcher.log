@@ -1,0 +1,2789 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.30)  30 JAN 2021 11:32
+entering extended mode
+**./sketcher.tex
+(sketcher.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-01-09> xparse <2020-03-03>
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@section=\count178
+\c@subsection=\count179
+\c@subsubsection=\count180
+\c@paragraph=\count181
+\c@subparagraph=\count182
+\c@figure=\count183
+\c@table=\count184
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\t2aenc.dfu
+File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
+12.
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/01/26 3.53 The Babel package
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2021/01/26 3.53 Babel common definitions
+\babel@savecnt=\count185
+\U@D=\dimen139
+\l@babelnohyphens=\language79
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count186
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
+df
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 108.
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/babel-russian\russianb.
+ldf
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
+))
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks18
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\enumerate.s
+ty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks19
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count190
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box47
+)
+\tc@llx=\dimen150
+\tc@lly=\dimen151
+\tc@urx=\dimen152
+\tc@ury=\dimen153
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen154
+\adjbox@Height=\dimen155
+\adjbox@Depth=\dimen156
+\adjbox@Totalheight=\dimen157
+\adjbox@pwidth=\dimen158
+\adjbox@pheight=\dimen159
+\adjbox@pdepth=\dimen160
+\adjbox@ptotalheight=\dimen161
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count191
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box48
+\sift@deathcycles=\count192
+\@vwid@loff=\dimen162
+\@vwid@roff=\dimen163
+))
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\varioref.st
+y
+Package: varioref 2020/08/11 v1.6e package for extended references (FMi)
+\c@vrcnt=\count193
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/srcltx\srcltx.sty
+Package: srcltx 2006/11/12 v1.6 Source specials for inverse search in DVI files
+
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\src@lastline=\count194
+\src@new@everypar=\toks22
+\src@new@output=\toks23
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen164
+\Hy@linkcounter=\count195
+\Hy@pagecounter=\count196
+Package srcltx Info: Expanded filename `pd1enc.def' to `pd1enc.def.tex' on inpu
+t line 775.
+
+:<+ pd1enc.def.tex
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+:<-
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count197
+Package hyperref Info: Option `unicode' set `true' on input line 3427.
+Package srcltx Info: Expanded filename `puenc.def' to `puenc.def.tex' on input 
+line 3427.
+
+:<+ puenc.def.tex
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+:<-
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4338
+.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4338.
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count198
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen165
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count199
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count266
+\c@Item=\count267
+\c@Hfootnote=\count268
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+Package srcltx Info: Expanded filename `hpdftex.def' to `hpdftex.def.tex' on in
+put line 50.
+:<+ hpdftex.def.tex
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count269
+\c@bookmark@seq@number=\count270
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
+)
+:<-
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/overpic\overpic.sty
+Package: overpic 2020/02/22 1.3 picture overlays (RN)
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/epic\epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count271
+\d@lta=\count272
+\@delta=\dimen168
+\@@delta=\dimen169
+\@gridcnt=\count273
+\@joinkind=\count274
+\@dotgap=\dimen170
+\@ddotgap=\dimen171
+\@x@diff=\count275
+\@y@diff=\count276
+\x@diff=\dimen172
+\y@diff=\dimen173
+\@dotbox=\box49
+\num@segments=\count277
+\num@segmentsi=\count278
+\@datafile=\read3
+)
+\OVP@box=\box50
+)
+\c@Exercise=\count279
+\hours=\count280
+\minutes=\count281
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count282
+\l__pdf_internal_box=\box51
+) (sketcher.aux
+
+LaTeX Warning: Label `GridSnap' multiply defined.
+
+)
+\openout1 = `sketcher.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Info: Redefining \th on input line 98.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=681.15898pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count283
+\scratchdimen=\dimen174
+\scratchbox=\box52
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen175
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks25
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+)
+Package hyperref Info: Link coloring OFF on input line 98.
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count289
+LaTeX Info: Redefining \Ref on input line 520.
+)
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
+ (sketcher.out) (sketcher.out)
+\@outlinefile=\write3
+\openout3 = `sketcher.out'.
+
+LaTeX Info: Redefining \Ref on input line 98.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 100.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 100.
+ [1
+
+{C:/Users/Admin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (sketcher.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+ [2] [3])
+\tf@toc=\write4
+\openout4 = `sketcher.toc'.
+
+ [4] [5]
+<images/Sketcher_NewSketch.pdf, id=321, 51.19125pt x 51.19125pt>
+File: images/Sketcher_NewSketch.pdf Graphic file (type pdf)
+<use images/Sketcher_NewSketch.pdf>
+Package pdftex.def Info: images/Sketcher_NewSketch.pdf  used on input line 124.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Orientation.png, id=322, 236.885pt x 244.915pt>
+File: images/Orientation.png Graphic file (type png)
+<use images/Orientation.png>
+Package pdftex.def Info: images/Orientation.png  used on input line 129.
+(pdftex.def)             Requested size: 189.50824pt x 195.93225pt.
+File: images/Sketcher_NewSketch.pdf Graphic file (type pdf)
+<use images/Sketcher_NewSketch.pdf>
+Package pdftex.def Info: images/Sketcher_NewSketch.pdf  used on input line 141.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [6 <./images/Sketcher_NewSketch.pdf> <./images/Orientation.png>]
+<images/Origin.png, id=339, 545.03625pt x 480.79625pt>
+File: images/Origin.png Graphic file (type png)
+<use images/Origin.png>
+Package pdftex.def Info: images/Origin.png  used on input line 154.
+(pdftex.def)             Requested size: 212.41261pt x 187.37772pt.
+
+Overfull \hbox (28.27267pt too wide) in paragraph at lines 162--163
+[][]\T2A/cmr/m/n/12 Параметр ѕСо-здать неза-ви-си-мую ко-пиюї со-зда-ет несвя-з
+ан-ный объ-ект ShapeBinder,
+ []
+
+
+Overfull \hbox (5.43103pt too wide) in paragraph at lines 163--164
+[][]\T2A/cmr/m/n/12 Параметр ѕСде-лать за-ви-си-мую ко-пиюї со-зда-ет свя-зан-н
+ый объ-ект ShapeBinder,
+ []
+
+[7 <./images/Origin.png>]
+<images/SketcherWindow.png, id=346, 1374.13374pt x 1485.55pt>
+File: images/SketcherWindow.png Graphic file (type png)
+<use images/SketcherWindow.png>
+Package pdftex.def Info: images/SketcherWindow.png  used on input line 179.
+(pdftex.def)             Requested size: 471.55585pt x 509.77252pt.
+ [8] [9 <./images/SketcherWindow.png>]
+<images/GeomElements.png, id=358, 789.95125pt x 43.16125pt>
+File: images/GeomElements.png Graphic file (type png)
+<use images/GeomElements.png>
+Package pdftex.def Info: images/GeomElements.png  used on input line 229.
+(pdftex.def)             Requested size: 472.03123pt x 25.79091pt.
+<images/Constraints.png, id=359, 523.9575pt x 24.09pt>
+File: images/Constraints.png Graphic file (type png)
+<use images/Constraints.png>
+Package pdftex.def Info: images/Constraints.png  used on input line 234.
+(pdftex.def)             Requested size: 472.03123pt x 21.7032pt.
+ [10 <./images/GeomElements.png> <./images/Constraints.png>]
+<images/Sketcher_CreateLine.pdf, id=366, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateLine.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateLine.pdf>
+Package pdftex.def Info: images/Sketcher_CreateLine.pdf  used on input line 254
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Exercise1.png, id=367, 483.8075pt x 268.00125pt>
+File: images/Exercise1.png Graphic file (type png)
+<use images/Exercise1.png>
+Package pdftex.def Info: images/Exercise1.png  used on input line 266.
+(pdftex.def)             Requested size: 435.42273pt x 241.19888pt.
+<images/ElementsLine.png, id=368, 289.08pt x 162.6075pt>
+File: images/ElementsLine.png Graphic file (type png)
+<use images/ElementsLine.png>
+Package pdftex.def Info: images/ElementsLine.png  used on input line 271.
+(pdftex.def)             Requested size: 289.07928pt x 162.6071pt.
+ [11 <./images/Sketcher_CreateLine.pdf> <./images/Exercise1.png>]
+<images/Constraint_HorizontalDistance.pdf, id=381, 51.19125pt x 51.19125pt>
+File: images/Constraint_HorizontalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_HorizontalDistance.pdf>
+Package pdftex.def Info: images/Constraint_HorizontalDistance.pdf  used on inpu
+t line 290.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Horizontal.png, id=382, 572.1375pt x 286.06876pt>
+File: images/Horizontal.png Graphic file (type png)
+<use images/Horizontal.png>
+Package pdftex.def Info: images/Horizontal.png  used on input line 296.
+(pdftex.def)             Requested size: 434.26787pt x 217.13515pt.
+<images/Dof1.png, id=383, 212.795pt x 74.2775pt>
+File: images/Dof1.png Graphic file (type png)
+<use images/Dof1.png>
+Package pdftex.def Info: images/Dof1.png  used on input line 302.
+(pdftex.def)             Requested size: 212.79446pt x 74.27731pt.
+ [12 <./images/ElementsLine.png> <./images/Constraint_HorizontalDistance.pdf> <
+./images/Horizontal.png>]
+<images/Constraints1.png, id=397, 276.03125pt x 102.3825pt>
+File: images/Constraints1.png Graphic file (type png)
+<use images/Constraints1.png>
+Package pdftex.def Info: images/Constraints1.png  used on input line 307.
+(pdftex.def)             Requested size: 276.03056pt x 102.38225pt.
+<images/Constraint_VerticalDistance.pdf, id=398, 51.19125pt x 51.19125pt>
+File: images/Constraint_VerticalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_VerticalDistance.pdf>
+Package pdftex.def Info: images/Constraint_VerticalDistance.pdf  used on input 
+line 315.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Constraint_PointOnPoint.pdf, id=399, 48.18pt x 48.18pt>
+File: images/Constraint_PointOnPoint.pdf Graphic file (type pdf)
+<use images/Constraint_PointOnPoint.pdf>
+Package pdftex.def Info: images/Constraint_PointOnPoint.pdf  used on input line
+ 335.
+(pdftex.def)             Requested size: 25.84329pt x 25.84364pt.
+<images/Fully1.png, id=400, 297.11pt x 226.8475pt>
+File: images/Fully1.png Graphic file (type png)
+<use images/Fully1.png>
+Package pdftex.def Info: images/Fully1.png  used on input line 348.
+(pdftex.def)             Requested size: 227.62204pt x 173.80083pt.
+ [13 <./images/Dof1.png> <./images/Constraints1.png> <./images/Constraint_Verti
+calDistance.pdf> <./images/Constraint_PointOnPoint.pdf>]
+<images/Constraints2.png, id=419, 281.05pt x 113.42375pt>
+File: images/Constraints2.png Graphic file (type png)
+<use images/Constraints2.png>
+Package pdftex.def Info: images/Constraints2.png  used on input line 353.
+(pdftex.def)             Requested size: 281.0493pt x 113.42346pt.
+
+Overfull \hbox (3.46245pt too wide) in paragraph at lines 356--358
+[]\T2A/cmr/m/n/12 If auto constraints are enabled some constraints are created 
+automatically. To see the difference
+ []
+
+
+Overfull \hbox (18.86409pt too wide) in paragraph at lines 363--366
+[][]\T2A/cmr/m/it/12 Expand the Edit controls section of the panel and make sur
+e that "Auto constraints"is
+ []
+
+<images/AutoConstraintsOn.png, id=420, 299.1175pt x 159.59625pt>
+File: images/AutoConstraintsOn.png Graphic file (type png)
+<use images/AutoConstraintsOn.png>
+Package pdftex.def Info: images/AutoConstraintsOn.png  used on input line 367.
+(pdftex.def)             Requested size: 264.33633pt x 141.04906pt.
+[14 <./images/Fully1.png> <./images/Constraints2.png> <./images/AutoConstraints
+On.png>]
+File: images/Sketcher_CreateLine.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateLine.pdf>
+Package pdftex.def Info: images/Sketcher_CreateLine.pdf  used on input line 372
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Auto1.png, id=429, 285.065pt x 144.54pt>
+File: images/Auto1.png Graphic file (type png)
+<use images/Auto1.png>
+Package pdftex.def Info: images/Auto1.png  used on input line 377.
+(pdftex.def)             Requested size: 285.0643pt x 144.53963pt.
+<images/Auto2.png, id=430, 313.17pt x 261.97874pt>
+File: images/Auto2.png Graphic file (type png)
+<use images/Auto2.png>
+Package pdftex.def Info: images/Auto2.png  used on input line 383.
+(pdftex.def)             Requested size: 313.16922pt x 261.9781pt.
+ [15 <./images/Auto1.png> <./images/Auto2.png>]
+<images/Auto3.png, id=437, 247.92625pt x 217.81375pt>
+File: images/Auto3.png Graphic file (type png)
+<use images/Auto3.png>
+Package pdftex.def Info: images/Auto3.png  used on input line 391.
+(pdftex.def)             Requested size: 247.92564pt x 217.8132pt.
+<images/ListConstraintsAuto.png, id=438, 256.96pt x 138.5175pt>
+File: images/ListConstraintsAuto.png Graphic file (type png)
+<use images/ListConstraintsAuto.png>
+Package pdftex.def Info: images/ListConstraintsAuto.png  used on input line 399
+.
+(pdftex.def)             Requested size: 256.95937pt x 138.51715pt.
+<images/AutoConstraintsOff.png, id=439, 308.15125pt x 157.58875pt>
+File: images/AutoConstraintsOff.png Graphic file (type png)
+<use images/AutoConstraintsOff.png>
+Package pdftex.def Info: images/AutoConstraintsOff.png  used on input line 408.
+
+(pdftex.def)             Requested size: 277.33354pt x 141.82854pt.
+ [16 <./images/Auto3.png> <./images/ListConstraintsAuto.png>] [17 <./images/Aut
+oConstraintsOff.png>]
+<images/CursorLine.png, id=454, 157.58875pt x 70.2625pt>
+File: images/CursorLine.png Graphic file (type png)
+<use images/CursorLine.png>
+Package pdftex.def Info: images/CursorLine.png  used on input line 467.
+(pdftex.def)             Requested size: 141.61081pt x 63.14236pt.
+<images/CursorArc.png, id=455, 157.58875pt x 70.2625pt>
+File: images/CursorArc.png Graphic file (type png)
+<use images/CursorArc.png>
+Package pdftex.def Info: images/CursorArc.png  used on input line 468.
+(pdftex.def)             Requested size: 141.61081pt x 63.14236pt.
+<images/CursorSlot.png, id=456, 157.58875pt x 70.2625pt>
+File: images/CursorSlot.png Graphic file (type png)
+<use images/CursorSlot.png>
+Package pdftex.def Info: images/CursorSlot.png  used on input line 469.
+(pdftex.def)             Requested size: 141.61081pt x 63.14236pt.
+File: images/Sketcher_CreateLine.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateLine.pdf>
+Package pdftex.def Info: images/Sketcher_CreateLine.pdf  used on input line 493
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+[18 <./images/CursorLine.png> <./images/CursorArc.png> <./images/CursorSlot.png
+>]
+<images/Constraint_Horizontal.pdf, id=465, 51.19125pt x 51.19125pt>
+File: images/Constraint_Horizontal.pdf Graphic file (type pdf)
+<use images/Constraint_Horizontal.pdf>
+Package pdftex.def Info: images/Constraint_Horizontal.pdf  used on input line 5
+06.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+Overfull \hbox (5.95192pt too wide) in paragraph at lines 505--507
+[][]\T2A/cmr/m/n/12 for a horizontal line. Select the line and click the horizo
+ntal constraint
+ []
+
+<images/Constraint_Vertical.pdf, id=466, 51.19125pt x 51.19125pt>
+File: images/Constraint_Vertical.pdf Graphic file (type pdf)
+<use images/Constraint_Vertical.pdf>
+Package pdftex.def Info: images/Constraint_Vertical.pdf  used on input line 510
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Constraint_EqualLength.pdf, id=467, 51.19125pt x 51.19125pt>
+File: images/Constraint_EqualLength.pdf Graphic file (type pdf)
+<use images/Constraint_EqualLength.pdf>
+Package pdftex.def Info: images/Constraint_EqualLength.pdf  used on input line 
+513.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/LineEquality.png, id=468, 146.5475pt x 135.50626pt>
+File: images/LineEquality.png Graphic file (type png)
+<use images/LineEquality.png>
+Package pdftex.def Info: images/LineEquality.png  used on input line 515.
+(pdftex.def)             Requested size: 117.23813pt x 108.40514pt.
+disregarding the orientation of the lines
+File: images/Constraint_HorizontalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_HorizontalDistance.pdf>
+Package pdftex.def Info: images/Constraint_HorizontalDistance.pdf  used on inpu
+t line 520.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/LineHorizontalDistance.png, id=470, 197.73875pt x 166.6225pt>
+File: images/LineHorizontalDistance.png Graphic file (type png)
+<use images/LineHorizontalDistance.png>
+Package pdftex.def Info: images/LineHorizontalDistance.png  used on input line 
+528.
+(pdftex.def)             Requested size: 158.19121pt x 133.29817pt.
+File: images/Constraint_VerticalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_VerticalDistance.pdf>
+Package pdftex.def Info: images/Constraint_VerticalDistance.pdf  used on input 
+line 530.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+[19 <./images/Constraint_Horizontal.pdf> <./images/Constraint_Vertical.pdf> <./
+images/Constraint_EqualLength.pdf> <./images/LineEquality.png> <./images/LineHo
+rizontalDistance.png>]
+<images/LineVerticalDistance.png, id=498, 231.86626pt x 138.5175pt>
+File: images/LineVerticalDistance.png Graphic file (type png)
+<use images/LineVerticalDistance.png>
+Package pdftex.def Info: images/LineVerticalDistance.png  used on input line 53
+7.
+(pdftex.def)             Requested size: 185.49324pt x 110.81413pt.
+<images/Constraint_Length.pdf, id=499, 51.19125pt x 51.19125pt>
+File: images/Constraint_Length.pdf Graphic file (type pdf)
+<use images/Constraint_Length.pdf>
+Package pdftex.def Info: images/Constraint_Length.pdf  used on input line 540.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/LineLength.png, id=500, 172.645pt x 143.53625pt>
+File: images/LineLength.png Graphic file (type png)
+<use images/LineLength.png>
+Package pdftex.def Info: images/LineLength.png  used on input line 543.
+(pdftex.def)             Requested size: 138.11617pt x 114.82915pt.
+
+Overfull \hbox (8.46254pt too wide) in paragraph at lines 563--566
+\T2A/cmr/m/it/12 equal. Besides that the sketch has only coincidence, vertical,
+ horizontal, and equality constraints. 
+ []
+
+<images/Line1.png, id=507, 479.7925pt x 357.335pt>
+File: images/Line1.png Graphic file (type png)
+<use images/Line1.png>
+Package pdftex.def Info: images/Line1.png  used on input line 569.
+(pdftex.def)             Requested size: 383.8345pt x 285.86838pt.
+[20 <./images/LineVerticalDistance.png> <./images/Constraint_Length.pdf> <./ima
+ges/LineLength.png>]
+<images/Line2.png, id=521, 419.5675pt x 330.23375pt>
+File: images/Line2.png Graphic file (type png)
+<use images/Line2.png>
+Package pdftex.def Info: images/Line2.png  used on input line 576.
+(pdftex.def)             Requested size: 221.85526pt x 174.61488pt.
+<images/Constraint_PointOnObject.pdf, id=522, 51.19125pt x 51.19125pt>
+File: images/Constraint_PointOnObject.pdf Graphic file (type pdf)
+<use images/Constraint_PointOnObject.pdf>
+Package pdftex.def Info: images/Constraint_PointOnObject.pdf  used on input lin
+e 578.
+(pdftex.def)             Requested size: 16.4459pt x 16.44635pt.
+<images/Line3.png, id=523, 421.575pt x 328.22626pt>
+File: images/Line3.png Graphic file (type png)
+<use images/Line3.png>
+Package pdftex.def Info: images/Line3.png  used on input line 580.
+(pdftex.def)             Requested size: 221.85526pt x 172.73204pt.
+<images/Sketcher_CreateCircle.pdf, id=524, 51.392pt x 51.392pt>
+File: images/Sketcher_CreateCircle.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateCircle.pdf>
+Package pdftex.def Info: images/Sketcher_CreateCircle.pdf  used on input line 5
+85.
+(pdftex.def)             Requested size: 25.84413pt x 25.84364pt.
+<images/Sketcher_Create3PointCircle.pdf, id=525, 48.18pt x 48.18pt>
+File: images/Sketcher_Create3PointCircle.pdf Graphic file (type pdf)
+<use images/Sketcher_Create3PointCircle.pdf>
+Package pdftex.def Info: images/Sketcher_Create3PointCircle.pdf  used on input 
+line 586.
+(pdftex.def)             Requested size: 25.84329pt x 25.84364pt.
+ [21 <./images/Line1.png> <./images/Line2.png> <./images/Constraint_PointOnObje
+ct.pdf> <./images/Line3.png>]
+File: images/Sketcher_CreateCircle.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateCircle.pdf>
+Package pdftex.def Info: images/Sketcher_CreateCircle.pdf  used on input line 5
+99.
+(pdftex.def)             Requested size: 25.84413pt x 25.84364pt.
+File: images/Sketcher_Create3PointCircle.pdf Graphic file (type pdf)
+<use images/Sketcher_Create3PointCircle.pdf>
+Package pdftex.def Info: images/Sketcher_Create3PointCircle.pdf  used on input 
+line 607.
+(pdftex.def)             Requested size: 25.84329pt x 25.84364pt.
+<images/Constraint_Radius.pdf, id=540, 51.19125pt x 51.19125pt>
+File: images/Constraint_Radius.pdf Graphic file (type pdf)
+<use images/Constraint_Radius.pdf>
+Package pdftex.def Info: images/Constraint_Radius.pdf  used on input line 619.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Constraint_Diameter.pdf, id=541, 51.19125pt x 51.19125pt>
+File: images/Constraint_Diameter.pdf Graphic file (type pdf)
+<use images/Constraint_Diameter.pdf>
+Package pdftex.def Info: images/Constraint_Diameter.pdf  used on input line 622
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Constraint_EqualLength.pdf Graphic file (type pdf)
+<use images/Constraint_EqualLength.pdf>
+Package pdftex.def Info: images/Constraint_EqualLength.pdf  used on input line 
+625.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/EqualCircle.png, id=542, 180.675pt x 124.465pt>
+File: images/EqualCircle.png Graphic file (type png)
+<use images/EqualCircle.png>
+Package pdftex.def Info: images/EqualCircle.png  used on input line 627.
+(pdftex.def)             Requested size: 180.67455pt x 124.46469pt.
+ [22 <./images/Sketcher_CreateCircle.pdf> <./images/Sketcher_Create3PointCircle
+.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./images/Sketcher_Create3PointCircle.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/Constraint_Radius.pdf> <./images/Constraint_Diameter.pdf> <./images
+/EqualCircle.png>]
+File: images/Constraint_PointOnObject.pdf Graphic file (type pdf)
+<use images/Constraint_PointOnObject.pdf>
+Package pdftex.def Info: images/Constraint_PointOnObject.pdf  used on input lin
+e 641.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/PointOnCircle.png, id=606, 159.59625pt x 112.42pt>
+File: images/PointOnCircle.png Graphic file (type png)
+<use images/PointOnCircle.png>
+Package pdftex.def Info: images/PointOnCircle.png  used on input line 643.
+(pdftex.def)             Requested size: 159.59584pt x 112.41972pt.
+<images/Constraint_Tangent.pdf, id=607, 51.19125pt x 51.19125pt>
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 658.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/TangencyCirclePoint.png, id=608, 209.78375pt x 103.38625pt>
+File: images/TangencyCirclePoint.png Graphic file (type png)
+<use images/TangencyCirclePoint.png>
+Package pdftex.def Info: images/TangencyCirclePoint.png  used on input line 660
+.
+(pdftex.def)             Requested size: 209.78322pt x 103.38599pt.
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 667.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/TangencyCircleLine.png, id=609, 206.7725pt x 171.64125pt>
+File: images/TangencyCircleLine.png Graphic file (type png)
+<use images/TangencyCircleLine.png>
+Package pdftex.def Info: images/TangencyCircleLine.png  used on input line 671.
+
+(pdftex.def)             Requested size: 186.09352pt x 154.47568pt.
+ [23 <./images/PointOnCircle.png> <./images/Constraint_Tangent.pdf> <./images/T
+angencyCirclePoint.png>]
+<images/CircleTangentNoTouch.png, id=624, 187.70125pt x 137.51375pt>
+File: images/CircleTangentNoTouch.png Graphic file (type png)
+<use images/CircleTangentNoTouch.png>
+Package pdftex.def Info: images/CircleTangentNoTouch.png  used on input line 67
+6.
+(pdftex.def)             Requested size: 187.70079pt x 137.51341pt.
+ [24 <./images/TangencyCircleLine.png> <./images/CircleTangentNoTouch.png>]
+<images/FlangeSquare.png, id=631, 439.6425pt x 436.63126pt>
+File: images/FlangeSquare.png Graphic file (type png)
+<use images/FlangeSquare.png>
+Package pdftex.def Info: images/FlangeSquare.png  used on input line 691.
+(pdftex.def)             Requested size: 472.03123pt x 468.8098pt.
+<images/Constraint_Symmetric.pdf, id=632, 51.19125pt x 51.19125pt>
+File: images/Constraint_Symmetric.pdf Graphic file (type pdf)
+<use images/Constraint_Symmetric.pdf>
+Package pdftex.def Info: images/Constraint_Symmetric.pdf  used on input line 69
+7.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [25 <./images/FlangeSquare.png> <./images/Constraint_Symmetric.pdf>]
+<images/Sketcher_AlterConstruction.pdf, id=646, 51.19125pt x 51.19125pt>
+File: images/Sketcher_AlterConstruction.pdf Graphic file (type pdf)
+<use images/Sketcher_AlterConstruction.pdf>
+Package pdftex.def Info: images/Sketcher_AlterConstruction.pdf  used on input l
+ine 706.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/FlangeSquareConstruction.png, id=647, 443.6575pt x 435.6275pt>
+File: images/FlangeSquareConstruction.png Graphic file (type png)
+<use images/FlangeSquareConstruction.png>
+Package pdftex.def Info: images/FlangeSquareConstruction.png  used on input lin
+e 712.
+(pdftex.def)             Requested size: 377.62642pt x 370.7903pt.
+<images/PartDesign_Pad.pdf, id=648, 51.19125pt x 51.19125pt>
+File: images/PartDesign_Pad.pdf Graphic file (type pdf)
+<use images/PartDesign_Pad.pdf>
+Package pdftex.def Info: images/PartDesign_Pad.pdf  used on input line 714.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/FlangeSquarePad.png, id=649, 301.125pt x 315.1775pt>
+File: images/FlangeSquarePad.png Graphic file (type png)
+<use images/FlangeSquarePad.png>
+Package pdftex.def Info: images/FlangeSquarePad.png  used on input line 717.
+(pdftex.def)             Requested size: 150.56212pt x 157.58836pt.
+ [26 <./images/Sketcher_AlterConstruction.pdf> <./images/FlangeSquareConstructi
+on.png> <./images/PartDesign_Pad.pdf> <./images/FlangeSquarePad.png>]
+<images/Sketcher_CreateArc.pdf, id=668, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateArc.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateArc.pdf>
+Package pdftex.def Info: images/Sketcher_CreateArc.pdf  used on input line 725.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_Create3PointArc.pdf, id=669, 51.19125pt x 51.19125pt>
+File: images/Sketcher_Create3PointArc.pdf Graphic file (type pdf)
+<use images/Sketcher_Create3PointArc.pdf>
+Package pdftex.def Info: images/Sketcher_Create3PointArc.pdf  used on input lin
+e 726.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Sketcher_CreateArc.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateArc.pdf>
+Package pdftex.def Info: images/Sketcher_CreateArc.pdf  used on input line 739.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+Overfull \hbox (3.73013pt too wide) in paragraph at lines 744--746
+[][]\T2A/cmr/m/n/12 If you have autoconstraints on you can select existing poin
+ts which will create coincidence
+ []
+
+File: images/Sketcher_Create3PointArc.pdf Graphic file (type pdf)
+<use images/Sketcher_Create3PointArc.pdf>
+Package pdftex.def Info: images/Sketcher_Create3PointArc.pdf  used on input lin
+e 747.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+Overfull \hbox (3.29572pt too wide) in paragraph at lines 775--779
+[][] \T2A/cmr/m/it/12 Create an arc and two horizontal lines. Apply point-to-po
+int tangency constraints
+ []
+
+<images/ArcTangencyPoint.png, id=670, 151.56625pt x 101.37875pt>
+File: images/ArcTangencyPoint.png Graphic file (type png)
+<use images/ArcTangencyPoint.png>
+Package pdftex.def Info: images/ArcTangencyPoint.png  used on input line 780.
+(pdftex.def)             Requested size: 151.56587pt x 101.3785pt.
+<images/ArcTangencyPointAfter.png, id=671, 150.5625pt x 100.375pt>
+File: images/ArcTangencyPointAfter.png Graphic file (type png)
+<use images/ArcTangencyPointAfter.png>
+Package pdftex.def Info: images/ArcTangencyPointAfter.png  used on input line 7
+80.
+(pdftex.def)             Requested size: 150.56212pt x 100.37474pt.
+<images/ArcExercise.png, id=672, 331.2375pt x 353.32pt>
+File: images/ArcExercise.png Graphic file (type png)
+<use images/ArcExercise.png>
+Package pdftex.def Info: images/ArcExercise.png  used on input line 790.
+(pdftex.def)             Requested size: 314.67383pt x 316.5809pt.
+[27 <./images/Sketcher_CreateArc.pdf> <./images/Sketcher_Create3PointArc.pdf>]
+<images/Sketcher_CreatePolyline.pdf, id=693, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreatePolyline.pdf Graphic file (type pdf)
+<use images/Sketcher_CreatePolyline.pdf>
+Package pdftex.def Info: images/Sketcher_CreatePolyline.pdf  used on input line
+ 797.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+[28 <./images/ArcExercise.png> <./images/ArcTangencyPoint.png> <./images/ArcTan
+gencyPointAfter.png>]
+Overfull \hbox (2.74866pt too wide) in paragraph at lines 807--812
+[][]\T2A/cmr/m/n/12 The polyline in its standard form adds a sequence of lines 
+which are connected with coincidence
+ []
+
+File: images/Line1.png Graphic file (type png)
+<use images/Line1.png>
+Package pdftex.def Info: images/Line1.png  used on input line 828.
+(pdftex.def)             Requested size: 364.63875pt x 271.57196pt.
+[29 <./images/Sketcher_CreatePolyline.pdf>]
+Overfull \hbox (7.57259pt too wide) in paragraph at lines 842--847
+\T2A/cmr/m/n/12 through the following different modes. The numbers of DOF are g
+iven ignoring auto constraints,
+ []
+
+<images/PolyExercise.png, id=716, 312.16624pt x 328.22626pt>
+File: images/PolyExercise.png Graphic file (type png)
+<use images/PolyExercise.png>
+Package pdftex.def Info: images/PolyExercise.png  used on input line 876.
+(pdftex.def)             Requested size: 312.16548pt x 328.22545pt.
+[30]
+<images/Sketcher_CreateRectangle.pdf, id=721, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateRectangle.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateRectangle.pdf>
+Package pdftex.def Info: images/Sketcher_CreateRectangle.pdf  used on input lin
+e 883.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Constraint_Symmetric.pdf Graphic file (type pdf)
+<use images/Constraint_Symmetric.pdf>
+Package pdftex.def Info: images/Constraint_Symmetric.pdf  used on input line 90
+2.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [31 <./images/PolyExercise.png> <./images/Sketcher_CreateRectangle.pdf>]
+<images/RectSymmetric.png, id=739, 287.0725pt x 213.79875pt>
+File: images/RectSymmetric.png Graphic file (type png)
+<use images/RectSymmetric.png>
+Package pdftex.def Info: images/RectSymmetric.png  used on input line 908.
+(pdftex.def)             Requested size: 287.0718pt x 213.79822pt.
+<images/Sketcher_CreateTriangle.pdf, id=740, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateTriangle.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateTriangle.pdf>
+Package pdftex.def Info: images/Sketcher_CreateTriangle.pdf  used on input line
+ 914.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_CreateSquare.pdf, id=741, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateSquare.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateSquare.pdf>
+Package pdftex.def Info: images/Sketcher_CreateSquare.pdf  used on input line 9
+15.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_CreatePentagon.pdf, id=742, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreatePentagon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreatePentagon.pdf>
+Package pdftex.def Info: images/Sketcher_CreatePentagon.pdf  used on input line
+ 916.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_CreateHexagon.pdf, id=743, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateHexagon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateHexagon.pdf>
+Package pdftex.def Info: images/Sketcher_CreateHexagon.pdf  used on input line 
+917.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_CreateHeptagon.pdf, id=744, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateHeptagon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateHeptagon.pdf>
+Package pdftex.def Info: images/Sketcher_CreateHeptagon.pdf  used on input line
+ 918.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_CreateOctagon.pdf, id=745, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateOctagon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateOctagon.pdf>
+Package pdftex.def Info: images/Sketcher_CreateOctagon.pdf  used on input line 
+919.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_CreateRegularPolygon.pdf, id=746, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateRegularPolygon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateRegularPolygon.pdf>
+Package pdftex.def Info: images/Sketcher_CreateRegularPolygon.pdf  used on inpu
+t line 920.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Hexagon.png, id=747, 250.9375pt x 261.97874pt>
+File: images/Hexagon.png Graphic file (type png)
+<use images/Hexagon.png>
+Package pdftex.def Info: images/Hexagon.png  used on input line 937.
+(pdftex.def)             Requested size: 200.75026pt x 209.58327pt.
+
+[32 <./images/RectSymmetric.png> <./images/Sketcher_CreateTriangle.pdf> <./imag
+es/Sketcher_CreateSquare.pdf> <./images/Sketcher_CreatePentagon.pdf> <./images/
+Sketcher_CreateHexagon.pdf> <./images/Sketcher_CreateHeptagon.pdf> <./images/Sk
+etcher_CreateOctagon.pdf> <./images/Sketcher_CreateRegularPolygon.pdf>]
+<images/Sketcher_CreateSlot.pdf, id=796, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateSlot.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateSlot.pdf>
+Package pdftex.def Info: images/Sketcher_CreateSlot.pdf  used on input line 951
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/slotExercise.png, id=797, 482.80376pt x 283.0575pt>
+File: images/slotExercise.png Graphic file (type png)
+<use images/slotExercise.png>
+Package pdftex.def Info: images/slotExercise.png  used on input line 970.
+(pdftex.def)             Requested size: 401.22942pt x 235.23999pt.
+
+[33 <./images/Hexagon.png> <./images/Sketcher_CreateSlot.pdf>]
+<images/slotExerciseOuter.png, id=810, 428.60126pt x 184.69pt>
+File: images/slotExerciseOuter.png Graphic file (type png)
+<use images/slotExerciseOuter.png>
+Package pdftex.def Info: images/slotExerciseOuter.png  used on input line 987.
+(pdftex.def)             Requested size: 401.22942pt x 172.89561pt.
+ [34 <./images/slotExercise.png> <./images/slotExerciseOuter.png>]
+<images/slotPointOnArc.png, id=820, 191.71625pt x 172.645pt>
+File: images/slotPointOnArc.png Graphic file (type png)
+<use images/slotPointOnArc.png>
+Package pdftex.def Info: images/slotPointOnArc.png  used on input line 999.
+(pdftex.def)             Requested size: 191.71577pt x 172.64456pt.
+<images/slotPointOnArcAfter.png, id=821, 150.5625pt x 158.5925pt>
+File: images/slotPointOnArcAfter.png Graphic file (type png)
+<use images/slotPointOnArcAfter.png>
+Package pdftex.def Info: images/slotPointOnArcAfter.png  used on input line 100
+5.
+(pdftex.def)             Requested size: 150.56212pt x 158.59209pt.
+ [35 <./images/slotPointOnArc.png> <./images/slotPointOnArcAfter.png>]
+<images/SlotTilted.png, id=828, 223.83624pt x 177.66376pt>
+File: images/SlotTilted.png Graphic file (type png)
+<use images/SlotTilted.png>
+Package pdftex.def Info: images/SlotTilted.png  used on input line 1019.
+(pdftex.def)             Requested size: 223.8357pt x 177.66331pt.
+<images/Sketcher_CreateBSpline.pdf, id=829, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreateBSpline.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateBSpline.pdf>
+Package pdftex.def Info: images/Sketcher_CreateBSpline.pdf  used on input line 
+1025.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_Create_Periodic_BSpline.pdf, id=830, 51.19125pt x 51.19125pt>
+File: images/Sketcher_Create_Periodic_BSpline.pdf Graphic file (type pdf)
+<use images/Sketcher_Create_Periodic_BSpline.pdf>
+Package pdftex.def Info: images/Sketcher_Create_Periodic_BSpline.pdf  used on i
+nput line 1026.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Sketcher_CreateBSpline.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateBSpline.pdf>
+Package pdftex.def Info: images/Sketcher_CreateBSpline.pdf  used on input line 
+1043.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Sketcher_Create_Periodic_BSpline.pdf Graphic file (type pdf)
+<use images/Sketcher_Create_Periodic_BSpline.pdf>
+Package pdftex.def Info: images/Sketcher_Create_Periodic_BSpline.pdf  used on i
+nput line 1045.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/BSplineCreate.png, id=831, 222.8325pt x 192.72pt>
+File: images/BSplineCreate.png Graphic file (type png)
+<use images/BSplineCreate.png>
+Package pdftex.def Info: images/BSplineCreate.png  used on input line 1054.
+(pdftex.def)             Requested size: 222.83195pt x 192.71951pt.
+ [36 <./images/SlotTilted.png> <./images/Sketcher_CreateBSpline.pdf> <./images/
+Sketcher_Create_Periodic_BSpline.pdf>]
+<images/BSplineMoveUp.png, id=849, 234.8775pt x 308.15125pt>
+File: images/BSplineMoveUp.png Graphic file (type png)
+<use images/BSplineMoveUp.png>
+Package pdftex.def Info: images/BSplineMoveUp.png  used on input line 1073.
+(pdftex.def)             Requested size: 126.83195pt x 166.39919pt.
+<images/BSplineMoveLeft.png, id=850, 289.08pt x 220.825pt>
+File: images/BSplineMoveLeft.png Graphic file (type png)
+<use images/BSplineMoveLeft.png>
+Package pdftex.def Info: images/BSplineMoveLeft.png  used on input line 1075.
+(pdftex.def)             Requested size: 156.10086pt x 119.24371pt.
+<images/BSplineMoveRight.png, id=851, 311.1625pt x 231.86626pt>
+File: images/BSplineMoveRight.png Graphic file (type png)
+<use images/BSplineMoveRight.png>
+Package pdftex.def Info: images/BSplineMoveRight.png  used on input line 1077.
+(pdftex.def)             Requested size: 168.02524pt x 125.2059pt.
+
+[37 <./images/BSplineCreate.png> <./images/BSplineMoveUp.png> <./images/BSpline
+MoveLeft.png> <./images/BSplineMoveRight.png>]
+<images/BSplineBigCircle.png, id=862, 241.90375pt x 258.9675pt>
+File: images/BSplineBigCircle.png Graphic file (type png)
+<use images/BSplineBigCircle.png>
+Package pdftex.def Info: images/BSplineBigCircle.png  used on input line 1090.
+(pdftex.def)             Requested size: 241.90315pt x 258.96684pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1109.
+\listWidth=\skip50
+<images/BSplineBlock.png, id=864, 198.7425pt x 195.73125pt>
+File: images/BSplineBlock.png Graphic file (type png)
+<use images/BSplineBlock.png>
+Package pdftex.def Info: images/BSplineBlock.png  used on input line 1120.
+(pdftex.def)             Requested size: 198.742pt x 195.73076pt.
+ [38 <./images/BSplineBigCircle.png>]
+<images/BSplineTangent.png, id=874, 92.345pt x 170.6375pt>
+File: images/BSplineTangent.png Graphic file (type png)
+<use images/BSplineTangent.png>
+Package pdftex.def Info: images/BSplineTangent.png  used on input line 1136.
+(pdftex.def)             Requested size: 92.34476pt x 170.63707pt.
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 1138
+.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+<images/BSplinePerpendicular.png, id=875, 94.3525pt x 170.6375pt>
+File: images/BSplinePerpendicular.png Graphic file (type png)
+<use images/BSplinePerpendicular.png>
+Package pdftex.def Info: images/BSplinePerpendicular.png  used on input line 11
+40.
+(pdftex.def)             Requested size: 94.35225pt x 170.63707pt.
+<images/Constraint_Perpendicular.pdf, id=876, 51.19125pt x 51.19125pt>
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1142.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+<images/BSplineTangentPerpendicular.png, id=877, 227.85126pt x 170.6375pt>
+File: images/BSplineTangentPerpendicular.png Graphic file (type png)
+<use images/BSplineTangentPerpendicular.png>
+Package pdftex.def Info: images/BSplineTangentPerpendicular.png  used on input 
+line 1144.
+(pdftex.def)             Requested size: 227.8507pt x 170.63707pt.
+ [39 <./images/BSplineBlock.png> <./images/BSplineTangent.png> <./images/BSplin
+ePerpendicular.png> <./images/Constraint_Perpendicular.pdf> <./images/BSplineTa
+ngentPerpendicular.png>]
+<images/BSplineInnerTangentAll.png, id=895, 362.35374pt x 276.03125pt>
+File: images/BSplineInnerTangentAll.png Graphic file (type png)
+<use images/BSplineInnerTangentAll.png>
+Package pdftex.def Info: images/BSplineInnerTangentAll.png  used on input line 
+1163.
+(pdftex.def)             Requested size: 362.35286pt x 276.03056pt.
+<images/BSplineInnerTangentLeft.png, id=896, 375.4025pt x 278.03876pt>
+File: images/BSplineInnerTangentLeft.png Graphic file (type png)
+<use images/BSplineInnerTangentLeft.png>
+Package pdftex.def Info: images/BSplineInnerTangentLeft.png  used on input line
+ 1168.
+(pdftex.def)             Requested size: 202.96997pt x 150.32959pt.
+<images/BSplineInnerTangentRight.png, id=897, 360.34625pt x 276.03125pt>
+File: images/BSplineInnerTangentRight.png Graphic file (type png)
+<use images/BSplineInnerTangentRight.png>
+Package pdftex.def Info: images/BSplineInnerTangentRight.png  used on input lin
+e 1168.
+(pdftex.def)             Requested size: 202.96997pt x 155.47778pt.
+ [40 <./images/BSplineInnerTangentAll.png> <./images/BSplineInnerTangentLeft.pn
+g> <./images/BSplineInnerTangentRight.png>]
+<images/Sketcher_Conics.pdf, id=907, 51.392pt x 51.392pt>
+File: images/Sketcher_Conics.pdf Graphic file (type pdf)
+<use images/Sketcher_Conics.pdf>
+Package pdftex.def Info: images/Sketcher_Conics.pdf  used on input line 1183.
+(pdftex.def)             Requested size: 25.84413pt x 25.84364pt.
+<images/Sketcher_CreateEllipse.pdf, id=908, 51.392pt x 51.392pt>
+File: images/Sketcher_CreateEllipse.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateEllipse.pdf>
+Package pdftex.def Info: images/Sketcher_CreateEllipse.pdf  used on input line 
+1188.
+(pdftex.def)             Requested size: 25.84413pt x 25.84364pt.
+<images/Sketcher_CreateEllipse_3points.pdf, id=909, 51.392pt x 51.392pt>
+File: images/Sketcher_CreateEllipse_3points.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateEllipse_3points.pdf>
+Package pdftex.def Info: images/Sketcher_CreateEllipse_3points.pdf  used on inp
+ut line 1189.
+(pdftex.def)             Requested size: 25.84413pt x 25.84364pt.
+<images/Sketcher_Elliptical_Arc.pdf, id=910, 51.392pt x 51.392pt>
+File: images/Sketcher_Elliptical_Arc.pdf Graphic file (type pdf)
+<use images/Sketcher_Elliptical_Arc.pdf>
+Package pdftex.def Info: images/Sketcher_Elliptical_Arc.pdf  used on input line
+ 1190.
+(pdftex.def)             Requested size: 25.84413pt x 25.84364pt.
+<images/Sketcher_Hyperbolic_Arc.pdf, id=911, 51.392pt x 51.392pt>
+File: images/Sketcher_Hyperbolic_Arc.pdf Graphic file (type pdf)
+<use images/Sketcher_Hyperbolic_Arc.pdf>
+Package pdftex.def Info: images/Sketcher_Hyperbolic_Arc.pdf  used on input line
+ 1191.
+(pdftex.def)             Requested size: 25.84413pt x 25.84364pt.
+<images/Sketcher_Parabolic_Arc.pdf, id=912, 51.392pt x 51.392pt>
+File: images/Sketcher_Parabolic_Arc.pdf Graphic file (type pdf)
+<use images/Sketcher_Parabolic_Arc.pdf>
+Package pdftex.def Info: images/Sketcher_Parabolic_Arc.pdf  used on input line 
+1192.
+(pdftex.def)             Requested size: 25.84413pt x 25.84364pt.
+
+Overfull \hbox (11.62708pt too wide) in paragraph at lines 1213--1215
+[][]\T2A/cmr/m/n/12 You can use the construction lines (see section []15[][] on
+ the next page[][]) for further constraining
+ []
+
+
+Overfull \hbox (6.02458pt too wide) in paragraph at lines 1220--1222
+[][]\T2A/cmr/m/n/12 add perpendicular constraints between endpoints of conical 
+arcs and other geometric
+ []
+
+[41 <./images/Sketcher_Conics.pdf> <./images/Sketcher_CreateEllipse.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./images/Sketcher_CreateEllipse.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+> <./images/Sketcher_CreateEllipse_3points.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./images/Sketcher_CreateEllipse_3points
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/Sketcher_Elliptical_Arc.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./images/Sketcher_Elliptical_Arc.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/Sketcher_Hyperbolic_Arc.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./images/Sketcher_Hyperbolic_Arc.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/Sketcher_Parabolic_Arc.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./images/Sketcher_Parabolic_Arc.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>]
+<images/ConicalTangent.png, id=962, 220.825pt x 118.4425pt>
+File: images/ConicalTangent.png Graphic file (type png)
+<use images/ConicalTangent.png>
+Package pdftex.def Info: images/ConicalTangent.png  used on input line 1237.
+(pdftex.def)             Requested size: 220.82445pt x 118.4422pt.
+<images/ConicalPerpendicular.png, id=963, 213.79875pt x 124.465pt>
+File: images/ConicalPerpendicular.png Graphic file (type png)
+<use images/ConicalPerpendicular.png>
+Package pdftex.def Info: images/ConicalPerpendicular.png  used on input line 12
+42.
+(pdftex.def)             Requested size: 213.79822pt x 124.46469pt.
+File: images/Sketcher_AlterConstruction.pdf Graphic file (type pdf)
+<use images/Sketcher_AlterConstruction.pdf>
+Package pdftex.def Info: images/Sketcher_AlterConstruction.pdf  used on input l
+ine 1258.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Sketcher_AlterConstruction.pdf Graphic file (type pdf)
+<use images/Sketcher_AlterConstruction.pdf>
+Package pdftex.def Info: images/Sketcher_AlterConstruction.pdf  used on input l
+ine 1262.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [42 <./images/ConicalTangent.png> <./images/ConicalPerpendicular.png>]
+<images/ConstructionReady.png, id=973, 440.64626pt x 268.00125pt>
+File: images/ConstructionReady.png Graphic file (type png)
+<use images/ConstructionReady.png>
+Package pdftex.def Info: images/ConstructionReady.png  used on input line 1277.
+
+(pdftex.def)             Requested size: 368.18378pt x 223.93767pt.
+<images/ConstructionPrep.png, id=974, 432.61626pt x 271.0125pt>
+File: images/ConstructionPrep.png Graphic file (type png)
+<use images/ConstructionPrep.png>
+Package pdftex.def Info: images/ConstructionPrep.png  used on input line 1285.
+(pdftex.def)             Requested size: 354.02342pt x 221.78506pt.
+
+[43 <./images/ConstructionReady.png> <./images/ConstructionPrep.png>]
+<images/ConstructionListOfElements.png, id=983, 270.00874pt x 65.24374pt>
+File: images/ConstructionListOfElements.png Graphic file (type png)
+<use images/ConstructionListOfElements.png>
+Package pdftex.def Info: images/ConstructionListOfElements.png  used on input l
+ine 1297.
+(pdftex.def)             Requested size: 270.00807pt x 65.24358pt.
+<images/Sketcher_CreatePoint.pdf, id=984, 51.19125pt x 51.19125pt>
+File: images/Sketcher_CreatePoint.pdf Graphic file (type pdf)
+<use images/Sketcher_CreatePoint.pdf>
+Package pdftex.def Info: images/Sketcher_CreatePoint.pdf  used on input line 13
+06.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [44 <./images/ConstructionListOfElements.png> <./images/Sketcher_CreatePoint.p
+df>]
+Overfull \hbox (0.52417pt too wide) in paragraph at lines 1329--1337
+\T2A/cmr/m/n/12 most other 2D drawing programs as well. Especially the geometri
+c constraints like coincidence,
+ []
+
+
+Overfull \hbox (2.4874pt too wide) in paragraph at lines 1353--1355
+[][]\T2A/cmr/m/n/12 This is probably the most frequently used possibility. 
+ []
+
+<images/Sketcher_SelectConstraints.pdf, id=997, 51.19125pt x 51.19125pt>
+File: images/Sketcher_SelectConstraints.pdf Graphic file (type pdf)
+<use images/Sketcher_SelectConstraints.pdf>
+Package pdftex.def Info: images/Sketcher_SelectConstraints.pdf  used on input l
+ine 1367.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+Overfull \hbox (13.41399pt too wide) in paragraph at lines 1366--1370
+[][]\T2A/cmr/m/n/12 If you have selected a geometric
+ []
+
+<images/Sketcher_SelectElementsAssociatedWithConstraints.pdf, id=998, 51.19125p
+t x 51.19125pt>
+File: images/Sketcher_SelectElementsAssociatedWithConstraints.pdf Graphic file 
+(type pdf)
+<use images/Sketcher_SelectElementsAssociatedWithConstraints.pdf>
+Package pdftex.def Info: images/Sketcher_SelectElementsAssociatedWithConstraint
+s.pdf  used on input line 1372.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+Overfull \hbox (18.37383pt too wide) in paragraph at lines 1370--1375
+[][]\T2A/cmr/m/n/12 If you have selected a constraint,
+ []
+
+[45 <./images/Sketcher_SelectConstraints.pdf>]
+Overfull \hbox (3.08186pt too wide) in paragraph at lines 1375--1381
+\T2A/cmr/m/n/12 coincidence constraints. On the other hand it can be used to se
+lect endpoints of geometric
+ []
+
+
+Overfull \hbox (3.79987pt too wide) in paragraph at lines 1375--1381
+\T2A/cmr/m/n/12 elements which lie on top of each other, e.g. in order to apply
+ a tangency or perpendicular
+ []
+
+[46 <./images/Sketcher_SelectElementsAssociatedWithConstraints.pdf>]
+<images/unique1.png, id=1021, 304.13625pt x 202.7575pt>
+File: images/unique1.png Graphic file (type png)
+<use images/unique1.png>
+Package pdftex.def Info: images/unique1.png  used on input line 1436.
+(pdftex.def)             Requested size: 304.1355pt x 202.757pt.
+<images/unique2.png, id=1022, 253.94875pt x 201.75375pt>
+File: images/unique2.png Graphic file (type png)
+<use images/unique2.png>
+Package pdftex.def Info: images/unique2.png  used on input line 1453.
+(pdftex.def)             Requested size: 253.94812pt x 201.75325pt.
+ [47 <./images/unique1.png> <./images/unique2.png>]
+<images/Jump1.png, id=1030, 294.09875pt x 175.65625pt>
+File: images/Jump1.png Graphic file (type png)
+<use images/Jump1.png>
+Package pdftex.def Info: images/Jump1.png  used on input line 1463.
+(pdftex.def)             Requested size: 294.09802pt x 175.6558pt.
+<images/Jump2.png, id=1031, 431.6125pt x 170.6375pt>
+File: images/Jump2.png Graphic file (type png)
+<use images/Jump2.png>
+Package pdftex.def Info: images/Jump2.png  used on input line 1468.
+(pdftex.def)             Requested size: 345.29045pt x 136.51016pt.
+<images/Jump3.png, id=1032, 531.9875pt x 170.6375pt>
+File: images/Jump3.png Graphic file (type png)
+<use images/Jump3.png>
+Package pdftex.def Info: images/Jump3.png  used on input line 1474.
+(pdftex.def)             Requested size: 425.59058pt x 136.51016pt.
+<images/Jump4.png, id=1033, 464.73625pt x 170.6375pt>
+File: images/Jump4.png Graphic file (type png)
+<use images/Jump4.png>
+Package pdftex.def Info: images/Jump4.png  used on input line 1480.
+(pdftex.def)             Requested size: 371.78949pt x 136.51016pt.
+ [48 <./images/Jump1.png> <./images/Jump2.png> <./images/Jump3.png>]
+<images/ConstraintsSolverUnder.png, id=1045, 429.605pt x 165.61874pt>
+File: images/ConstraintsSolverUnder.png Graphic file (type png)
+<use images/ConstraintsSolverUnder.png>
+Package pdftex.def Info: images/ConstraintsSolverUnder.png  used on input line 
+1507.
+(pdftex.def)             Requested size: 429.60394pt x 165.61833pt.
+ [49 <./images/Jump4.png> <./images/ConstraintsSolverUnder.png>]
+<images/ConstraintsSolverFull.png, id=1056, 117.43875pt x 79.29625pt>
+File: images/ConstraintsSolverFull.png Graphic file (type png)
+<use images/ConstraintsSolverFull.png>
+Package pdftex.def Info: images/ConstraintsSolverFull.png  used on input line 1
+522.
+(pdftex.def)             Requested size: 117.43845pt x 79.29604pt.
+
+Overfull \hbox (5.69228pt too wide) in paragraph at lines 1524--1527
+[][]\T2A/cmr/m/n/12 Sketches can be used for pads and pockets without being ful
+ly constrained, but experience
+ []
+
+<images/ConstraintsSolverUnsolved.png, id=1057, 392.46625pt x 103.38625pt>
+File: images/ConstraintsSolverUnsolved.png Graphic file (type png)
+<use images/ConstraintsSolverUnsolved.png>
+Package pdftex.def Info: images/ConstraintsSolverUnsolved.png  used on input li
+ne 1549.
+(pdftex.def)             Requested size: 392.46527pt x 103.38599pt.
+[50 <./images/ConstraintsSolverFull.png> <./images/ConstraintsSolverUnsolved.pn
+g>]
+<images/ConstraintsSolverUndefined.png, id=1065, 166.6225pt x 88.33pt>
+File: images/ConstraintsSolverUndefined.png Graphic file (type png)
+<use images/ConstraintsSolverUndefined.png>
+Package pdftex.def Info: images/ConstraintsSolverUndefined.png  used on input l
+ine 1555.
+(pdftex.def)             Requested size: 166.62209pt x 88.32977pt.
+<images/ConstraintsSolverConflicting.png, id=1066, 396.48125pt x 157.58875pt>
+File: images/ConstraintsSolverConflicting.png Graphic file (type png)
+<use images/ConstraintsSolverConflicting.png>
+Package pdftex.def Info: images/ConstraintsSolverConflicting.png  used on input
+ line 1559.
+(pdftex.def)             Requested size: 396.48027pt x 157.58835pt.
+File: images/Constraint_Horizontal.pdf Graphic file (type pdf)
+<use images/Constraint_Horizontal.pdf>
+Package pdftex.def Info: images/Constraint_Horizontal.pdf  used on input line 1
+574.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Constraint_VerticalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_VerticalDistance.pdf>
+Package pdftex.def Info: images/Constraint_VerticalDistance.pdf  used on input 
+line 1575.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/ConstraintsSolverOver1.png, id=1067, 195.73125pt x 103.38625pt>
+File: images/ConstraintsSolverOver1.png Graphic file (type png)
+<use images/ConstraintsSolverOver1.png>
+Package pdftex.def Info: images/ConstraintsSolverOver1.png  used on input line 
+1588.
+(pdftex.def)             Requested size: 195.73076pt x 103.38599pt.
+ [51 <./images/ConstraintsSolverUndefined.png> <./images/ConstraintsSolverConfl
+icting.png>]
+<images/ConstraintsSolverOver2.png, id=1074, 441.65pt x 103.38625pt>
+File: images/ConstraintsSolverOver2.png Graphic file (type png)
+<use images/ConstraintsSolverOver2.png>
+Package pdftex.def Info: images/ConstraintsSolverOver2.png  used on input line 
+1594.
+(pdftex.def)             Requested size: 441.64891pt x 103.38599pt.
+
+Overfull \hbox (5.98392pt too wide) in paragraph at lines 1597--1604
+[][]\T2A/cmr/m/n/12 You get this message when a constraint is implied
+ []
+
+<images/ConstraintsSolverRedundant.png, id=1075, 412.54124pt x 111.41624pt>
+File: images/ConstraintsSolverRedundant.png Graphic file (type png)
+<use images/ConstraintsSolverRedundant.png>
+Package pdftex.def Info: images/ConstraintsSolverRedundant.png  used on input l
+ine 1608.
+(pdftex.def)             Requested size: 412.54024pt x 111.41597pt.
+<images/equiTriangle1.png, id=1076, 260.975pt x 250.9375pt>
+File: images/equiTriangle1.png Graphic file (type png)
+<use images/equiTriangle1.png>
+Package pdftex.def Info: images/equiTriangle1.png  used on input line 1628.
+(pdftex.def)             Requested size: 172.24403pt x 165.61925pt.
+[52 <./images/ConstraintsSolverOver1.png> <./images/ConstraintsSolverOver2.png>
+ <./images/ConstraintsSolverRedundant.png>]
+<images/equiTriangle2.png, id=1084, 265.99374pt x 250.9375pt>
+File: images/equiTriangle2.png Graphic file (type png)
+<use images/equiTriangle2.png>
+Package pdftex.def Info: images/equiTriangle2.png  used on input line 1633.
+(pdftex.def)             Requested size: 175.55641pt x 165.61925pt.
+<images/equiTriangle3.png, id=1085, 253.94875pt x 254.9525pt>
+File: images/equiTriangle3.png Graphic file (type png)
+<use images/equiTriangle3.png>
+Package pdftex.def Info: images/equiTriangle3.png  used on input line 1638.
+(pdftex.def)             Requested size: 167.60667pt x 168.26915pt.
+
+Overfull \hbox (6.60185pt too wide) in paragraph at lines 1644--1650
+\T2A/cmr/m/n/12 constraints can lead to different results. If you create in the
+ example above the coincidence
+ []
+
+[53 <./images/equiTriangle1.png> <./images/equiTriangle2.png> <./images/equiTri
+angle3.png>]
+File: images/Constraint_PointOnPoint.pdf Graphic file (type pdf)
+<use images/Constraint_PointOnPoint.pdf>
+Package pdftex.def Info: images/Constraint_PointOnPoint.pdf  used on input line
+ 1661.
+(pdftex.def)             Requested size: 25.84329pt x 25.84364pt.
+<images/Coincidence1.png, id=1093, 237.88875pt x 147.55125pt>
+File: images/Coincidence1.png Graphic file (type png)
+<use images/Coincidence1.png>
+Package pdftex.def Info: images/Coincidence1.png  used on input line 1679.
+(pdftex.def)             Requested size: 237.88815pt x 147.55087pt.
+<images/Coincidence2.png, id=1094, 220.825pt x 170.6375pt>
+File: images/Coincidence2.png Graphic file (type png)
+<use images/Coincidence2.png>
+Package pdftex.def Info: images/Coincidence2.png  used on input line 1684.
+(pdftex.def)             Requested size: 198.74065pt x 153.57231pt.
+<images/Coincidence3.png, id=1095, 241.90375pt x 170.6375pt>
+File: images/Coincidence3.png Graphic file (type png)
+<use images/Coincidence3.png>
+Package pdftex.def Info: images/Coincidence3.png  used on input line 1684.
+(pdftex.def)             Requested size: 217.71135pt x 153.57231pt.
+<images/Coincidence4.png, id=1096, 344.28625pt x 227.85126pt>
+File: images/Coincidence4.png Graphic file (type png)
+<use images/Coincidence4.png>
+Package pdftex.def Info: images/Coincidence4.png  used on input line 1690.
+(pdftex.def)             Requested size: 240.99872pt x 159.49478pt.
+ [54 <./images/Coincidence1.png> <./images/Coincidence2.png> <./images/Coincide
+nce3.png>]
+File: images/Constraint_PointOnObject.pdf Graphic file (type pdf)
+<use images/Constraint_PointOnObject.pdf>
+Package pdftex.def Info: images/Constraint_PointOnObject.pdf  used on input lin
+e 1708.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+ask "curve or arc" for following paragraph
+
+Overfull \hbox (6.37271pt too wide) in paragraph at lines 1728--1730
+[][]\T2A/cmr/m/it/12 Create a sketch according to the following image using poi
+nt-on-object constraints
+ []
+
+<images/PointOnLine1.png, id=1107, 272.01625pt x 215.80624pt>
+File: images/PointOnLine1.png Graphic file (type png)
+<use images/PointOnLine1.png>
+Package pdftex.def Info: images/PointOnLine1.png  used on input line 1731.
+(pdftex.def)             Requested size: 272.01558pt x 215.80571pt.
+[55 <./images/Coincidence4.png>]
+<images/PointOnLine2.png, id=1115, 255.95625pt x 221.82875pt>
+File: images/PointOnLine2.png Graphic file (type png)
+<use images/PointOnLine2.png>
+Package pdftex.def Info: images/PointOnLine2.png  used on input line 1740.
+(pdftex.def)             Requested size: 164.14731pt x 142.26378pt.
+File: images/Constraint_PointOnObject.pdf Graphic file (type pdf)
+<use images/Constraint_PointOnObject.pdf>
+Package pdftex.def Info: images/Constraint_PointOnObject.pdf  used on input lin
+e 1742.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/PointOnLine3.png, id=1116, 243.91125pt x 221.82875pt>
+File: images/PointOnLine3.png Graphic file (type png)
+<use images/PointOnLine3.png>
+Package pdftex.def Info: images/PointOnLine3.png  used on input line 1744.
+(pdftex.def)             Requested size: 156.42273pt x 142.26378pt.
+File: images/Constraint_Vertical.pdf Graphic file (type pdf)
+<use images/Constraint_Vertical.pdf>
+Package pdftex.def Info: images/Constraint_Vertical.pdf  used on input line 175
+3.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [56 <./images/PointOnLine1.png> <./images/PointOnLine2.png> <./images/PointOnL
+ine3.png>]
+<images/VerticalPoints.png, id=1125, 401.5pt x 386.44376pt>
+File: images/VerticalPoints.png Graphic file (type png)
+<use images/VerticalPoints.png>
+Package pdftex.def Info: images/VerticalPoints.png  used on input line 1785.
+(pdftex.def)             Requested size: 281.04808pt x 270.50877pt.
+File: images/Constraint_Horizontal.pdf Graphic file (type pdf)
+<use images/Constraint_Horizontal.pdf>
+Package pdftex.def Info: images/Constraint_Horizontal.pdf  used on input line 1
+795.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Constraint_Parallel.pdf, id=1127, 48.18pt x 48.18pt>
+File: images/Constraint_Parallel.pdf Graphic file (type pdf)
+<use images/Constraint_Parallel.pdf>
+Package pdftex.def Info: images/Constraint_Parallel.pdf  used on input line 180
+8.
+(pdftex.def)             Requested size: 25.84329pt x 25.84364pt.
+ [57 <./images/VerticalPoints.png>]
+File: images/Constraint_Parallel.pdf Graphic file (type pdf)
+<use images/Constraint_Parallel.pdf>
+Package pdftex.def Info: images/Constraint_Parallel.pdf  used on input line 181
+7.
+(pdftex.def)             Requested size: 25.84329pt x 25.84364pt.
+<images/Parallelogramm.png, id=1134, 300.12125pt x 212.795pt>
+File: images/Parallelogramm.png Graphic file (type png)
+<use images/Parallelogramm.png>
+Package pdftex.def Info: images/Parallelogramm.png  used on input line 1824.
+(pdftex.def)             Requested size: 283.22162pt x 200.82932pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1838.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+Overfull \hbox (1.54051pt too wide) in paragraph at lines 1854--1857
+[][]\T2A/cmr/m/n/12 For the basic variant select two lines and apply the perpen
+dicular constraint. The following
+ []
+
+[58 <./images/Constraint_Parallel.pdf> <./images/Parallelogramm.png>]
+<images/Perpendicular1.png, id=1150, 259.97125pt x 130.4875pt>
+File: images/Perpendicular1.png Graphic file (type png)
+<use images/Perpendicular1.png>
+Package pdftex.def Info: images/Perpendicular1.png  used on input line 1862.
+(pdftex.def)             Requested size: 188.8096pt x 94.76924pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1864.
+(pdftex.def)             Requested size: 26.39384pt x 26.39351pt.
+<images/Perpendicular2.png, id=1151, 276.03125pt x 130.4875pt>
+File: images/Perpendicular2.png Graphic file (type png)
+<use images/Perpendicular2.png>
+Package pdftex.def Info: images/Perpendicular2.png  used on input line 1866.
+(pdftex.def)             Requested size: 188.8096pt x 89.25993pt.
+<images/PerpendicularLineCurve1.png, id=1152, 199.74625pt x 110.4125pt>
+File: images/PerpendicularLineCurve1.png Graphic file (type png)
+<use images/PerpendicularLineCurve1.png>
+Package pdftex.def Info: images/PerpendicularLineCurve1.png  used on input line
+ 1872.
+(pdftex.def)             Requested size: 188.8096pt x 104.37236pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1874.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/PerpendicularLineCurve2.png, id=1153, 187.70125pt x 110.4125pt>
+File: images/PerpendicularLineCurve2.png Graphic file (type png)
+<use images/PerpendicularLineCurve2.png>
+Package pdftex.def Info: images/PerpendicularLineCurve2.png  used on input line
+ 1876.
+(pdftex.def)             Requested size: 188.8096pt x 111.07095pt.
+<images/PerpendicularLinePoint3.png, id=1154, 158.5925pt x 110.4125pt>
+File: images/PerpendicularLinePoint3.png Graphic file (type png)
+<use images/PerpendicularLinePoint3.png>
+Package pdftex.def Info: images/PerpendicularLinePoint3.png  used on input line
+ 1885.
+(pdftex.def)             Requested size: 188.8096pt x 131.45987pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1887.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/PerpendicularLinePoint4.png, id=1155, 153.57375pt x 110.4125pt>
+File: images/PerpendicularLinePoint4.png Graphic file (type png)
+<use images/PerpendicularLinePoint4.png>
+Package pdftex.def Info: images/PerpendicularLinePoint4.png  used on input line
+ 1889.
+(pdftex.def)             Requested size: 188.8096pt x 135.75432pt.
+<images/PerpendicularLinePoint1.png, id=1156, 199.74625pt x 110.4125pt>
+File: images/PerpendicularLinePoint1.png Graphic file (type png)
+<use images/PerpendicularLinePoint1.png>
+Package pdftex.def Info: images/PerpendicularLinePoint1.png  used on input line
+ 1895.
+(pdftex.def)             Requested size: 188.8096pt x 104.37236pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1897.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/PerpendicularLinePoint2.png, id=1157, 204.765pt x 112.42pt>
+File: images/PerpendicularLinePoint2.png Graphic file (type png)
+<use images/PerpendicularLinePoint2.png>
+Package pdftex.def Info: images/PerpendicularLinePoint2.png  used on input line
+ 1899.
+(pdftex.def)             Requested size: 188.8096pt x 103.66609pt.
+ [59 <./images/Perpendicular1.png> <./images/Perpendicular2.png> <./images/Perp
+endicularLineCurve1.png> <./images/PerpendicularLineCurve2.png> <./images/Perpe
+ndicularLinePoint3.png> <./images/PerpendicularLinePoint4.png>]
+<images/PerpendicularCurvePoint.png, id=1169, 173.64874pt x 123.46124pt>
+File: images/PerpendicularCurvePoint.png Graphic file (type png)
+<use images/PerpendicularCurvePoint.png>
+Package pdftex.def Info: images/PerpendicularCurvePoint.png  used on input line
+ 1903.
+(pdftex.def)             Requested size: 173.64832pt x 123.46092pt.
+<images/PerpendicularPointPoint1.png, id=1171, 160.6pt x 100.375pt>
+File: images/PerpendicularPointPoint1.png Graphic file (type png)
+<use images/PerpendicularPointPoint1.png>
+Package pdftex.def Info: images/PerpendicularPointPoint1.png  used on input lin
+e 1912.
+(pdftex.def)             Requested size: 160.5996pt x 100.37474pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1914.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/PerpendicularPointPoint2.png, id=1172, 183.68625pt x 100.375pt>
+File: images/PerpendicularPointPoint2.png Graphic file (type png)
+<use images/PerpendicularPointPoint2.png>
+Package pdftex.def Info: images/PerpendicularPointPoint2.png  used on input lin
+e 1916.
+(pdftex.def)             Requested size: 183.68578pt x 100.37474pt.
+<images/PerpendicularPointArc1.png, id=1173, 195.73125pt x 117.43875pt>
+File: images/PerpendicularPointArc1.png Graphic file (type png)
+<use images/PerpendicularPointArc1.png>
+Package pdftex.def Info: images/PerpendicularPointArc1.png  used on input line 
+1918.
+(pdftex.def)             Requested size: 180.20036pt x 108.12054pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1920.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/PerpendicularPointArc2.png, id=1174, 195.73125pt x 117.43875pt>
+File: images/PerpendicularPointArc2.png Graphic file (type png)
+<use images/PerpendicularPointArc2.png>
+Package pdftex.def Info: images/PerpendicularPointArc2.png  used on input line 
+1922.
+(pdftex.def)             Requested size: 180.20036pt x 108.12054pt.
+<images/PerpendicularArcArc1.png, id=1175, 195.73125pt x 117.43875pt>
+File: images/PerpendicularArcArc1.png Graphic file (type png)
+<use images/PerpendicularArcArc1.png>
+Package pdftex.def Info: images/PerpendicularArcArc1.png  used on input line 19
+24.
+(pdftex.def)             Requested size: 180.20036pt x 108.12054pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 1926.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/PerpendicularArcArc2.png, id=1176, 195.73125pt x 117.43875pt>
+File: images/PerpendicularArcArc2.png Graphic file (type png)
+<use images/PerpendicularArcArc2.png>
+Package pdftex.def Info: images/PerpendicularArcArc2.png  used on input line 19
+28.
+(pdftex.def)             Requested size: 180.20036pt x 108.12054pt.
+ [60 <./images/PerpendicularLinePoint1.png> <./images/PerpendicularLinePoint2.p
+ng> <./images/PerpendicularCurvePoint.png> <./images/PerpendicularPointPoint1.p
+ng> <./images/PerpendicularPointPoint2.png> <./images/PerpendicularPointArc1.pn
+g> <./images/PerpendicularPointArc2.png>]
+Overfull \hbox (14.18877pt too wide) in paragraph at lines 1935--1940
+[][]\T2A/cmr/m/n/12 You should \T2A/cmr/m/it/12 not \T2A/cmr/m/n/12 use the per
+pendicular constraint to create vertical or horizontal constraints.
+ []
+
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 1952
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/TangentCurveCurve1.png, id=1191, 305.14pt x 288.07625pt>
+File: images/TangentCurveCurve1.png Graphic file (type png)
+<use images/TangentCurveCurve1.png>
+Package pdftex.def Info: images/TangentCurveCurve1.png  used on input line 1972
+.
+(pdftex.def)             Requested size: 186.86145pt x 176.407pt.
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 1974
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/TangentCurveCurve2.png, id=1192, 304.13625pt x 249.93375pt>
+File: images/TangentCurveCurve2.png Graphic file (type png)
+<use images/TangentCurveCurve2.png>
+Package pdftex.def Info: images/TangentCurveCurve2.png  used on input line 1976
+.
+(pdftex.def)             Requested size: 214.67131pt x 176.407pt.
+[61 <./images/PerpendicularArcArc1.png> <./images/PerpendicularArcArc2.png>]
+<images/TangentNoTouch.png, id=1202, 304.13625pt x 222.8325pt>
+File: images/TangentNoTouch.png Graphic file (type png)
+<use images/TangentNoTouch.png>
+Package pdftex.def Info: images/TangentNoTouch.png  used on input line 1982.
+(pdftex.def)             Requested size: 194.17317pt x 142.26378pt.
+<images/TangentPointCurve1.png, id=1203, 290.08376pt x 247.92625pt>
+File: images/TangentPointCurve1.png Graphic file (type png)
+<use images/TangentPointCurve1.png>
+Package pdftex.def Info: images/TangentPointCurve1.png  used on input line 1987
+.
+(pdftex.def)             Requested size: 206.40353pt x 176.407pt.
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 1989
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/TangentPointCurve2.png, id=1204, 283.0575pt x 245.91875pt>
+File: images/TangentPointCurve2.png Graphic file (type png)
+<use images/TangentPointCurve2.png>
+Package pdftex.def Info: images/TangentPointCurve2.png  used on input line 1991
+.
+(pdftex.def)             Requested size: 203.05403pt x 176.407pt.
+
+[62 <./images/TangentCurveCurve1.png> <./images/TangentCurveCurve2.png> <./imag
+es/TangentNoTouch.png> <./images/TangentPointCurve1.png> <./images/TangentPoint
+Curve2.png>]
+<images/TangentPointPoint1.png, id=1214, 284.06125pt x 243.91125pt>
+File: images/TangentPointPoint1.png Graphic file (type png)
+<use images/TangentPointPoint1.png>
+Package pdftex.def Info: images/TangentPointPoint1.png  used on input line 1999
+.
+(pdftex.def)             Requested size: 192.1925pt x 165.02606pt.
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 2001
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/TangentPointPoint2.png, id=1215, 289.08pt x 231.86626pt>
+File: images/TangentPointPoint2.png Graphic file (type png)
+<use images/TangentPointPoint2.png>
+Package pdftex.def Info: images/TangentPointPoint2.png  used on input line 2003
+.
+(pdftex.def)             Requested size: 205.75108pt x 165.02606pt.
+<images/TangentlineLine1.png, id=1216, 209.78375pt x 90.3375pt>
+File: images/TangentlineLine1.png Graphic file (type png)
+<use images/TangentlineLine1.png>
+Package pdftex.def Info: images/TangentlineLine1.png  used on input line 2011.
+(pdftex.def)             Requested size: 165.2138pt x 71.14528pt.
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 2013
+.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/TangentlineLine2.png, id=1217, 209.78375pt x 90.3375pt>
+File: images/TangentlineLine2.png Graphic file (type png)
+<use images/TangentlineLine2.png>
+Package pdftex.def Info: images/TangentlineLine2.png  used on input line 2015.
+(pdftex.def)             Requested size: 165.2138pt x 71.14528pt.
+<images/TangencyFlange.png, id=1218, 453.695pt x 479.7925pt>
+File: images/TangencyFlange.png Graphic file (type png)
+<use images/TangencyFlange.png>
+Package pdftex.def Info: images/TangencyFlange.png  used on input line 2027.
+(pdftex.def)             Requested size: 330.42041pt x 349.42564pt.
+ [63 <./images/TangentPointPoint1.png> <./images/TangentPointPoint2.png> <./ima
+ges/TangentlineLine1.png> <./images/TangentlineLine2.png>] [64 <./images/Tangen
+cyFlange.png>]
+<images/PerpendicularCurveCurve1.png, id=1233, 242.9075pt x 150.5625pt>
+File: images/PerpendicularCurveCurve1.png Graphic file (type png)
+<use images/PerpendicularCurveCurve1.png>
+Package pdftex.def Info: images/PerpendicularCurveCurve1.png  used on input lin
+e 2073.
+(pdftex.def)             Requested size: 242.90689pt x 150.56212pt.
+<images/PerpendicularCurveCurve2.png, id=1234, 236.885pt x 130.4875pt>
+File: images/PerpendicularCurveCurve2.png Graphic file (type png)
+<use images/PerpendicularCurveCurve2.png>
+Package pdftex.def Info: images/PerpendicularCurveCurve2.png  used on input lin
+e 2077.
+(pdftex.def)             Requested size: 236.88441pt x 130.48717pt.
+File: images/Constraint_EqualLength.pdf Graphic file (type pdf)
+<use images/Constraint_EqualLength.pdf>
+Package pdftex.def Info: images/Constraint_EqualLength.pdf  used on input line 
+2083.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [65 <./images/PerpendicularCurveCurve1.png> <./images/PerpendicularCurveCurve2
+.png>]
+<images/Equality1.png, id=1241, 188.705pt x 100.375pt>
+File: images/Equality1.png Graphic file (type png)
+<use images/Equality1.png>
+Package pdftex.def Info: images/Equality1.png  used on input line 2098.
+(pdftex.def)             Requested size: 188.8096pt x 100.42987pt.
+File: images/Constraint_EqualLength.pdf Graphic file (type pdf)
+<use images/Constraint_EqualLength.pdf>
+Package pdftex.def Info: images/Constraint_EqualLength.pdf  used on input line 
+2100.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Equality2.png, id=1242, 199.74625pt x 98.3675pt>
+File: images/Equality2.png Graphic file (type png)
+<use images/Equality2.png>
+Package pdftex.def Info: images/Equality2.png  used on input line 2102.
+(pdftex.def)             Requested size: 188.8096pt x 92.98627pt.
+<images/EqualityArc1.png, id=1243, 199.74625pt x 140.525pt>
+File: images/EqualityArc1.png Graphic file (type png)
+<use images/EqualityArc1.png>
+Package pdftex.def Info: images/EqualityArc1.png  used on input line 2104.
+(pdftex.def)             Requested size: 188.8096pt x 132.83755pt.
+File: images/Constraint_EqualLength.pdf Graphic file (type pdf)
+<use images/Constraint_EqualLength.pdf>
+Package pdftex.def Info: images/Constraint_EqualLength.pdf  used on input line 
+2106.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/EqualityArc2.png, id=1244, 189.70876pt x 140.525pt>
+File: images/EqualityArc2.png Graphic file (type png)
+<use images/EqualityArc2.png>
+Package pdftex.def Info: images/EqualityArc2.png  used on input line 2108.
+(pdftex.def)             Requested size: 188.8096pt x 139.86206pt.
+<images/EqualArcArcCircle1.png, id=1245, 269.005pt x 178.6675pt>
+File: images/EqualArcArcCircle1.png Graphic file (type png)
+<use images/EqualArcArcCircle1.png>
+Package pdftex.def Info: images/EqualArcArcCircle1.png  used on input line 2110
+.
+(pdftex.def)             Requested size: 188.8096pt x 125.40443pt.
+File: images/Constraint_EqualLength.pdf Graphic file (type pdf)
+<use images/Constraint_EqualLength.pdf>
+Package pdftex.def Info: images/Constraint_EqualLength.pdf  used on input line 
+2112.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/EqualArcArcCircle2.png, id=1246, 235.88126pt x 178.6675pt>
+File: images/EqualArcArcCircle2.png Graphic file (type png)
+<use images/EqualArcArcCircle2.png>
+Package pdftex.def Info: images/EqualArcArcCircle2.png  used on input line 2114
+.
+(pdftex.def)             Requested size: 188.8096pt x 143.01596pt.
+File: images/Constraint_Symmetric.pdf Graphic file (type pdf)
+<use images/Constraint_Symmetric.pdf>
+Package pdftex.def Info: images/Constraint_Symmetric.pdf  used on input line 21
+21.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [66 <./images/Equality1.png> <./images/Equality2.png> <./images/EqualityArc1.p
+ng> <./images/EqualityArc2.png> <./images/EqualArcArcCircle1.png> <./images/Equ
+alArcArcCircle2.png>]
+<images/Symmetry0.png, id=1257, 196.735pt x 150.5625pt>
+File: images/Symmetry0.png Graphic file (type png)
+<use images/Symmetry0.png>
+Package pdftex.def Info: images/Symmetry0.png  used on input line 2156.
+(pdftex.def)             Requested size: 157.38818pt x 120.45015pt.
+<images/SymmetryEndOfLine.png, id=1258, 198.7425pt x 154.5775pt>
+File: images/SymmetryEndOfLine.png Graphic file (type png)
+<use images/SymmetryEndOfLine.png>
+Package pdftex.def Info: images/SymmetryEndOfLine.png  used on input line 2164.
+
+(pdftex.def)             Requested size: 198.742pt x 154.5771pt.
+<images/SymmetryEndOfArc.png, id=1259, 191.71625pt x 155.58125pt>
+File: images/SymmetryEndOfArc.png Graphic file (type png)
+<use images/SymmetryEndOfArc.png>
+Package pdftex.def Info: images/SymmetryEndOfArc.png  used on input line 2165.
+(pdftex.def)             Requested size: 191.71577pt x 155.58086pt.
+<images/SymmetrySinglePoint.png, id=1260, 198.7425pt x 144.54pt>
+File: images/SymmetrySinglePoint.png Graphic file (type png)
+<use images/SymmetrySinglePoint.png>
+Package pdftex.def Info: images/SymmetrySinglePoint.png  used on input line 216
+6.
+(pdftex.def)             Requested size: 198.742pt x 144.53963pt.
+ [67 <./images/Symmetry0.png>]
+<images/SymmetryLinePoint1.png, id=1269, 171.64125pt x 100.375pt>
+File: images/SymmetryLinePoint1.png Graphic file (type png)
+<use images/SymmetryLinePoint1.png>
+Package pdftex.def Info: images/SymmetryLinePoint1.png  used on input line 2177
+.
+(pdftex.def)             Requested size: 171.64081pt x 100.37474pt.
+File: images/Constraint_Symmetric.pdf Graphic file (type pdf)
+<use images/Constraint_Symmetric.pdf>
+Package pdftex.def Info: images/Constraint_Symmetric.pdf  used on input line 21
+79.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/SymmetryLinePoint2.png, id=1270, 159.59625pt x 100.375pt>
+File: images/SymmetryLinePoint2.png Graphic file (type png)
+<use images/SymmetryLinePoint2.png>
+Package pdftex.def Info: images/SymmetryLinePoint2.png  used on input line 2181
+.
+(pdftex.def)             Requested size: 159.59584pt x 100.37474pt.
+<images/SymmetryPointLinePoint1.png, id=1271, 135.50626pt x 120.45pt>
+File: images/SymmetryPointLinePoint1.png Graphic file (type png)
+<use images/SymmetryPointLinePoint1.png>
+Package pdftex.def Info: images/SymmetryPointLinePoint1.png  used on input line
+ 2187.
+(pdftex.def)             Requested size: 135.5059pt x 120.44969pt.
+File: images/Constraint_Symmetric.pdf Graphic file (type pdf)
+<use images/Constraint_Symmetric.pdf>
+Package pdftex.def Info: images/Constraint_Symmetric.pdf  used on input line 21
+89.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/SymmetryPointLinePoint2.png, id=1272, 135.50626pt x 120.45pt>
+File: images/SymmetryPointLinePoint2.png Graphic file (type png)
+<use images/SymmetryPointLinePoint2.png>
+Package pdftex.def Info: images/SymmetryPointLinePoint2.png  used on input line
+ 2191.
+(pdftex.def)             Requested size: 135.5059pt x 120.44969pt.
+ [68 <./images/SymmetryEndOfLine.png> <./images/SymmetryEndOfArc.png> <./images
+/SymmetrySinglePoint.png> <./images/SymmetryLinePoint1.png> <./images/SymmetryL
+inePoint2.png>]
+<images/slotCentered.png, id=1285, 647.41875pt x 384.43625pt>
+File: images/slotCentered.png Graphic file (type png)
+<use images/slotCentered.png>
+Package pdftex.def Info: images/slotCentered.png  used on input line 2203.
+(pdftex.def)             Requested size: 472.03123pt x 280.2959pt.
+<images/SymmetryRedundantNo.png, id=1286, 431.6125pt x 115.43124pt>
+File: images/SymmetryRedundantNo.png Graphic file (type png)
+<use images/SymmetryRedundantNo.png>
+Package pdftex.def Info: images/SymmetryRedundantNo.png  used on input line 221
+3.
+(pdftex.def)             Requested size: 431.61143pt x 115.43095pt.
+ [69 <./images/SymmetryPointLinePoint1.png> <./images/SymmetryPointLinePoint2.p
+ng> <./images/slotCentered.png>]
+<images/SymmetryRedundantMaybe.png, id=1296, 379.4175pt x 117.43875pt>
+File: images/SymmetryRedundantMaybe.png Graphic file (type png)
+<use images/SymmetryRedundantMaybe.png>
+Package pdftex.def Info: images/SymmetryRedundantMaybe.png  used on input line 
+2219.
+(pdftex.def)             Requested size: 379.41656pt x 117.43845pt.
+<images/SymmetryRedundantYes.png, id=1297, 389.455pt x 117.43875pt>
+File: images/SymmetryRedundantYes.png Graphic file (type png)
+<use images/SymmetryRedundantYes.png>
+Package pdftex.def Info: images/SymmetryRedundantYes.png  used on input line 22
+25.
+(pdftex.def)             Requested size: 389.45404pt x 117.43845pt.
+ [70 <./images/SymmetryRedundantNo.png> <./images/SymmetryRedundantMaybe.png> <
+./images/SymmetryRedundantYes.png>]
+<images/SymmetryPatho1.png, id=1307, 312.16624pt x 91.34125pt>
+File: images/SymmetryPatho1.png Graphic file (type png)
+<use images/SymmetryPatho1.png>
+Package pdftex.def Info: images/SymmetryPatho1.png  used on input line 2241.
+(pdftex.def)             Requested size: 265.34256pt x 77.64041pt.
+File: images/Constraint_Symmetric.pdf Graphic file (type pdf)
+<use images/Constraint_Symmetric.pdf>
+Package pdftex.def Info: images/Constraint_Symmetric.pdf  used on input line 22
+42.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+<images/SymmetryPatho2.png, id=1308, 312.16624pt x 91.34125pt>
+File: images/SymmetryPatho2.png Graphic file (type png)
+<use images/SymmetryPatho2.png>
+Package pdftex.def Info: images/SymmetryPatho2.png  used on input line 2243.
+(pdftex.def)             Requested size: 265.34256pt x 77.64041pt.
+<images/SymmetryPatho3.png, id=1309, 327.2225pt x 97.36375pt>
+File: images/SymmetryPatho3.png Graphic file (type png)
+<use images/SymmetryPatho3.png>
+Package pdftex.def Info: images/SymmetryPatho3.png  used on input line 2252.
+(pdftex.def)             Requested size: 261.77835pt x 77.89108pt.
+File: images/SymmetryPatho1.png Graphic file (type png)
+<use images/SymmetryPatho1.png>
+Package pdftex.def Info: images/SymmetryPatho1.png  used on input line 2260.
+(pdftex.def)             Requested size: 262.21785pt x 76.72612pt.
+File: images/Constraint_Symmetric.pdf Graphic file (type pdf)
+<use images/Constraint_Symmetric.pdf>
+Package pdftex.def Info: images/Constraint_Symmetric.pdf  used on input line 22
+61.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/SymmetryPatho3.png Graphic file (type png)
+<use images/SymmetryPatho3.png>
+Package pdftex.def Info: images/SymmetryPatho3.png  used on input line 2262.
+(pdftex.def)             Requested size: 274.86502pt x 81.78497pt.
+ [71 <./images/SymmetryPatho1.png> <./images/SymmetryPatho2.png> <./images/Symm
+etryPatho3.png>]
+<images/SymmetryPatho4.png, id=1317, 327.2225pt x 97.36375pt>
+File: images/SymmetryPatho4.png Graphic file (type png)
+<use images/SymmetryPatho4.png>
+Package pdftex.def Info: images/SymmetryPatho4.png  used on input line 2277.
+(pdftex.def)             Requested size: 283.22162pt x 84.27194pt.
+<images/Sketcher_ConstrainBlock.pdf, id=1318, 51.19125pt x 51.19125pt>
+File: images/Sketcher_ConstrainBlock.pdf Graphic file (type pdf)
+<use images/Sketcher_ConstrainBlock.pdf>
+Package pdftex.def Info: images/Sketcher_ConstrainBlock.pdf  used on input line
+ 2283.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/BlockHidden.png, id=1319, 255.95625pt x 158.5925pt>
+File: images/BlockHidden.png Graphic file (type png)
+<use images/BlockHidden.png>
+Package pdftex.def Info: images/BlockHidden.png  used on input line 2305.
+(pdftex.def)             Requested size: 255.95561pt x 158.59209pt.
+ [72 <./images/SymmetryPatho4.png> <./images/Sketcher_ConstrainBlock.pdf> <./im
+ages/BlockHidden.png>]
+File: images/Constraint_HorizontalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_HorizontalDistance.pdf>
+Package pdftex.def Info: images/Constraint_HorizontalDistance.pdf  used on inpu
+t line 2340.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/HDist1.png, id=1333, 165.61874pt x 90.3375pt>
+File: images/HDist1.png Graphic file (type png)
+<use images/HDist1.png>
+Package pdftex.def Info: images/HDist1.png  used on input line 2355.
+(pdftex.def)             Requested size: 165.61833pt x 90.33727pt.
+File: images/Constraint_HorizontalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_HorizontalDistance.pdf>
+Package pdftex.def Info: images/Constraint_HorizontalDistance.pdf  used on inpu
+t line 2357.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/HDist2.png, id=1334, 165.61874pt x 90.3375pt>
+File: images/HDist2.png Graphic file (type png)
+<use images/HDist2.png>
+Package pdftex.def Info: images/HDist2.png  used on input line 2359.
+(pdftex.def)             Requested size: 165.61833pt x 90.33727pt.
+<images/HDist3.png, id=1335, 127.47626pt x 96.36pt>
+File: images/HDist3.png Graphic file (type png)
+<use images/HDist3.png>
+Package pdftex.def Info: images/HDist3.png  used on input line 2367.
+(pdftex.def)             Requested size: 127.47594pt x 96.35974pt.
+File: images/Constraint_HorizontalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_HorizontalDistance.pdf>
+Package pdftex.def Info: images/Constraint_HorizontalDistance.pdf  used on inpu
+t line 2369.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/HDist4.png, id=1336, 119.44624pt x 98.3675pt>
+File: images/HDist4.png Graphic file (type png)
+<use images/HDist4.png>
+Package pdftex.def Info: images/HDist4.png  used on input line 2371.
+(pdftex.def)             Requested size: 119.44594pt x 98.36723pt.
+ [73 <./images/HDist1.png> <./images/HDist2.png>]
+File: images/Constraint_Vertical.pdf Graphic file (type pdf)
+<use images/Constraint_Vertical.pdf>
+Package pdftex.def Info: images/Constraint_Vertical.pdf  used on input line 237
+7.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Constraint_VerticalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_VerticalDistance.pdf>
+Package pdftex.def Info: images/Constraint_VerticalDistance.pdf  used on input 
+line 2384.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Sketcher_ConstrainLock.pdf, id=1346, 51.19125pt x 51.19125pt>
+File: images/Sketcher_ConstrainLock.pdf Graphic file (type pdf)
+<use images/Sketcher_ConstrainLock.pdf>
+Package pdftex.def Info: images/Sketcher_ConstrainLock.pdf  used on input line 
+2401.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+
+Overfull \hbox (10.04945pt too wide) in paragraph at lines 2423--2425
+[][]\T2A/cmr/m/n/12 The lock constraint creates a horizontal and a vertical dis
+tance constraint
+ []
+
+[74 <./images/HDist3.png> <./images/HDist4.png> <./images/Sketcher_ConstrainLoc
+k.pdf>]
+File: images/Constraint_Length.pdf Graphic file (type pdf)
+<use images/Constraint_Length.pdf>
+Package pdftex.def Info: images/Constraint_Length.pdf  used on input line 2438.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/LengthLine1.png, id=1363, 93.34875pt x 100.375pt>
+File: images/LengthLine1.png Graphic file (type png)
+<use images/LengthLine1.png>
+Package pdftex.def Info: images/LengthLine1.png  used on input line 2454.
+(pdftex.def)             Requested size: 93.34851pt x 100.37474pt.
+File: images/Constraint_Length.pdf Graphic file (type pdf)
+<use images/Constraint_Length.pdf>
+Package pdftex.def Info: images/Constraint_Length.pdf  used on input line 2456.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/LengthLine2.png, id=1364, 105.39375pt x 100.375pt>
+File: images/LengthLine2.png Graphic file (type png)
+<use images/LengthLine2.png>
+Package pdftex.def Info: images/LengthLine2.png  used on input line 2458.
+(pdftex.def)             Requested size: 105.39348pt x 100.37474pt.
+<images/LengthPointPoint1.png, id=1365, 176.66pt x 90.3375pt>
+File: images/LengthPointPoint1.png Graphic file (type png)
+<use images/LengthPointPoint1.png>
+Package pdftex.def Info: images/LengthPointPoint1.png  used on input line 2464.
+
+(pdftex.def)             Requested size: 176.65956pt x 90.33727pt.
+File: images/Constraint_Length.pdf Graphic file (type pdf)
+<use images/Constraint_Length.pdf>
+Package pdftex.def Info: images/Constraint_Length.pdf  used on input line 2466.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/LengthPointPoint2.png, id=1366, 176.66pt x 90.3375pt>
+File: images/LengthPointPoint2.png Graphic file (type png)
+<use images/LengthPointPoint2.png>
+Package pdftex.def Info: images/LengthPointPoint2.png  used on input line 2468.
+
+(pdftex.def)             Requested size: 176.65956pt x 90.33727pt.
+<images/LengthLinePoint1.png, id=1367, 162.6075pt x 95.35625pt>
+File: images/LengthLinePoint1.png Graphic file (type png)
+<use images/LengthLinePoint1.png>
+Package pdftex.def Info: images/LengthLinePoint1.png  used on input line 2476.
+(pdftex.def)             Requested size: 162.6071pt x 95.356pt.
+File: images/Constraint_Length.pdf Graphic file (type pdf)
+<use images/Constraint_Length.pdf>
+Package pdftex.def Info: images/Constraint_Length.pdf  used on input line 2478.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/LengthLinePoint2.png, id=1368, 163.61125pt x 95.35625pt>
+File: images/LengthLinePoint2.png Graphic file (type png)
+<use images/LengthLinePoint2.png>
+Package pdftex.def Info: images/LengthLinePoint2.png  used on input line 2480.
+(pdftex.def)             Requested size: 163.61084pt x 95.356pt.
+ [75 <./images/LengthLine1.png> <./images/LengthLine2.png> <./images/LengthPoin
+tPoint1.png> <./images/LengthPointPoint2.png>]
+File: images/Constraint_Radius.pdf Graphic file (type pdf)
+<use images/Constraint_Radius.pdf>
+Package pdftex.def Info: images/Constraint_Radius.pdf  used on input line 2496.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+File: images/Constraint_Diameter.pdf Graphic file (type pdf)
+<use images/Constraint_Diameter.pdf>
+Package pdftex.def Info: images/Constraint_Diameter.pdf  used on input line 249
+7.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/Constraint_InternalAngle.pdf, id=1380, 51.19125pt x 51.19125pt>
+File: images/Constraint_InternalAngle.pdf Graphic file (type pdf)
+<use images/Constraint_InternalAngle.pdf>
+Package pdftex.def Info: images/Constraint_InternalAngle.pdf  used on input lin
+e 2515.
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+ [76 <./images/LengthLinePoint1.png> <./images/LengthLinePoint2.png> <./images/
+Constraint_InternalAngle.pdf>]
+<images/AngleXAxis.png, id=1393, 195.73125pt x 111.41624pt>
+File: images/AngleXAxis.png Graphic file (type png)
+<use images/AngleXAxis.png>
+Package pdftex.def Info: images/AngleXAxis.png  used on input line 2548.
+(pdftex.def)             Requested size: 195.73076pt x 111.41597pt.
+<images/AngleLineLine.png, id=1394, 303.1325pt x 131.49126pt>
+File: images/AngleLineLine.png Graphic file (type png)
+<use images/AngleLineLine.png>
+Package pdftex.def Info: images/AngleLineLine.png  used on input line 2557.
+(pdftex.def)             Requested size: 303.13176pt x 131.49092pt.
+<images/AngleLinePointLine1.png, id=1395, 160.6pt x 107.40125pt>
+File: images/AngleLinePointLine1.png Graphic file (type png)
+<use images/AngleLinePointLine1.png>
+Package pdftex.def Info: images/AngleLinePointLine1.png  used on input line 257
+2.
+(pdftex.def)             Requested size: 160.5996pt x 107.40097pt.
+File: images/Constraint_InternalAngle.pdf Graphic file (type pdf)
+<use images/Constraint_InternalAngle.pdf>
+Package pdftex.def Info: images/Constraint_InternalAngle.pdf  used on input lin
+e 2574.
+(pdftex.def)             Requested size: 26.39384pt x 26.39351pt.
+<images/AngleLinePointLine2.png, id=1396, 169.63374pt x 107.40125pt>
+File: images/AngleLinePointLine2.png Graphic file (type png)
+<use images/AngleLinePointLine2.png>
+Package pdftex.def Info: images/AngleLinePointLine2.png  used on input line 257
+6.
+(pdftex.def)             Requested size: 169.63332pt x 107.40097pt.
+ [77 <./images/AngleXAxis.png> <./images/AngleLineLine.png>]
+<images/singleArc1.png, id=1405, 140.525pt x 100.375pt>
+File: images/singleArc1.png Graphic file (type png)
+<use images/singleArc1.png>
+Package pdftex.def Info: images/singleArc1.png  used on input line 2592.
+(pdftex.def)             Requested size: 140.52464pt x 100.37474pt.
+File: images/Constraint_InternalAngle.pdf Graphic file (type pdf)
+<use images/Constraint_InternalAngle.pdf>
+Package pdftex.def Info: images/Constraint_InternalAngle.pdf  used on input lin
+e 2594.
+(pdftex.def)             Requested size: 26.39384pt x 26.39351pt.
+<images/singleArc2.png, id=1406, 217.81375pt x 203.76125pt>
+File: images/singleArc2.png Graphic file (type png)
+<use images/singleArc2.png>
+Package pdftex.def Info: images/singleArc2.png  used on input line 2596.
+(pdftex.def)             Requested size: 217.8132pt x 203.76074pt.
+ [78 <./images/AngleLinePointLine1.png> <./images/AngleLinePointLine2.png> <./i
+mages/singleArc1.png> <./images/singleArc2.png>]
+<images/AngleCurveCurve1.png, id=1417, 172.645pt x 90.3375pt>
+File: images/AngleCurveCurve1.png Graphic file (type png)
+<use images/AngleCurveCurve1.png>
+Package pdftex.def Info: images/AngleCurveCurve1.png  used on input line 2623.
+(pdftex.def)             Requested size: 172.64456pt x 90.33727pt.
+File: images/Constraint_InternalAngle.pdf Graphic file (type pdf)
+<use images/Constraint_InternalAngle.pdf>
+Package pdftex.def Info: images/Constraint_InternalAngle.pdf  used on input lin
+e 2625.
+(pdftex.def)             Requested size: 26.39384pt x 26.39351pt.
+<images/AngleCurveCurve2.png, id=1418, 179.67125pt x 90.3375pt>
+File: images/AngleCurveCurve2.png Graphic file (type png)
+<use images/AngleCurveCurve2.png>
+Package pdftex.def Info: images/AngleCurveCurve2.png  used on input line 2627.
+(pdftex.def)             Requested size: 179.67079pt x 90.33727pt.
+
+Overfull \hbox (5.61598pt too wide) in paragraph at lines 2661--2664
+[]\T2A/cmr/m/n/12 Now that you know about the different constraints, you should
+ not only aim at fully constrained
+ []
+
+[79 <./images/AngleCurveCurve1.png> <./images/AngleCurveCurve2.png>]
+<images/driven1.png, id=1429, 257.96375pt x 234.8775pt>
+File: images/driven1.png Graphic file (type png)
+<use images/driven1.png>
+Package pdftex.def Info: images/driven1.png  used on input line 2724.
+(pdftex.def)             Requested size: 128.98155pt x 117.43846pt.
+ [80]
+<images/driven2.png, id=1437, 565.11125pt x 303.1325pt>
+File: images/driven2.png Graphic file (type png)
+<use images/driven2.png>
+Package pdftex.def Info: images/driven2.png  used on input line 2730.
+(pdftex.def)             Requested size: 282.55493pt x 151.56587pt.
+<images/Sketcher_ToggleConstraint.pdf, id=1438, 48.18pt x 48.18pt>
+File: images/Sketcher_ToggleConstraint.pdf Graphic file (type pdf)
+<use images/Sketcher_ToggleConstraint.pdf>
+Package pdftex.def Info: images/Sketcher_ToggleConstraint.pdf  used on input li
+ne 2740.
+(pdftex.def)             Requested size: 25.84329pt x 25.84364pt.
+File: images/Sketcher_ToggleConstraint.pdf Graphic file (type pdf)
+<use images/Sketcher_ToggleConstraint.pdf>
+Package pdftex.def Info: images/Sketcher_ToggleConstraint.pdf  used on input li
+ne 2743.
+(pdftex.def)             Requested size: 25.84329pt x 25.84364pt.
+<images/drivenAllBlue.png, id=1439, 257.96375pt x 24.09pt>
+File: images/drivenAllBlue.png Graphic file (type png)
+<use images/drivenAllBlue.png>
+Package pdftex.def Info: images/drivenAllBlue.png  used on input line 2745.
+(pdftex.def)             Requested size: 257.9631pt x 24.08992pt.
+
+[81 <./images/driven1.png> <./images/driven2.png> <./images/Sketcher_ToggleCons
+traint.pdf>]
+<images/drivenPentagon.png, id=1448, 286.06876pt x 293.095pt>
+File: images/drivenPentagon.png Graphic file (type png)
+<use images/drivenPentagon.png>
+Package pdftex.def Info: images/drivenPentagon.png  used on input line 2754.
+(pdftex.def)             Requested size: 214.55104pt x 219.8207pt.
+<images/Sketcher_External.pdf, id=1449, 51.19125pt x 51.19125pt>
+File: images/Sketcher_External.pdf Graphic file (type pdf)
+<use images/Sketcher_External.pdf>
+Package pdftex.def Info: images/Sketcher_External.pdf  used on input line 2763.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/ExternalBlock.png, id=1450, 225.84375pt x 202.7575pt>
+File: images/ExternalBlock.png Graphic file (type png)
+<use images/ExternalBlock.png>
+Package pdftex.def Info: images/ExternalBlock.png  used on input line 2784.
+(pdftex.def)             Requested size: 188.8096pt x 169.52002pt.
+<images/ExternalBlockTarget.png, id=1451, 225.84375pt x 202.7575pt>
+File: images/ExternalBlockTarget.png Graphic file (type png)
+<use images/ExternalBlockTarget.png>
+Package pdftex.def Info: images/ExternalBlockTarget.png  used on input line 278
+4.
+(pdftex.def)             Requested size: 188.8096pt x 169.52002pt.
+ [82 <./images/drivenAllBlue.png> <./images/drivenPentagon.png> <./images/Sketc
+her_External.pdf>]
+<images/ExternalBlockSketch.png, id=1467, 483.8075pt x 321.2pt>
+File: images/ExternalBlockSketch.png Graphic file (type png)
+<use images/ExternalBlockSketch.png>
+Package pdftex.def Info: images/ExternalBlockSketch.png  used on input line 279
+4.
+(pdftex.def)             Requested size: 241.90315pt x 160.59961pt.
+<images/ExternalBlockTree.png, id=1468, 186.6975pt x 104.39pt>
+File: images/ExternalBlockTree.png Graphic file (type png)
+<use images/ExternalBlockTree.png>
+Package pdftex.def Info: images/ExternalBlockTree.png  used on input line 2799.
+
+(pdftex.def)             Requested size: 186.69704pt x 104.38972pt.
+ [83 <./images/ExternalBlock.png> <./images/ExternalBlockTarget.png> <./images/
+ExternalBlockSketch.png>]
+File: images/Sketcher_External.pdf Graphic file (type pdf)
+<use images/Sketcher_External.pdf>
+Package pdftex.def Info: images/Sketcher_External.pdf  used on input line 2809.
+
+(pdftex.def)             Requested size: 25.84395pt x 25.84364pt.
+<images/ExternalSelect.png, id=1477, 163.61125pt x 164.615pt>
+File: images/ExternalSelect.png Graphic file (type png)
+<use images/ExternalSelect.png>
+Package pdftex.def Info: images/ExternalSelect.png  used on input line 2811.
+(pdftex.def)             Requested size: 130.88916pt x 131.69217pt.
+<images/ExternalFinalSketch.png, id=1478, 241.90375pt x 167.62625pt>
+File: images/ExternalFinalSketch.png Graphic file (type png)
+<use images/ExternalFinalSketch.png>
+Package pdftex.def Info: images/ExternalFinalSketch.png  used on input line 281
+6.
+(pdftex.def)             Requested size: 205.61916pt x 142.48297pt.
+ [84 <./images/ExternalBlockTree.png> <./images/ExternalSelect.png> <./images/E
+xternalFinalSketch.png>]
+<images/ExternalListOfElements.png, id=1489, 270.00874pt x 224.84pt>
+File: images/ExternalListOfElements.png Graphic file (type png)
+<use images/ExternalListOfElements.png>
+Package pdftex.def Info: images/ExternalListOfElements.png  used on input line 
+2838.
+(pdftex.def)             Requested size: 216.00728pt x 179.87224pt.
+<images/ExternalListOfElementsExtended.png, id=1490, 270.00874pt x 224.84pt>
+File: images/ExternalListOfElementsExtended.png Graphic file (type png)
+<use images/ExternalListOfElementsExtended.png>
+Package pdftex.def Info: images/ExternalListOfElementsExtended.png  used on inp
+ut line 2844.
+(pdftex.def)             Requested size: 216.00728pt x 179.87224pt.
+[85 <./images/ExternalListOfElements.png> <./images/ExternalListOfElementsExten
+ded.png>] [86]
+File: images/Sketcher_CreateLine.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateLine.pdf>
+Package pdftex.def Info: images/Sketcher_CreateLine.pdf  used on input line 286
+9.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateCircle.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateCircle.pdf>
+Package pdftex.def Info: images/Sketcher_CreateCircle.pdf  used on input line 2
+871.
+(pdftex.def)             Requested size: 20.6615pt x 20.66162pt.
+File: images/Sketcher_CreateArc.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateArc.pdf>
+Package pdftex.def Info: images/Sketcher_CreateArc.pdf  used on input line 2873
+.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreatePolyline.pdf Graphic file (type pdf)
+<use images/Sketcher_CreatePolyline.pdf>
+Package pdftex.def Info: images/Sketcher_CreatePolyline.pdf  used on input line
+ 2875.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateRectangle.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateRectangle.pdf>
+Package pdftex.def Info: images/Sketcher_CreateRectangle.pdf  used on input lin
+e 2877.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateTriangle.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateTriangle.pdf>
+Package pdftex.def Info: images/Sketcher_CreateTriangle.pdf  used on input line
+ 2879.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateSquare.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateSquare.pdf>
+Package pdftex.def Info: images/Sketcher_CreateSquare.pdf  used on input line 2
+881.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreatePentagon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreatePentagon.pdf>
+Package pdftex.def Info: images/Sketcher_CreatePentagon.pdf  used on input line
+ 2883.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateHexagon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateHexagon.pdf>
+Package pdftex.def Info: images/Sketcher_CreateHexagon.pdf  used on input line 
+2885.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateHeptagon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateHeptagon.pdf>
+Package pdftex.def Info: images/Sketcher_CreateHeptagon.pdf  used on input line
+ 2887.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateOctagon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateOctagon.pdf>
+Package pdftex.def Info: images/Sketcher_CreateOctagon.pdf  used on input line 
+2889.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateRegularPolygon.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateRegularPolygon.pdf>
+Package pdftex.def Info: images/Sketcher_CreateRegularPolygon.pdf  used on inpu
+t line 2891.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateSlot.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateSlot.pdf>
+Package pdftex.def Info: images/Sketcher_CreateSlot.pdf  used on input line 289
+3.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreatePoint.pdf Graphic file (type pdf)
+<use images/Sketcher_CreatePoint.pdf>
+Package pdftex.def Info: images/Sketcher_CreatePoint.pdf  used on input line 28
+95.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_CreateBSpline.pdf Graphic file (type pdf)
+<use images/Sketcher_CreateBSpline.pdf>
+Package pdftex.def Info: images/Sketcher_CreateBSpline.pdf  used on input line 
+2897.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Sketcher_Create_Periodic_BSpline.pdf Graphic file (type pdf)
+<use images/Sketcher_Create_Periodic_BSpline.pdf>
+Package pdftex.def Info: images/Sketcher_Create_Periodic_BSpline.pdf  used on i
+nput line 2898.
+(pdftex.def)             Requested size: 20.66203pt x 20.66162pt.
+File: images/Constraint_PointOnPoint.pdf Graphic file (type pdf)
+<use images/Constraint_PointOnPoint.pdf>
+Package pdftex.def Info: images/Constraint_PointOnPoint.pdf  used on input line
+ 2909.
+(pdftex.def)             Requested size: 15.49582pt x 15.49622pt.
+File: images/Constraint_PointOnObject.pdf Graphic file (type pdf)
+<use images/Constraint_PointOnObject.pdf>
+Package pdftex.def Info: images/Constraint_PointOnObject.pdf  used on input lin
+e 2911.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_Vertical.pdf Graphic file (type pdf)
+<use images/Constraint_Vertical.pdf>
+Package pdftex.def Info: images/Constraint_Vertical.pdf  used on input line 291
+3.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_Horizontal.pdf Graphic file (type pdf)
+<use images/Constraint_Horizontal.pdf>
+Package pdftex.def Info: images/Constraint_Horizontal.pdf  used on input line 2
+915.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_Parallel.pdf Graphic file (type pdf)
+<use images/Constraint_Parallel.pdf>
+Package pdftex.def Info: images/Constraint_Parallel.pdf  used on input line 291
+7.
+(pdftex.def)             Requested size: 15.49582pt x 15.49622pt.
+File: images/Constraint_Perpendicular.pdf Graphic file (type pdf)
+<use images/Constraint_Perpendicular.pdf>
+Package pdftex.def Info: images/Constraint_Perpendicular.pdf  used on input lin
+e 2919.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_Tangent.pdf Graphic file (type pdf)
+<use images/Constraint_Tangent.pdf>
+Package pdftex.def Info: images/Constraint_Tangent.pdf  used on input line 2923
+.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_EqualLength.pdf Graphic file (type pdf)
+<use images/Constraint_EqualLength.pdf>
+Package pdftex.def Info: images/Constraint_EqualLength.pdf  used on input line 
+2927.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_Symmetric.pdf Graphic file (type pdf)
+<use images/Constraint_Symmetric.pdf>
+Package pdftex.def Info: images/Constraint_Symmetric.pdf  used on input line 29
+29.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Sketcher_ConstrainBlock.pdf Graphic file (type pdf)
+<use images/Sketcher_ConstrainBlock.pdf>
+Package pdftex.def Info: images/Sketcher_ConstrainBlock.pdf  used on input line
+ 2931.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Sketcher_ConstrainLock.pdf Graphic file (type pdf)
+<use images/Sketcher_ConstrainLock.pdf>
+Package pdftex.def Info: images/Sketcher_ConstrainLock.pdf  used on input line 
+2933.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_HorizontalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_HorizontalDistance.pdf>
+Package pdftex.def Info: images/Constraint_HorizontalDistance.pdf  used on inpu
+t line 2935.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_VerticalDistance.pdf Graphic file (type pdf)
+<use images/Constraint_VerticalDistance.pdf>
+Package pdftex.def Info: images/Constraint_VerticalDistance.pdf  used on input 
+line 2937.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_Length.pdf Graphic file (type pdf)
+<use images/Constraint_Length.pdf>
+Package pdftex.def Info: images/Constraint_Length.pdf  used on input line 2939.
+
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_Radius.pdf Graphic file (type pdf)
+<use images/Constraint_Radius.pdf>
+Package pdftex.def Info: images/Constraint_Radius.pdf  used on input line 2941.
+
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_Diameter.pdf Graphic file (type pdf)
+<use images/Constraint_Diameter.pdf>
+Package pdftex.def Info: images/Constraint_Diameter.pdf  used on input line 294
+3.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+File: images/Constraint_InternalAngle.pdf Graphic file (type pdf)
+<use images/Constraint_InternalAngle.pdf>
+Package pdftex.def Info: images/Constraint_InternalAngle.pdf  used on input lin
+e 2945.
+(pdftex.def)             Requested size: 15.49574pt x 15.49622pt.
+ [87] (sketcher.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `sketcher.out' has not changed.
+(rerunfilecheck)             Checksum: 07052748B91A0F36E62457DC6651BFAC;9093.
+ ) 
+Here is how much of TeX's memory you used:
+ 13914 strings out of 479618
+ 227365 string characters out of 2865026
+ 501415 words of memory out of 3000000
+ 30453 multiletter control sequences out of 15000+200000
+ 420523 words of font info for 56 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 97i,13n,102p,622b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labi12
+00.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+ti1000.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi60
+0\larm0700.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/d
+pi600\larm1000.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t
+2a/dpi600\larm1728.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
+appen/ec/dpi600\tcrm1200.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/
+ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts
+/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Admin\AppData\Local\MiKTeX\f
+onts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Admin\AppData\Local\MiKT
+eX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Admin\AppData\Local\
+MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\Admin\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1095.pk> <C:\Users\Admin\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk> <C:\Users\Admin\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\Admi
+n\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm2074.pk><C:/Users/A
+dmin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
+:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/latxfont/line10.pfb>
+Output written on sketcher.pdf (87 pages, 1668701 bytes).
+PDF statistics:
+ 2355 PDF objects out of 2487 (max. 8388607)
+ 219 named destinations out of 1000 (max. 500000)
+ 1553 words of extra memory for PDF output out of 10000 (max. 10000000)
+
