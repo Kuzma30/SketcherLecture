@@ -405,37 +405,21 @@ MSOlsen65
 
 В части использования геометрических элементов я буду использовать некоторые ограничения, которые еще не объяснены, поэтому вам, возможно, придется дважды проработать этот раздел, чтобы полностью понять его. Лучшего решения проблемы, с чего начать, не было. Чтобы объяснить использование геометрических элементов, мне нужны некоторые ограничения, а для объяснения ограничений мне, конечно же, нужны геометрические элементы. При использовании ограничений в части, посвященной геометрическим элементам, я ограничиваю объяснения ограничений до минимума. Их дальнейшее использование будет объяснено позже в части \vref{Constraints}.
 
-For further information refer to the
-\href{https://www.freecadweb.org/wiki/Sketcher_Workbench}{documentation} available online.
+Для получения дополнительной информации см.
+\ href {https://www.freecadweb.org/wiki/Sketcher_Workbench} {документацию}, доступную в Интернете.
 
-\section{Common Usage}
-When you select one of the geometric element creation tools such as line,
-circle, arc, ...
-you enter creation mode for an arbitrary number of these objects. When you
-enter creation mode the cursor changes in 3D view to a cross and is augmented
-with information about its current x/y coordinates and by showing a symbol
-indicating which kind of geometric object you are going to create. Examples
-for line, arc and slot:
+\section{Обычное использование}
+Когда вы выбираете один из инструментов создания геометрических элементов, таких как линия, окружность, дуга, ... вы входите в режим создания для произвольного количества этих объектов. Когда вы входите в режим создания, курсор в 3D-виде превращается в крестик и дополняется информацией о его текущих координатах x / y и отображением символа, указывающего, какой тип геометрического объекта вы собираетесь создать. Примеры для линии, дуги и паза:
 
 \img{width=0.3\textwidth}{CursorLine}\hfill
 \img{width=0.3\textwidth}{CursorArc}\hfill
 \img{width=0.3\textwidth}{CursorSlot}
 
-When you have created one of the geometric elements you are still in creation mode so
-you can immediately continue creating the next object. This behaviour can be
-configured in Preferences\menu Sketcher\menu General\menu Geometry Creation "Continue
-Mode". If you uncheck it in the preferences, creation mode ends as soon as
-the element is created.
+Когда вы создали один из геометрических элементов, вы все еще находитесь в режиме создания, поэтому вы можете немедленно продолжить создание следующего объекта. Это поведение можно настроить в Настройки\menu Эскиз \menu Общие \menu Создание геометрии "Непрерывный режим (Continue Mode)". Если вы снимите этот флажок в настройках, режим создания завершится сразу после создания элемента.
 
-To end creation mode, you can click the right mouse button or hit the escape key. The
-latter is sometimes a problem, because if you are not in creation mode the escape key
-ends the sketch editing and closes the Sketcher; thus pressing twice escape leaves
-creation mode and ends editing. Polyline is a bit different as you need an additional
-right mouse click or escape keypress to leave the continuous mode.
+Чтобы выйти из режима создания, вы можете щелкнуть правой кнопкой мыши или нажать клавишу ESC. Последнее иногда является проблемой, потому что, если вы не находитесь в режиме создания, клавиша ESC завершает редактирование эскиза и закрывает Sketcher; таким образом, дважды нажав ESC, вы выйдете из режима создания и завершите редактирование. Создание полилинии немного отличается, так как вам понадобится дополнительный щелчок правой кнопкой мыши или нажатие клавиши ESC, чтобы выйти из непрерывного режима.
 
-I recommend to use the right click because you have the
-hand on the mouse anyway and there is not the danger of leaving Sketcher unintendedly
-by one escape keypress too much.
+Я рекомендую использовать щелчок правой кнопкой, потому что у вас все равно есть рука на мыши, и нет опасности непреднамеренно покинуть Sketcher частым нажатием клавиши ESC.
 
 You can configure the behaviour of leaving using the escape in the Sketcher
 preferences.
