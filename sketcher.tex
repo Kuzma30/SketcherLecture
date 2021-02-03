@@ -61,7 +61,7 @@
 \newcommand{\imgTop}[2]{\raisebox{0ex}{\includegraphics[valign=t,#1]{images/#2}}}
 \newcommand{\imgFull}[1]{\vspace{2ex}\noindent\includegraphics[width=\textwidth]{images/#1}}
 \newcommand{\dofConsumed}{Number of DOF consumed:}
-\newcommand{\dofAdded}{Number of DOF added:}
+\newcommand{\dofAdded}{Количество добавленных степеней свободы:}
 
 \newtheorem{Exercise}{Упражнение}
 \parindent0pt
@@ -406,7 +406,7 @@ MSOlsen65
 В части использования геометрических элементов я буду использовать некоторые ограничения, которые еще не объяснены, поэтому вам, возможно, придется дважды проработать этот раздел, чтобы полностью понять его. Лучшего решения проблемы, с чего начать, не было. Чтобы объяснить использование геометрических элементов, мне нужны некоторые ограничения, а для объяснения ограничений мне, конечно же, нужны геометрические элементы. При использовании ограничений в части, посвященной геометрическим элементам, я ограничиваю объяснения ограничений до минимума. Их дальнейшее использование будет объяснено позже в части \vref{Constraints}.
 
 Для получения дополнительной информации см.
-\ href {https://www.freecadweb.org/wiki/Sketcher_Workbench} {документацию}, доступную в Интернете.
+\href {https://www.freecadweb.org/wiki/Sketcher_Workbench} {документацию}, доступную в Интернете.
 
 \section{Обычное использование}
 Когда вы выбираете один из инструментов создания геометрических элементов, таких как линия, окружность, дуга, ... вы входите в режим создания для произвольного количества этих объектов. Когда вы входите в режим создания, курсор в 3D-виде превращается в крестик и дополняется информацией о его текущих координатах x / y и отображением символа, указывающего, какой тип геометрического объекта вы собираетесь создать. Примеры для линии, дуги и паза:
@@ -421,30 +421,26 @@ MSOlsen65
 
 Я рекомендую использовать щелчок правой кнопкой, потому что у вас все равно есть рука на мыши, и нет опасности непреднамеренно покинуть Sketcher частым нажатием клавиши ESC.
 
-You can configure the behaviour of leaving using the escape in the Sketcher
-preferences.
+Вы можете настроить поведение выхода по клавише ESC в настройках Sketcher.
 
 \section{Line}
 \begin{tabular}{|l|l|}
 \hline
-Icon: & \icon{Sketcher_CreateLine}\\
+Иконка: & \icon{Sketcher_CreateLine}\\
 \hline
 \dofAdded & 4\\
 \hline
 \end{tabular}
 
-The line is defined by the endpoints, each endpoint adding 2 DOF which sums up to 4
-DOF.
+Линия определяется конечными точками, каждая конечная точка добавляет 2 степени свободы, что в сумме составляет до 4 степеней свободы.
 
 \subsection*{Typical constraints}
 \begin{description}
-\item [Coincidence on the endpoints] In exercise \vref{ExerciseCoincidence} we have used this already.
-\item [Horizontal constraint] for a horizontal line. Select the line and click the
-      horizontal constraint icon \icon{Constraint_Horizontal}
+\item [Совпадение конечных точек] В упражнении \vref {ExerciseCoincidence} мы уже использовали это.
+\item [Горизонтальное ограничение] для горизонтальной линии. Выберите линию и щелкните значок  ограничения горизонтальности \icon {Constraint_Horizontal}
       
-      The line becomes and will remain exactly horizontal.
-\item [Vertical constraint] for vertical lines. Select the line and click the
-      vertical constraint icon \icon{Constraint_Vertical}
+      Линия станет и останется ровно горизонтальной.
+\item [Вертикальное ограничение] для вертикальных линий. Выберите линию и щелкните значок ограничения вертикальности \icon {Constraint_Vertical}
 
       The line becomes and will remain exactly vertical.
 \item [Equality] Select two lines and click the icon \icon{Constraint_EqualLength}
