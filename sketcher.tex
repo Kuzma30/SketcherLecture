@@ -423,7 +423,7 @@ MSOlsen65
 
 Вы можете настроить поведение выхода по клавише ESC в настройках Sketcher.
 
-\section{Line}
+\section{Линия}
 \begin{tabular}{|l|l|}
 \hline
 Иконка: & \icon{Sketcher_CreateLine}\\
@@ -434,7 +434,7 @@ MSOlsen65
 
 Линия определяется конечными точками, каждая конечная точка добавляет 2 степени свободы, что в сумме составляет до 4 степеней свободы.
 
-\subsection*{Typical constraints}
+\subsection*{Типичные ограничения}
 \begin{description}
 \item [Совпадение конечных точек] В упражнении \vref {ExerciseCoincidence} мы уже использовали это.
 \item [Горизонтальное ограничение] для горизонтальной линии. Выберите линию и щелкните значок  ограничения горизонтальности \icon {Constraint_Horizontal}
@@ -547,7 +547,7 @@ MSOlsen65
             
              \img {scale = 0.9} {TangencyCircleLine}
 
-             Такого рода касание можно даже применить между линией и кругом, которые не касаятся друг друга:
+             Такого рода касание можно  применить даже между линией и кругом, которые не касаятся друг друга:
 
             \img{}{CircleTangentNoTouch}
       \end{itemize}
@@ -555,35 +555,26 @@ MSOlsen65
 
 \pagebreak
 
-Circles are frequently used to create holes, either by pockets or by using the
-dedicated hole feature. Although the latter does not make usage of the
-radius value, you should nevertheless fully constrain your sketches.
+Круги часто используются для создания отверстий либо с помощью карманов, либо с помощью специального инструмента отверстий. Хотя последний не использует значение радиуса, вы, тем не менее, должны полностью ограничить свои эскизы.
 
 \vbox{
 \begin{Exercise}
 \label{ExerciseConstruction}
-Select PartDesign workbench and create a sketch for a flange:
+Выберите верстак PartDesign и создайте эскиз фланца:
 
 \imgFull{FlangeSquare}
 \end{Exercise}
 }
 
-To center the squares we use the symmetry constraint: select the left lower corner and
-the right upper corner and then the center. Finally apply the symmetry constraint
-\icon{Constraint_Symmetric}.
+Чтобы центрировать квадраты, мы используем ограничение симметрии: выберите левый нижний угол и правый верхний угол, а затем центр. Потом примените ограничение симметрии \icon {Constraint_Symmetric}.
 
-This flange cannot be padded in the way it is now, because there are intersections
-between the inner square and the small holes. We don't need the inner square for the
-pad anyway, it is needed only for the construction of the sketch. So we turn the
-inner square into construction lines:
+Фланец в таком виде нельзя выдавить так, как между внутренним квадратом и маленькими отверстиями есть пересечения. В любом случае внутренний квадрат для выдавливания нам не нужен, он нужен только для построения эскиза. Давайте заменим внутренний квадрат на конструкционные линии:
 
 \begin{itemize}
-\item Select the four sides of the inner square.
-\item Click the toggle-construction-mode-icon \icon{Sketcher_AlterConstruction}.
+\item Выберите четыре стороны внутреннего квадрата.
+\item Щелкните значок-переключателя-режима-строительства \icon {Sketcher_AlterConstruction}.
 \end{itemize}
-Now the inner square has changed its color to blue indicating that these are
-construction lines, which don't contribute to any sketch-based features, such
-as pads or pockets.
+Теперь внутренний квадрат изменил свой цвет на синий, указывая на то, что это вспомогательные линии, которые не влияют на какие-либо элементы на основе эскиза, такие как прокладки или карманы.
 
 \img{width=0.8\textwidth}{FlangeSquareConstruction}
 
