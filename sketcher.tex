@@ -504,74 +504,50 @@ MSOlsen65
 
 Есть два варианта создания кругов. Как только круг создан, нет никакой разницы между двумя методами.
 \begin{enumerate}
-\item Метод по умолчанию начинается с центра, а затем добавляется радиус: После нажатия \icon {Sketcher_CreateCircle} щелкните в трехмерном виде в том месте, где вы хотите разместить центр круга. Переместите мышь и наблюдайте, как радиус растет вместе с положением мыши. Щелкните точку, которая затем будет лежать на круге.
+\item В методе по умолчанию создание круга начинается с центра, а затем добавляется радиус: После нажатия \icon {Sketcher_CreateCircle} щелкните в трехмерном виде в том месте, где вы хотите разместить центр круга. Переместите мышь и наблюдайте, как радиус растет вместе с положением мыши. Щелкните точку, которая затем будет лежать на круге.
       
       Если у вас включены автоматические ограничения, вы можете выбрать существующую точку щелчком мыши, что создаст ограничение точки на объекте.
 \item Чтобы выбрать альтернативный режим создания, щелкните маленький треугольник справа от значка создания круга и выберите \icon {Sketcher_Create3PointCircle}. Теперь вы можете щелкнуть по трем точкам в 3D-виде, которые будут лежать на окружности. Такой режим создания  будет по умолчанию во время вашего сеанса FreeCAD, пока вы снова не поменяете его.
 \end{enumerate}
 
 
-\subsection*{Typical constraints}
+\subsection*{Типичные ограничения}
 \begin{description}
-\item [Positioning the center] can be achieved by any method used for positioning a
-      point, this includes, of course, coincidence, horizontal and vertical distance.
-\item [Radius/Diameter] Select the circle and apply a radius constraint
-      \icon{Constraint_Radius}.
+\item [Позиционирование центра] может быть достигнуто любым методом, используемым для позиционирования точки, включая совпадение, горизонтальное и вертикальное расстояние. 
+\item [Радиус / Диаметр] Выберите круг и примените ограничение радиуса \icon {Constraint_Radius}.
       
-      If you want to use the diameter instead, select from the radius icon's
-      drop down menu the diameter icon \icon{Constraint_Diameter}. The
-      diameter is often used for circles, while the radius is more often used for arcs.
-\item [Equality] Select two circles, or a circle and an arc and click the icon
-      \icon{Constraint_EqualLength}
+       Если вы хотите использовать диаметр, выберите в раскрывающемся меню значок диаметра \icon {Constraint_Diameter}. Диаметр часто используется для окружностей, а радиус - для дуг.
+\item [Равенство] Выберите два круга или круг и дугу и щелкните значок \icon {Constraint_EqualLength}
 
       \img{}{EqualCircle}
 
-      The radius of each circle will become and will remain equal to one another.
+	Радиусы каждого круга станут и останутся равными друг другу.
 
-      Please note that equality between circle and a line is not possible,
-      unless you use so called \emph{Expressions}, a subject out of scope
-      here; see also the remark on arc length on page \pageref{arclength}.
+Обратите внимание, что равенство между кругом и линией невозможно, если вы только не используете так называемые \emph {Выражения}. Данная тема  выходит за рамки лекции; см. также замечание о длине дуги на странице \pageref {arclength}.
 
-      {\footnotesize Mathematical sidenote: To calculate the length of a
-      circle was one of the most prominent challenges in mathematics since
-      ancient times. Nowadays it is proven that it is not solvable with finite
-      precision.}
-\item [Point-on-Object] If you want to fix a point onto the circle, e.g. the endpoint
-      of a line, you can select the circle and the endpoint, and apply a point-on
-      object constraint by clicking \icon{Constraint_PointOnObject}.
+{\footnotesize Замечание по математике: вычисление длины круга было одной из самых важных задач математики с древних времен. В настоящее время доказано, что эта проблема не решается с конечной точностью.}
+\ item [Точка на Объекте] Если вы хотите зафиксировать точку на окружности, например конечную точку линии, вы можете выбрать круг и конечную точку и применить ограничение «точка на объекте», щелкнув \icon {Constraint_PointOnObject}.
 
       \img{}{PointOnCircle}
 
-      Please note, that the sketch as it is shown here, can neither be padded
-      nor pocketed for two reasons: The sketch is not a closed shape and it
-      has this junction of three lines in one point. We call this situation a
-      \emph{self-intersection}.
-\item [Tangency] There are usually two possibilities to create a tangency on a
-      circle. Therefore you should move all circles, lines or arcs involved as
-      close as reasonably possible to their respective final positions,
-      \emph{before} you apply a tangency constraint.
+   Обратите внимание, что эскиз в том виде, в котором он показан здесь, нельзя ни выдавить, ни создать паз по двум причинам: эскиз не является замкнутой формой, и в нем есть соединение трех линий в одной точке. Мы называем эту ситуацию \emph {самопересечением}.
 
-      Tangency can be applied in two different ways to a circle. 
+\item [Касание] Обычно есть две возможности создать касание на окружности. Поэтому вам следует переместить все задействованные окружности, линии или дуги как можно ближе к их соответствующим конечным положениям, \emph {до того, как} вы примените ограничение касания.
+
+Касание может быть применено к кругу двумя разными способами.
       \begin{itemize}
-      \item The endpoint of a line or arc can lie on the circle. Then select the
-            circle and the endpoint and apply the tangency constraint
-            \icon{Constraint_Tangent}.
+\item Конечная точка прямой или дуги может лежать на окружности. Затем выберите окружность и конечную точку и примените ограничение касания \icon {Constraint_Tangent}.
 
-            \img{}{TangencyCirclePoint}
+             \img {} {TangencyCirclePoint}
             
-            I should mention again, that this example can neither be padded nor
-            pocketed due to the self-intersection and lack of closed shape.
-      \item The circle touches another circle, arc or a line. Select the circle and
-            the line or arc---Note the difference to the above; do
-            not select a point!---and apply the tangency with
-            \icon{Constraint_Tangent}.
+             Я должен еще раз упомянуть, что этот пример нельзя  ни выдавить, ни создать паз из-за самопересечения и отсутствия замкнутой формы.
+       \item Круг касается другого круга, дуги или линии. Выберите круг и линию или дугу --- Обратите внимание на отличие от прелыдущего способа; не выбирайте точку! --- и примените касание с помощью \icon {Constraint_Tangent}.
             
-            In this example I have done so twice, once on the X and once on the Y axis:
+             В этом примере я сделал это дважды, один раз по оси X и один раз по оси Y:
             
-            \img{scale=0.9}{TangencyCircleLine}
+             \img {scale = 0.9} {TangencyCircleLine}
 
-            This kind of tangency can even be applied between a line and a
-            circle without them actually touching one another:
+             Такого рода касание можно даже применить между линией и кругом, которые не касаятся друг друга:
 
             \img{}{CircleTangentNoTouch}
       \end{itemize}
