@@ -38,13 +38,13 @@
 \pdfminorversion=7
 \usepackage[utf8]{inputenc} % Включаем поддержку UTF8
 \usepackage[T1,T2A]{fontenc}
-\usepackage[english,russian]{babel}
+\usepackage[russian]{babel}
 \usepackage{geometry}\geometry{left=2.5cm,right=2.5cm,top=2cm,bottom=2cm}
 \usepackage{enumerate}
 \usepackage{color}
 \usepackage[export]{adjustbox}
 \usepackage{graphicx}
-\usepackage{varioref} % set to \usepackage[spanish/german/french/...]{varioref}
+\usepackage[russian]{varioref} % set to \usepackage[spanish/german/french/...]{varioref}
 \usepackage{srcltx}
 \usepackage[bookmarksnumbered=true,breaklinks]{hyperref}
 \usepackage[percent]{overpic}
@@ -79,8 +79,8 @@
   \SetTime
   \def\now{\number\hours:\ifnum\minutes<10 0\fi\number\minutes}
 
-\title{Лекции по верстаку Sketcher}
-\author{Christoph Blaue\\
+\title{Лекция по верстаку Sketcher}
+\author{Кристоф Блауэ\\
 \\
 \scriptsize с особой благодарностью участникам \href {https://forum.freecadweb.org} {форума FreeCAD}:\\
 \small bejant,
@@ -439,72 +439,50 @@ MSOlsen65
 \item [Совпадение конечных точек] В упражнении \vref {ExerciseCoincidence} мы уже использовали это.
 \item [Горизонтальное ограничение] для горизонтальной линии. Выберите линию и щелкните значок  ограничения горизонтальности \icon {Constraint_Horizontal}
       
-      Линия станет и останется ровно горизонтальной.
+      Линия станет и останется строго горизонтальной.
 \item [Вертикальное ограничение] для вертикальных линий. Выберите линию и щелкните значок ограничения вертикальности \icon {Constraint_Vertical}
 
-      The line becomes and will remain exactly vertical.
-\item [Equality] Select two lines and click the icon \icon{Constraint_EqualLength}
+      Линия станет и останется строго вертикальной.
+\item [Equality] Выберите две линии и щелкните значок \icon{Constraint_EqualLength}
 
       \img{scale=0.8}{LineEquality}
       
-      The lines will become and remain equal in length.
-\typeout{disregarding the orientation of the lines}
-\item [Horizontal distance] Select the line and click the icon
-      \icon{Constraint_HorizontalDistance}. Enter the distance in the input field
-      like you have done in exercise \vref{ExerciseHorizontalDistance}
+      Линии станут и останутся равными по длине.
+\typeout{без учета ориентации линий}
+\item[Расстояние по горизонтали] Выберите линию и щелкните значок \icon {Constraint_HorizontalDistance}. Введите расстояние в поле ввода, как в упражнении \vref{ExerciseHorizontalDistance}
 
-      This is usually applied to horizontal lines, but is not restricted to them.
+      Обычно это применяется к горизонтальным линиям, но не ограничивается ими.
 %\hspace*{0em}\vbox{}
-      If you apply it to a sloped line, this constraint defines the
-      horizontal distance between the endpoints.
+      Если вы примените его к наклонной линии, это ограничение определяет расстояние по горизонтали между конечными точками.
 
       \img{scale=0.8}{LineHorizontalDistance}
-\item [Vertical distance] Select the line and click the icon
-      \icon{Constraint_VerticalDistance}. Enter the distance in the input field
-      like you have done in exercise \vref{ExerciseVerticalDistance}
+\item [Расстояние по вертикали] Выберите линию и щелкните значок \icon {Constraint_VerticalDistance}. Введите расстояние в поле ввода, как в упражнении \vref{ExerciseVerticalDistance}
 
-      This is usually applied to vertical lines, but is not restricted to them.
-      If you apply it to a sloped line, this constraint defines the
-      vertical distance between the endpoints.
+Обычно это применяется к вертикальным линиям, но не ограничивается ими. Если вы примените его к наклонной линии, это ограничение определяет расстояние по вертикали между конечными точками.
 
       \img{scale=0.8}{LineVerticalDistance}
 
-\item [Length] \label{LineLength} Select the line and click the icon
-      \icon{Constraint_Length}. Enter a value as you did e.g. for horizontal
-      or vertical distance.
+\item [Длина] \label {LineLength} Выберите линию и щелкните значок \icon {Constraint_Length}. Введите значение, аналогично как для горизонтального или вертикального расстояния.
       
       \img{scale=0.8}{LineLength}
 
-      {\bf Warning:} Do not use this constraint for horizontal or vertical
-      lines---unless you intend to change the angle of the element in Sketcher
-      later (for an example of this consider turning a slot as in section
-      \vref{SlotTilted}).
-      Use the specialized constraints horizontal distance or vertical
-      distance instead. That makes it easier for the solver to find a
-      solution; see section \vref{SolverRecommendations} for details.
+{\bf Предупреждение:} Не используйте это ограничение для горизонтальных или вертикальных линий --- если вы не собираетесь изменять угол элемента в Sketcher позже (например, рассмотрите возможность поворота паза, как в разделе  \vref {SlotTilted}).
+      Вместо этого используйте специальные ограничения по горизонтали или по вертикали. Это упрощает работу решателя; подробности смотрите в разделе \vref {SolverRecommendations}.
 \end{description}
 
-It should be pointed out, that what we call a line is in fact only a line segment.
-This segment lies on a line of infinite extent. This is of importance when
-point-on-object or tangency constraints are involved (see sections
-\ref{PointOnObject} on page \pageref{PointOnObject} and section \ref{Tangency} on
-page \pageref{Tangency}).
+Следует отметить, что то, что мы называем линией, на самом деле является только отрезком линии. Этот отрезок лежит на линии бесконечной длины. Это важно, когда задействованы ограничения точки на объекте или касания (см. Разделы \ref {PointOnObject} на странице \pageref {PointOnObject} и раздел \ref {Tangency} на странице \pageref {Tangency}).
 
 \vbox{
 \begin{Exercise}
 \label{exerciseLinesPerpendicular}
-Create the following sketch. It has exactly one measure and all short lines 
-are equal. Besides that the sketch has only coincidence, vertical, horizontal,
-and equality constraints.
+Создайте следующий эскиз. У него только одно ограничение длины, и все короткие линии равны. Кроме того, в эскизе есть только ограничения совпадения, вертикальности, горизонтальности и равенства.
 \end{Exercise}
-In the state as shown here it has 1 DOF:
+В показанном здесь состоянии он имеет 1 степень свободы:
 
 \img{scale=0.8}{Line1}
 }
 
-Target: the two selected lines must be on the same level. This can be achieved e.g.
-by selecting the line to the left and a point to the right and apply a
-point-on-object constraint.
+Цель: две выбранные линии должны находиться на одном уровне. Это может быть достигнуто, например, путем выбора линии слева и точки справа и применения ограничения «точка на объекте».
 
 \img{width=0.47\textwidth}{Line2}
 \hfill
@@ -512,35 +490,24 @@ point-on-object constraint.
 \hfill
 \img{width=0.47\textwidth}{Line3}
 
-\section{Circle}
+\section{Круг}
 \begin{tabular}{|l|l|}
 \hline
-Icons: & \icon{Sketcher_CreateCircle} (default)\\
+Иконки: & \icon{Sketcher_CreateCircle} (default)\\
        & \icon{Sketcher_Create3PointCircle}\\
 \hline
 \dofAdded & 3\\
 \hline
 \end{tabular}
 
-A circle can be defined by the position of its center with 2 DOF and the radius with
-one DOF which sums up to 3 DOF.
+Круг может быть определен положением его центра с 2 степенями свободы и радиусом с одной степенью свободы, что в сумме составляет до 3 степеней свободы.
 
-Creation of circles comes in two flavors. As soon as the circle is created there is
-no difference between the two methods.
+Есть два варианта создания кругов. Как только круг создан, нет никакой разницы между двумя методами.
 \begin{enumerate}
-\item The default method starts with the center and then adds the radius:
-      After clicking \icon{Sketcher_CreateCircle}, click in the 3D view at the
-      position where you want to place the center of the circle. Move the mouse and
-      watch the radius growing with the mouse position. Click at a point which will
-      then lie on the circle.
+\item Метод по умолчанию начинается с центра, а затем добавляется радиус: После нажатия \icon {Sketcher_CreateCircle} щелкните в трехмерном виде в том месте, где вы хотите разместить центр круга. Переместите мышь и наблюдайте, как радиус растет вместе с положением мыши. Щелкните точку, которая затем будет лежать на круге.
       
-      If you have auto constraints enabled you can select an existing point
-      with a mouse click which will create a point-on-object constraint.
-\item To choose the alternative creation mode click the small triangle right of the
-      create circle icon and choose \icon{Sketcher_Create3PointCircle}. Now you can
-      click three points in 3D view which will all lie on the circle. This creation
-      mode will now be the default during your FreeCAD session until it is changed
-      again.
+      Если у вас включены автоматические ограничения, вы можете выбрать существующую точку щелчком мыши, что создаст ограничение точки на объекте.
+\item Чтобы выбрать альтернативный режим создания, щелкните маленький треугольник справа от значка создания круга и выберите \icon {Sketcher_Create3PointCircle}. Теперь вы можете щелкнуть по трем точкам в 3D-виде, которые будут лежать на окружности. Такой режим создания  будет по умолчанию во время вашего сеанса FreeCAD, пока вы снова не поменяете его.
 \end{enumerate}
 
 
