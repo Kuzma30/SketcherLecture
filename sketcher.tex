@@ -622,10 +622,7 @@ MSOlsen65
 \begin{Exercise}
 % comment for translators on the first mandatory space: it is inserted to
 % slightly improve the clumsy linebreak at the end of the line
-\ \,Create an arc and two horizontal lines. Apply point-to-point tangency
-constraints to the upper and the lower pair of points respectively.
-The left picture shows the selection just before applying the first
-constraint, the right one shows the result after applying both.
+\ \,Создайте дугу и две горизонтальные линии. Примените ограничения касания точка-точка к верхней и нижней паре точек соответственно. На левом рисунке показан выбор непосредственно перед применением первого ограничения, на правом - результат после применения обоих.
 
 \mbox{}\hfill\img{}{ArcTangencyPoint} \hfill \hfill \img{}{ArcTangencyPointAfter}\hfill\mbox{}
 \end{Exercise}
@@ -633,135 +630,92 @@ constraint, the right one shows the result after applying both.
 
 \vbox{%
 \begin{Exercise}
-Create the following sketch. All arcs have the same radius of 15\,mm. The long lines
-are equal. All short lines are equal. All tangencies are point to point
-tangencies with smooth joints.
+Создайте следующий эскиз. Все дуги имеют одинаковый радиус 15\,мм. Все длинные и короткие линии равны. Все касания являются касаниями точка - точка с гладкими стыками.
 
 \img{scale=0.95,clip,trim=0 20 0 0}{ArcExercise}
 \end{Exercise}
 }
 
-\section{Polyline}
+\section{Полилиния}
 \begin{tabular}{|l|l|}
 \hline
-Icon: & \icon{Sketcher_CreatePolyline}\\
+Иконка: & \icon{Sketcher_CreatePolyline}\\
 \hline
-\dofAdded & depending on the elements added (see below)\\
+\dofAdded & в зависимости от добавленных элементов (см. ниже)\\
 \hline
 \end{tabular}
 
-Polyline is a most useful tool for fast creation of a sketch. It is much more than
-just connecting straight lines, there are several different modes of how to connect
-them and even arcs can be created with this tool.
+Полилиния - самый полезный инструмент для быстрого создания эскиза. Это гораздо больше, чем просто соединение прямых линий, есть несколько различных способов их соединения. С помощью этого инструмента могут быть созданы даже дуги.
 
-The polyline in its standard form adds a sequence of lines which are connected with
-coincidence constraints. These coincidences are independent of whether
-autoconstraints are switched on or off. The continuation mode of the tool ends when
-the figure is closed, i.\,e. when you connect the end point back to the
-original starting point of the polyline.
+Полилиния в ее стандартной форме добавляет последовательность линий, которые связаны ограничениями совпадения. Эти совпадения не зависят от того, включены автограничения или нет. Режим продолжения заканчивается, когда фигура закрывается, т.е.  когда вы соединяете конечную точку с  начальной точкой полилинии.
 
-Alternatively you use the right mouse button or the escape key to end the
-sequence at any time. As mentioned above I recommend to use the right click on other systems because you already have your hand
-on the mouse and there is not the danger of leaving Sketcher unintendedly
-by one escape keypress too many.
+В качестве альтернативы вы можете использовать правую кнопку мыши или клавишу ESC, чтобы завершить последовательность в любое время. Как упоминалось выше, я рекомендую использовать правый щелчок на других системах, потому что вы уже держите руку на мыши, и нет опасности случайно покинуть Sketcher, нажав много раз ESC-клавишу.
 
-Like with the other geometry tools you stay in creation mode so you can
-immediately continue with another polyline.
+Как и в случае с другими инструментами создания геометрии, вы остаетесь в режиме создания, поэтому можете сразу продолжить работу с другой полилинией.
 
-A further right mouse button click (or escape keypress) ends the polyline
-creation completely.
+Дальнейшее нажатие правой кнопки мыши (или нажатие клавиши ESC) полностью завершает создание полилинии.
 
 \vbox{\begin{Exercise}
-Create the sketch from exercise \vref{exerciseLinesPerpendicular}, now using the
-Polyline tool.
+Создайте эскиз из упражнения \vref {exerciseLinesPerpendicular}, теперь используя инструмент «Полилиния».
 
 \img{scale=0.76}{Line1}
 \end{Exercise}
 }
 
 
-It should be pointed out, that the results are the same whether a set of lines is
-created by the polyline tool or with multiple single lines.
+Следует отметить, что результаты будут одинаковыми независимо от того, создается ли набор линий с помощью инструмента полилинии или  отдельными линиями.
 
-The polyline can do more than connect lines by coincidences. The following is taken
-from the documentation with adding the DOF information:
+Полилиния может не только соединять линии точками совпадениями. Следующее взято из документации с добавлением информации о КСС:
 
-The polyline always starts with a straight line segment: click - move the mouse -
-click. This adds---like any other line---4 DOF to the model.
+Полилиния всегда начинается с отрезка прямой линии. Для ее создания щелкните мышкой - переместите - щелкните. Это добавляет --- как и любая другая линия --- к модели 4 степени свободы.
 
-Move the mouse again. After placing the first line segment, the Sketcher
-polyline tool has multiple modes that can be toggled with the M key. For example you
-can draw tangent or perpendicular arcs following a line or arc segment. Repeatedly
-pressing the M key toggles through the following different modes. The numbers of DOF
-are given ignoring auto constraints, which can reduce the DOF further e.g. by applying an additional horizontal constraint.
+Снова переместите мышь. После размещения первого сегмента линии инструмент полилинии эскиза имеет несколько режимов, которые можно переключать с помощью клавиши M. Например, вы можете нарисовать касательные или перпендикулярные дуги, следующие за отрезком линии или дуги. Повторное нажатие клавиши M позволяет переключаться между следующими различными режимами. Числа степеней свободы даны без учета автоматических ограничений, которые могут дополнительно уменьшить КСС, например. путем применения дополнительного горизонтального ограничения.
 
 \begin{itemize}
 \label{PolylineMKey}
-\item Without pressing the M key a line with only the coincidence constraint is
-      added. This adds 2 DOF for the new endpoint.
-\item Press the M key: the new segment is a line which is perpendicular to the
-      previous segment. This adds 1 DOF.
-\item Press the M key again: the new segment is a line which is tangential to the
-      previous segment. This adds 1 DOF.
-\item Press the M key again: the new segment is an arc which is tangential to the
-      previous segment. This adds 2 DOF.
-\item Press the M key again: the new segment is an arc which is perpendicular (left)
-      to the previous segment. This adds 2 DOF.
-\item Press the M key again: the new segment is an arc which is perpendicular(right)
-      to the previous segment. This adds 2 DOF.
-\item Press the M key again: You are again in the state where you started; the line
-      is only connected with a coincidence to the previous segment.
-\item While in any of the arc modes, holding down the CTRL key (MacOS: CMD key) and
-      moving the cursor causes the arc to snap by increments of 45 degrees, relative
-      to the previously created polyline segment. In this case only 1 DOF is added instead
-      of 2 because an angle constraint is automatically set.
+\item Без нажатия клавиши M добавляется линия только с ограничением совпадения. Это добавляет 2 степени свободы для новой конечной точки.
+\item Нажмите клавишу M: новый сегмент - это линия, перпендикулярная предыдущему сегменту. Это добавляет 1 степень свободы.
+\item Нажмите клавишу M еще раз: новый сегмент - это линия, касательная к предыдущему сегменту. Это добавляет 1 степень свободы.
+\item Нажмите клавишу M еще раз: новый сегмент - это дуга, касательная к предыдущему сегменту. Это добавляет 2 степени свободы.
+\item Нажмите клавишу M еще раз: новый сегмент представляет собой дугу, перпендикулярную (слева) предыдущему сегменту. Это добавляет 2 степени свободы.
+\item Нажмите клавишу M еще раз: новый сегмент представляет собой дугу, перпендикулярную (вправо) предыдущему сегменту. Это добавляет 2 степени свободы.
+\item Нажмите клавишу M еще раз: вы снова в том состоянии, в котором начали; линия соединяется только совпадением с предыдущим отрезком.
+\item В любом из режимов дуги удерживание клавиши CTRL (MacOS: клавиша CMD) и перемещение курсора вызывает привязку дуги с шагом 45\degree{} относительно ранее созданного сегмента полилинии. В этом случае добавляется только 1 степень свободы вместо 2, потому что ограничение угла устанавливается автоматически.
 \end{itemize}
 
 \vbox{
 \begin{Exercise}
-Create the following sketch using Polyline and the M key. All arcs including the 45\degree{}
-ones have the same radius. The long lines are equal. All short lines including the
-45\degree{} ones at the right have the same length.
+Создайте следующий эскиз, используя полилинию и клавишу M. Все дуги, включая дуги под углом 45\degree{}, имеют одинаковый радиус. Длинные линии равны. Все короткие линии справа, включая те, что под углом 45\degree{} , имеют одинаковую длину.
 
 \img{}{PolyExercise}
 \end{Exercise}
 }
 
-\section{Rectangle}
+\section{Прямоугольник}
 \begin{tabular}{|l|l|}
 \hline
-Icon: & \icon{Sketcher_CreateRectangle}\\
+Иконка: & \icon{Sketcher_CreateRectangle}\\
 \hline
 \dofAdded & 4\\
 \hline
 \end{tabular}
 
-The predefined rectangles in Sketcher have always horizontal and vertical lines only. Such
-a rectangle can be defined by two of its diagonal points, each of them adding 2 DOF
-which sums up to 4 DOF.
+Предварительно определенные прямоугольники в Sketcher всегда имеют только горизонтальные и вертикальные линии. Такой прямоугольник может быть определен двумя его диагональными точками, каждая из которых добавляет 2 степени свободы, что в сумме дает до 4 степеней свободы.
 
-To create a rectangle you click the first corner and then the diagonal opposite
-corner. The result is the same as if the rectangle was constructed by four lines
-connected with coincidences and constrained with vertical and horizontal constraints.
+Чтобы создать прямоугольник, щелкните мышкой первый угол, а затем диагональный противоположный угол. Результат будет такой же, как если бы прямоугольник был построен из четырех линий, соединенных точками совпадениями и ограниченных условиями вертикальности и горизонтальности.
 
-\subsection*{Centering of Rectangles}
-Often a rectangle has to be placed in the center of the coordinate system. Or some
-other point should be positioned in the middle of the rectangle (cf. exercise \vref{ExerciseConstruction}).
+\subsection*{Центрирование прямоугольников}
+Часто прямоугольник необходимо разместить в центре системы координат. Либо в середине прямоугольника должна быть расположена другая точка (см. Упражнение \vref {ExerciseConstruction}).
 
-To achieve this you select two diagonal points and as a third point the center
-and apply a symmetry constraint \icon{Constraint_Symmetric}. This is better
-than applying a symmetry constraint between a horizontal side and a vertical
-axis, then another symmetry constraint between a vertical side and the
-horizontal axis. It is important to select the center last, as you will see in
-section \vref{symmetry}.
+Для реализации этого выберите две диагональные точки и третью точку-центр и примените ограничение симметрии \icon {Constraint_Symmetric}. Это лучше, чем применение ограничения симметрии между горизонтальной стороной и вертикальной осью, а затем другого ограничения симметрии между вертикальной стороной и горизонтальной осью. Важно выбрать центр последним, как вы увидите в разделе \vref {symmetry}.
 
 \img{}{RectSymmetric}
 
-\section{Polygon}
+\section{Многоугольник}
 \label{polygon}
 \begin{tabular}{|l|l|}
 \hline
-Icons: & \icon{Sketcher_CreateTriangle} \\
+Иконки: & \icon{Sketcher_CreateTriangle} \\
        & \icon{Sketcher_CreateSquare} \\
        & \icon{Sketcher_CreatePentagon} \\
        & \icon{Sketcher_CreateHexagon} \\
@@ -773,97 +727,71 @@ Icons: & \icon{Sketcher_CreateTriangle} \\
 \hline
 \end{tabular}
 
-The center has two DOF, the diameter adds one DOF and the orientation is the last of
-the four DOF. This is independent of the number of edges of the polygon.
+Центр имеет две степени свободы, диаметр добавляет одну степень свободы, а ориентация является последней из четырех степеней свободы. Это не зависит от количества ребер многоугольника.
 
-When you create a polygon you start in the middle and move the mouse to define the
-outer radius and the position of one corner. The blue outer circle is construction
-geometry and thus not contributing to further usage of the sketch in pads and
-pockets.
+Когда вы создаете многоугольник, вы начинаете с середины и перемещаете мышь, чтобы определить внешний радиус и положение одного угла. Синий внешний круг является вспомогательной геометрией и поэтому не влияет на дальнейшему использованию эскиза в выдавливании или вырезах.
 
-The most frequently used polygon is probably the hexagon in connection with nuts and
-bolts:
+Наиболее часто используемый многоугольник - это, вероятно, шестигранник в сочетании с гайками и болтами:
 
-\img{scale=0.8}{Hexagon}
+\img {scale = 0.8} {Hexagon}
 
-As a polygon is a set of lines and a (construction) circle, all advice given before
-holds here as well.
+Поскольку многоугольник - это набор линий и (строительный) круг, все рекомендации, данные ранее, действуют и здесь.
 
-If the first constraints you add are fixing the center of the polygon, make sure that
-the intended target is close to the current center, i.\,e. you should move the
-polygon near its final position. If the target center is outside of the circle the
-polygon can collapse to something unusable. Fixing the size of the polygon
-prevents this from happening.
+Если первые ограничения, которые вы добавляете, фиксируют центр многоугольника, убедитесь, что предполагаемая цель находится близко к текущему центру, т.e. вам следует переместить многоугольник в его конечное положение. Если целевой центр находится за пределами круга, многоугольник может сжаться до чего-то непригодного для использования. Этого не произойдет, если установить размер многоугольника.
 
-\section{Slot}
+\section{Паз}
 \begin{tabular}{|l|l|}
 \hline
-Icon: & \icon{Sketcher_CreateSlot} \\
+Иконка: & \icon{Sketcher_CreateSlot} \\
 \hline
 \dofAdded & 4 \\
 \hline
 \end{tabular}
 
-The center of one of the circles has 2 DOF. The predefined slot is always horizontal
-or vertical, so the distance to the other center adds 1 DOF, and the radius adds 1
-DOF as well, which sums up to 4 DOF.
+Центр одного из кругов имеет 2 степени свободы. Предопределенный паз всегда создается горизонтальным или вертикальным, поэтому расстояние до другого центра добавляет 1 степень свободы, а радиус также добавляет 1 степень свободы, что в сумме составляет до 4 степеней свободы.
 
-Creating a slot starts with a click in the center of one half circle. The next click
-defines the radius and the length of the slot. Depending on the relative position of
-the second click the slot is either vertical or horizontal.
+Создание паза начинается с щелчка в центре одного полукруга. Следующий щелчок определяет радиус и длину прорези. В зависимости от относительного положения второго щелчка слот бывает вертикальным или горизонтальным.
 
 \vbox{
 \begin{Exercise}
 \label{exerciseSlot}
-Create a sketch for a block containing a slot for a sliding mechanism:
+Создайте эскиз блока, содержащего паз для раздвижного механизма:
 
 \img{width=0.85\textwidth}{slotExercise}
 \end{Exercise}}
 
-{\bf Remark:} For now we position the slot with measures. We will learn in section
-\vref{symmetry} about symmetry how to center the slot.
+{\bf Примечание:} А пока разместим размеры на паз. В разделе \vref {symmetry} мы узнаем о симметрии, как центрировать паз.
 
-\subsection*{Typical constraints}
-Beyond the constraints you know already for lines and arcs I want to show how to
-constrain a slot if the \emph{overall length} of the slot is known and should thus be used
-directly in the sketch.
+\subsection*{Типичные ограничения}
+Помимо ограничений, которые вы уже знаете для линий и дуг, я хочу показать, как определить паз, если известна \emph {общая длина} паза, и поэтому его следует использовать непосредственно в эскизе.
 
 \vbox{
 \begin{Exercise}
 \label{exerciseSlotOuter}
-Create the same sketch for a sliding mechanism as before, but now setting the overall
-distance:
+Создайте такой же эскиз для раздвижного механизма, что и раньше, но теперь установите общую длины:
 
 \img{width=0.85\textwidth}{slotExerciseOuter}
 \end{Exercise}
-This sketch is not yet fully constrained, it misses the overall positioning in x and y.
+Этот эскиз еще не полностью ограничен, в нем отсутствуют координаты по x и y.
 }
 
-To create the sketch:
+Для создания эскиза:
 \begin{itemize}
-\item Create rectangle and slot as before.
-\item Create a point and place it with a point-on-object constraint on one of the
-      arcs. It is best to place it already near its final position. If you have
-      autoconstraints enabled you can do this in one step.
+\item Создайте прямоугольник и прорезь, как раньше.
+\item Создайте точку и разместите на ее одной из дуг с ограничением точки на объекте. Лучше всего разместить ее рядом с конечным положением. Если у вас включены автоблокировки, вы можете сделать это за один шаг.
 
 \img{}{slotPointOnArc}
-\item Do the same for the other arc.
-\item Select the new point and the center of the arc and apply a horizontal
-      constraint. The image shows the situation after having applied the constraint. I
-      have selected the elements involved, they show in green.
+\item Проделайте то же самое с другой дугой.
+\item Выберите новую точку и центр дуги и примените ограничение по горизонтали. На изображении показана ситуация после применения ограничения. Я выбрал задействованные элементы, они показаны зеленым.
 
 \img{}{slotPointOnArcAfter}
-\item Do the same for the other arc.
-\item Apply a horizontal distance constraint on the outer points.
-\item Apply the other constraints as before.
+\item Проделайте то же самое с другой дугой.
+\item Примените ограничение горизонтального расстояния к внешним точкам.
+\item Примените другие ограничения, как и раньше.
 \end{itemize}
 
 \subsection*{Tilted Slots}
-The predefined slots are either horizontal or vertical. This is sensible because most
-slots are oriented like this and they can be created with just two clicks. However,
-if you need a tilted slot it can be achieved by simply deleting the
-horizontal/vertical constraint. This will of course add another DOF. In the image I
-have added already an angular constraint:
+The predefined slots are either horizontal or vertical. This is sensible because most slots are oriented like this and they can be created with just two clicks. However, if you need a tilted slot it can be achieved by simply deleting the horizontal/vertical constraint. This will of course add another DOF. In the image I 9have added already an angular constraint:
 
 \label{SlotTilted}
 \img{}{SlotTilted}
@@ -881,42 +809,26 @@ Icons: & \icon{Sketcher_CreateBSpline} open B-spline\\
 
 Each control point is defined by a circle with 3 DOF.
 
-B-splines are curves which are used for smooth surfaces. They are determined
-by a set of control points, which themselves---except start and end---do not
-have to lie on the B-spline. Each control point has
-a weight, which determines how much the control point "attracts" the curve.
-B-splines often occur when you import Scalable Vector Graphics (SVG) files and
-apply Draft-to-Sketch.
+B-splines are curves which are used for smooth surfaces. They are determined by a set of control points, which themselves---except start and end---do not have to lie on the B-spline. Each control point has a weight, which determines how much the control point "attracts" the curve. B-splines often occur when you import Scalable Vector Graphics (SVG) files and apply Draft-to-Sketch. 
 
 There are two variants of B-spline: 
 \begin{description}
-\item [The open B-spline] \icon{Sketcher_CreateBSpline} has a start, which is
-      the first control point and an end, which is the last control point.
-\item [The closed B-spline] \icon{Sketcher_Create_Periodic_BSpline} is created
-      in the same way, but when creating ends, the B-spline's end is smoothly
-      connected with the start.
+\item [The open B-spline] \icon{Sketcher_CreateBSpline} has a start, which is       the first control point and an end, which is the last control point.
+\item [The closed B-spline] \icon{Sketcher_Create_Periodic_BSpline} is created       in the same way, but when creating ends, the B-spline's end is smoothly       connected with the start.
 \end{description}
 
 \vbox{\begin{Exercise}
-Create a B-spline with the following control points. The absolute distances
-between the points don't matter at the moment.
+Create a B-spline with the following control points. The absolute distances between the points don't matter at the moment.
 
 \img{}{BSplineCreate}
 \end{Exercise}}
 
-Start at the left, add the upper control point and finally the right one.
-Finish the B-Spline creation with a right mouse button click or use the escape
-key. The B-spline is created with the same size for all circles around the
-control points.
-Please note that the B-spline is not shown until creation is completed.
+Start at the left, add the upper control point and finally the right one. Finish the B-Spline creation with a right mouse button click or use the escape key. The B-spline is created with the same size for all circles around the control points. Please note that the B-spline is not shown until creation is completed.
 
-You have two possibilities to influence the shape of the B-spline with the
-upper control point (of course, the same possibilities exist for the other
-points too). 
+You have two possibilities to influence the shape of the B-spline with the upper control point (of course, the same possibilities exist for the other points too). 
 
 \begin{itemize}
-\item The position of the control point determines the direction and how much
-      the B-spline is deviated:
+\item The position of the control point determines the direction and how much       the B-spline is deviated:
 %You can move the control point around.
 
 {\newcommand{\scale}{0.54}
@@ -926,16 +838,11 @@ points too).
 \hfill%
 \img{scale=\scale}{BSplineMoveRight}}
 
-You see how the curve is attracted by the control point. The ratio between
-the control point, the curve, and the other points remains approximately constant.
+You see how the curve is attracted by the control point. The ratio between the control point, the curve, and the other points remains approximately constant.
 
-\item The size of the circles around the control points determines how much
-      the curve is attracted. The bigger the circle the more is the B-spline
-      attracted. An infinite circle would attract it up to the
-      control point itself.
+\item The size of the circles around the control points determines how much       the curve is attracted. The bigger the circle the more is the B-spline       attracted. An infinite circle would attract it up to the       control point itself.
       
-      Before changing the size of a single control point you have to remove
-      the equality constraint.
+      Before changing the size of a single control point you have to remove       the equality constraint.
 
 \img{}{BSplineBigCircle}
 \end{itemize}
@@ -944,19 +851,13 @@ the control point, the curve, and the other points remains approximately constan
 
 B-splines support all constraints seen so far on the control circles.
 
-It is not (yet) possible to use constraints like tangency or point-on-object in the curve of a B-spline but only on its endpoints; however, below you find some techniques how to
-simulate this.
+It is not (yet) possible to use constraints like tangency or point-on-object in the curve of a B-spline but only on its endpoints; however, below you find some techniques how to simulate this.
 
 \begin{description}
 \item [Block constraint.]
-While it is very sensible to use other than block constraints on the endpoints
-it might clutter the sketch with measures if you want to constrain all the
-control points in between.
+While it is very sensible to use other than block constraints on the endpoints it might clutter the sketch with measures if you want to constrain all the control points in between.
 
-Here it is sensible to use the block constraint on the B-spline. Make sure you
-have applied all other constraints before, because once the block constraint
-is applied nothing can be changed on any point of the B-spline.\footnote{As of
-v. \currentVersion{} the Sketcher doesn't report such overconstraints.}
+Here it is sensible to use the block constraint on the B-spline. Make sure you have applied all other constraints before, because once the block constraint is applied nothing can be changed on any point of the B-spline.\footnote{As of v. \currentVersion{} the Sketcher doesn't report such overconstraints.}
 
 \newlength{\listWidth}
 \setlength{\listWidth}{\textwidth}
@@ -964,23 +865,18 @@ v. \currentVersion{} the Sketcher doesn't report such overconstraints.}
 \begin{minipage}{\listWidth}
 \begin{Exercise}
 \label{BSplineBlock}
-Create a B-spline according to the following image. The block constraint is
-aligned rather far on the left, but it belongs to the B-spline curve.
+Create a B-spline according to the following image. The block constraint is aligned rather far on the left, but it belongs to the B-spline curve.
 
 \img{}{BSplineBlock}
 \end{Exercise}
 \end{minipage}
 
-Before applying the block constraint specify the overall length (55\,mm), and adjust the size
-of the bigger circle (without setting it as constraint).
+Before applying the block constraint specify the overall length (55\,mm), and adjust the size of the bigger circle (without setting it as constraint).
 
-\item [Tangent and Perpendicular Constraint on the endpoints.]Arcs and
-      lines---and with the help of a construction line even B-splines---can be
-      connected at their endpoints using tangent or perpendicular constraints.
+\item [Tangent and Perpendicular Constraint on the endpoints.]Arcs and       lines---and with the help of a construction line even B-splines---can be       connected at their endpoints using tangent or perpendicular constraints.
 
 \begin{Exercise}
-Remove the block constraint from exercise \vref{BSplineBlock}. Attach
-horizontal lines, tangential to the left, perpendicular to the right.
+Remove the block constraint from exercise \vref{BSplineBlock}. Attach horizontal lines, tangential to the left, perpendicular to the right.
 \end{Exercise}
 
 \hspace*{-\leftmargini}\img{scale=1}{BSplineTangent}%
@@ -996,16 +892,11 @@ horizontal lines, tangential to the left, perpendicular to the right.
 The last action would be to add the block constraint again.
 
 
-\item [Tangent Constraint on the curve.] It is currently not
-      possible to create a tangent on the inner part of a B-spline. The same
-      holds for points lying on the curve.
+\item [Tangent Constraint on the curve.] It is currently not       possible to create a tangent on the inner part of a B-spline. The same       holds for points lying on the curve.
       
-      As a workaround you have to create two B-splines and connect them
-      tangentially. That doesn't work directly either so you have to add a
-      construction line.
+      As a workaround you have to create two B-splines and connect them       tangentially. That doesn't work directly either so you have to add a       construction line.
       
-      \paragraph{Warning:} You will not get automatically exactly the same
-      curve as with a single B-spline, but you can get very close.
+      \paragraph{Warning:} You will not get automatically exactly the same       curve as with a single B-spline, but you can get very close.
 
 \begin{Exercise}
 Based on exercise \vref{BSplineBlock} add a tangent to the top of the B-spline.
@@ -1019,8 +910,7 @@ There are two B-splines involved:
 
 There are different possibilities to add the tangent:
 \begin{itemize}
-\item You can place the endpoint and the control point next to it on the
-      tangent. That's what I have done in the example.
+\item You can place the endpoint and the control point next to it on the       tangent. That's what I have done in the example.
 \item You can use tangent point-to-point constraints on the endpoints.
 \end{itemize}
 
@@ -1030,8 +920,7 @@ There are different possibilities to add the tangent:
 
 \pagebreak[3]
 \section{Conical sections}
-You find the conical section in the dropdown menu of the icon \icon{Sketcher_Conics}.
-Once you have selected this icon is replaced with the last chosen selection.
+You find the conical section in the dropdown menu of the icon \icon{Sketcher_Conics}. Once you have selected this icon is replaced with the last chosen selection.
 
 \begin{tabular}{|l|l|}
 \hline
@@ -1043,40 +932,29 @@ Icons: & \icon{Sketcher_CreateEllipse} Ellipse by Center, minor an major radius,
 \hline
 \end{tabular}
 
-The DOF of the ellipse are given by the two defining lines which would make up to 8 DOF.
-These are reduced by the lines having a common center (minus 2 DOF) and being perpendicular
-(minus 1 DOF). This sums up to 5 DOF.
+The DOF of the ellipse are given by the two defining lines which would make up to 8 DOF. These are reduced by the lines having a common center (minus 2 DOF) and being perpendicular (minus 1 DOF). This sums up to 5 DOF.
 
-The arc of ellipse has 2 additional DOF: start and endpoint can each be defined by an angle
-adding one DOF each. This sums up to 7 DOF.
+The arc of ellipse has 2 additional DOF: start and endpoint can each be defined by an angle adding one DOF each. This sums up to 7 DOF.
 
-A hyperbola is again defined by two perpendicular lines---this time connected like a T---and
-two angles, which sums up to 7 DOF
+A hyperbola is again defined by two perpendicular lines---this time connected like a T---and two angles, which sums up to 7 DOF
 
-A parabola is defined by a line between focus and vertex with 4 DOF and two angles for the
-endpoints. This sums up to 6 DOF.
+A parabola is defined by a line between focus and vertex with 4 DOF and two angles for the endpoints. This sums up to 6 DOF.
 
 \subsection{Creating and using conical sections}
-Usage of conical sections is straight forward. There is one exception of special behaviour
-when using tangents which will be described below (see section \vref{ConicalTangent}).
+Usage of conical sections is straight forward. There is one exception of special behaviour when using tangents which will be described below (see section \vref{ConicalTangent}).
 \begin{itemize}
-\item You can use the construction lines (see section \vref{ConstructionGeometry}) for further
-      constraining your model.
+\item You can use the construction lines (see section \vref{ConstructionGeometry}) for further       constraining your model.
 \item You can use the curve in the same way as was described for circles and arcs:
       \begin{itemize}
       \item add tangency constraints between curve and lines
-      \item add point-to-point tangency between endpoints of conical arcs and
-            other geometric elements
-      \item add perpendicular constraints between endpoints of conical arcs
-            and other geometric elements
+      \item add point-to-point tangency between endpoints of conical arcs and             other geometric elements
+      \item add perpendicular constraints between endpoints of conical arcs             and other geometric elements
       \end{itemize}
 \end{itemize}
 
 \subsection{Tangency and perpendicular on conical sections}
 \label{ConicalTangent}
-If you want to create a tangency constraint between a conical section and another curve of
-type conical section, circle or arc you do so in the same way as usual: Select both curves and
-apply the constraint. However, the effect is slightly different:
+If you want to create a tangency constraint between a conical section and another curve of type conical section, circle or arc you do so in the same way as usual: Select both curves and apply the constraint. However, the effect is slightly different:
 
 \begin{itemize}
 \item An additional point is created;
@@ -1086,32 +964,20 @@ apply the constraint. However, the effect is slightly different:
 
 \img{scale=1}{ConicalTangent}
 
-The same technique is used to create a perpendicular constraint between a conical section and
-a line:
+The same technique is used to create a perpendicular constraint between a conical section and a line:
 
 \img{scale=1}{ConicalPerpendicular}
 
 \section{Construction Geometry}
 \label{ConstructionGeometry}
 \vbox{
-Construction geometry can be used when the geometry won't be used for creating
-further features but only to construct the sketch itself. We have used it
-ourselves already in exercise \vref{ExerciseConstruction}, and it is generated
-automatically e.\,g. when creating a polygon, see section \vref{polygon}.
+Construction geometry can be used when the geometry won't be used for creating further features but only to construct the sketch itself. We have used it ourselves already in exercise \vref{ExerciseConstruction}, and it is generated automatically e.\,g. when creating a polygon, see section \vref{polygon}.
 }
 
-Construction geometry comes in blue color to distinguish it from what I will call
-here "real" or "normal" geometry, which comes in white. You have two possibilities to
-create construction geometry:
+Construction geometry comes in blue color to distinguish it from what I will call here "real" or "normal" geometry, which comes in white. You have two possibilities to create construction geometry:
 \begin{itemize}
-\item By selecting a geometric element and clicking the toggle-construction-mode-icon
-      \icon{Sketcher_AlterConstruction} you can toggle between construction and real
-      geometry. That means you can also go the other way and turn construction
-      geometry into real geometry.
-\item If nothing is selected and you click toggle-construction-mode-icon
-      \icon{Sketcher_AlterConstruction}, all icons for creating geometry turn to blue
-      and you enter construction mode. In this mode all geometric elements are
-      construction elements.
+\item By selecting a geometric element and clicking the toggle-construction-mode-icon       \icon{Sketcher_AlterConstruction} you can toggle between construction and real       geometry. That means you can also go the other way and turn construction       geometry into real geometry.
+\item If nothing is selected and you click toggle-construction-mode-icon       \icon{Sketcher_AlterConstruction}, all icons for creating geometry turn to blue       and you enter construction mode. In this mode all geometric elements are       construction elements.
 
       To end this mode, hit the toggle-construction-mode-icon again.      
 \end{itemize}
@@ -1121,35 +987,29 @@ I frequently use construction geometry when I want to have equal distances to so
 outer border of a sketch
 
 \begin{Exercise}
-Create a non trivial sketch with an inner and outer border of equal distance between
-them.
+Create a non trivial sketch with an inner and outer border of equal distance between them.
 \end{Exercise}
 \hspace{\leftmargin}\img{width=0.78\textwidth}{ConstructionReady}
 
 To do so:
 \begin{itemize}
 \item Start with a fully constrained sketch of the outer border
-\item Add the inner border with the same structure. Your sketch will roughly look
-      like this
+\item Add the inner border with the same structure. Your sketch will roughly look 8      like this
 
       \img{width=0.75\textwidth}{ConstructionPrep}
 \item Switch to construction mode
-\item Add the construction lines. With autoconstraints on you can add horizontal,
-      vertical and point-on-object constraints during construction. If some are
-      missing, apply them after creation.
+\item Add the construction lines. With autoconstraints on you can add horizontal,       vertical and point-on-object constraints during construction. If some are       missing, apply them after creation.
 \item Apply an equality constraint between all construction lines.
 \item Add a horizontal or vertical distance constraint to one of the construction lines.
 \end{itemize}
 
-Construction geometry is added to the list of elements like all other geometry
-as well. The corresponding icons have blue dots at the ends instead of red.
+Construction geometry is added to the list of elements like all other geometry as well. The corresponding icons have blue dots at the ends instead of red.
 
 \img{scale=1}{ConstructionListOfElements}
 
 \section{Point}
 \label{Point}
-The point is a geometric element we havent discussed yet. It cannot be toggled
-between real and construction geometry, it is always construction.
+The point is a geometric element we havent discussed yet. It cannot be toggled between real and construction geometry, it is always construction.
 
 \begin{tabular}{|l|l|}
 \hline
@@ -1161,16 +1021,9 @@ Icon: & \icon{Sketcher_CreatePoint}\\
 
 The point can be constrained fixing the x and the y coordinate, thus having 2 DOF.
 
-The point serves only as construction geometry. It is not possible to construct a
-sketch containing only a point as real geometry. (That would be desirable for
-Lofts which end in a single point.) This holds for the current version
-of 0.19, it might change in the future. If you need such a point as real
-geometry you have to use Draft or Part workbench.
+The point serves only as construction geometry. It is not possible to construct a sketch containing only a point as real geometry. (That would be desirable for Lofts which end in a single point.) This holds for the current version of 0.19, it might change in the future. If you need such a point as real geometry you have to use Draft or Part workbench.
 
-Use the point to define the rest of the sketch in case a point is needed, but isn't
-given directly by the geometry. This can be e.g. the center of two rectangles,
-a certain point on a circle, etc. For an example see the slot exercise
-\vref{exerciseSlotOuter}.
+Use the point to define the rest of the sketch in case a point is needed, but isn't given directly by the geometry. This can be e.g. the center of two rectangles, a certain point on a circle, etc. For an example see the slot exercise \vref{exerciseSlotOuter}.
 
 \newpage
 
