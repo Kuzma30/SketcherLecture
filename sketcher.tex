@@ -790,14 +790,14 @@ MSOlsen65
 \item Примените другие ограничения, как и раньше.
 \end{itemize}
 
-\subsection*{Tilted Slots}
-The predefined slots are either horizontal or vertical. This is sensible because most slots are oriented like this and they can be created with just two clicks. However, if you need a tilted slot it can be achieved by simply deleting the horizontal/vertical constraint. This will of course add another DOF. In the image I 9have added already an angular constraint:
+\subsection*{Наклонные пазы}
+Предустановленные пазов могут быть горизонтальными или вертикальными. Это разумно, потому что большинство пазов ориентировано именно так, и их можно создать всего за два щелчка мышки. Однако, если вам нужен наклонный паз, этого можно добиться, просто удалив горизонтальное / вертикальное ограничение. Это добавит еще одну степень свободы. На изображении я уже добавил угловое ограничение:
 
 \label{SlotTilted}
 \img{}{SlotTilted}
 
 
-\section{B-splines}
+\section{B-сплайны}
 \begin{tabular}{|l|l|}
 \hline
 Icons: & \icon{Sketcher_CreateBSpline} open B-spline\\
@@ -807,28 +807,28 @@ Icons: & \icon{Sketcher_CreateBSpline} open B-spline\\
 \hline
 \end{tabular}
 
-Each control point is defined by a circle with 3 DOF.
+Каждая контрольная точка обозначена кружком с 3 степенями свободы.
 
-B-splines are curves which are used for smooth surfaces. They are determined by a set of control points, which themselves---except start and end---do not have to lie on the B-spline. Each control point has a weight, which determines how much the control point "attracts" the curve. B-splines often occur when you import Scalable Vector Graphics (SVG) files and apply Draft-to-Sketch. 
+B-сплайны - это кривые, которые используются для гладких поверхностей. Они определяются набором контрольных точек, которые сами - за исключением начала и конца - не должны лежать на B-сплайне. Каждая контрольная точка имеет вес, который определяет, насколько контрольная точка "притягивает" кривую. B-сплайны часто возникают, когда вы импортируете файлы масштабируемой векторной графики (SVG) и применяете Draft-to-Sketch.
 
-There are two variants of B-spline: 
+Есть 2 варианта B-слайнов: 
 \begin{description}
-\item [The open B-spline] \icon{Sketcher_CreateBSpline} has a start, which is       the first control point and an end, which is the last control point.
-\item [The closed B-spline] \icon{Sketcher_Create_Periodic_BSpline} is created       in the same way, but when creating ends, the B-spline's end is smoothly       connected with the start.
+\item [Открытый B-сплайн] \icon {Sketcher_CreateBSpline} имеет начало, которое является первой контрольной точкой, и конец, который является последней контрольной точкой.
+\item [Замкнутый B-сплайн] \icon {Sketcher_Create_Periodic_BSpline} создается таким же образом, но при создании  конец B-сплайна плавно соединяется с началом.
 \end{description}
 
 \vbox{\begin{Exercise}
-Create a B-spline with the following control points. The absolute distances between the points don't matter at the moment.
+Создайте B-сплайн со следующими контрольными точками. В данный момент абсолютные расстояния между точками  значения не имеют.
 
 \img{}{BSplineCreate}
 \end{Exercise}}
 
-Start at the left, add the upper control point and finally the right one. Finish the B-Spline creation with a right mouse button click or use the escape key. The B-spline is created with the same size for all circles around the control points. Please note that the B-spline is not shown until creation is completed.
+Начните слева, добавьте верхнюю контрольную точку и, наконец, правую. Завершите создание B-сплайна щелчком правой кнопки мыши или используйте клавишу ESC. B-сплайн создается с одинаковым размером для всех окружностей вокруг контрольных точек. Обратите внимание, что B-сплайн не отображается, пока создание не будет завершено.
 
-You have two possibilities to influence the shape of the B-spline with the upper control point (of course, the same possibilities exist for the other points too). 
+У вас есть две возможности повлиять на форму B-сплайна с помощью верхней контрольной точки (конечно, те же возможности существуют и для других точек).
 
 \begin{itemize}
-\item The position of the control point determines the direction and how much       the B-spline is deviated:
+\item Положение контрольной точки определяет направление и степень отклонения B-сплайна:
 %You can move the control point around.
 
 {\newcommand{\scale}{0.54}
@@ -838,26 +838,26 @@ You have two possibilities to influence the shape of the B-spline with the upper
 \hfill%
 \img{scale=\scale}{BSplineMoveRight}}
 
-You see how the curve is attracted by the control point. The ratio between the control point, the curve, and the other points remains approximately constant.
+Вы видите, как кривая притягивается контрольной точкой. Соотношение между контрольной точкой, кривой и другими точками остается примерно постоянным.
 
-\item The size of the circles around the control points determines how much       the curve is attracted. The bigger the circle the more is the B-spline       attracted. An infinite circle would attract it up to the       control point itself.
+\item Размер кружков вокруг контрольных точек определяет степень притяжения кривой. Чем больше круг, тем больше притягивается B-сплайн. Бесконечный круг притянет его к самой контрольной точке.
       
-      Before changing the size of a single control point you have to remove       the equality constraint.
+      Перед изменением размера отдельной контрольной точки необходимо удалить ограничение равенства.
 
 \img{}{BSplineBigCircle}
 \end{itemize}
 
-\subsection*{Typical constraints}
+\subsection*{Типичные ограничения}
 
-B-splines support all constraints seen so far on the control circles.
+B-сплайны поддерживают все ограничения, которые мы видели на контрольных кругах.
 
-It is not (yet) possible to use constraints like tangency or point-on-object in the curve of a B-spline but only on its endpoints; however, below you find some techniques how to simulate this.
+Невозможно (пока) использовать ограничения, такие как касание или точка на объекте, на кривой B-сплайна, а только на его конечных точках; однако ниже вы найдете некоторые методы, как это имитировать.
 
 \begin{description}
-\item [Block constraint.]
-While it is very sensible to use other than block constraints on the endpoints it might clutter the sketch with measures if you want to constrain all the control points in between.
+\item [Ограничение блока.]
+Хотя очень разумно использовать для конечных точек ограничения, отличные от ограничений блока, это может загромождать эскиз размерами, если вы хотите ограничить все контрольные точки между ними.
 
-Here it is sensible to use the block constraint on the B-spline. Make sure you have applied all other constraints before, because once the block constraint is applied nothing can be changed on any point of the B-spline.\footnote{As of v. \currentVersion{} the Sketcher doesn't report such overconstraints.}
+Здесь имеет смысл использовать блочное ограничение на B-сплайне. Убедитесь, что вы применили все другие ограничения раньше, потому что после применения ограничения блока ничего нельзя изменить в любой точке B-сплайна. \footnote {Начиная с v. \currentVersion {}, Sketcher не сообщает о таких сверхограничениях. }
 
 \newlength{\listWidth}
 \setlength{\listWidth}{\textwidth}
@@ -865,18 +865,17 @@ Here it is sensible to use the block constraint on the B-spline. Make sure you h
 \begin{minipage}{\listWidth}
 \begin{Exercise}
 \label{BSplineBlock}
-Create a B-spline according to the following image. The block constraint is aligned rather far on the left, but it belongs to the B-spline curve.
-
+Создайте B-сплайн, как показано на следующем рисунке. Ограничение блока выровнено довольно далеко слева, но оно принадлежит кривой B-сплайна.
 \img{}{BSplineBlock}
 \end{Exercise}
 \end{minipage}
 
-Before applying the block constraint specify the overall length (55\,mm), and adjust the size of the bigger circle (without setting it as constraint).
+Перед применением ограничения блока укажите общую длину (55 мм) и подберите размер большего круга (не устанавливая его как ограничение).
 
-\item [Tangent and Perpendicular Constraint on the endpoints.]Arcs and       lines---and with the help of a construction line even B-splines---can be       connected at their endpoints using tangent or perpendicular constraints.
+\item [Касательные и перпендикулярные ограничения на конечных точках.] Дуги и линии --- а с помощью вспомогательной линии даже B-сплайны --- могут быть соединены в их конечных точках с использованием касательных или перпендикулярных ограничений.
 
 \begin{Exercise}
-Remove the block constraint from exercise \vref{BSplineBlock}. Attach horizontal lines, tangential to the left, perpendicular to the right.
+Удалите ограничение блока из упражнения \vref {BSplineBlock}. Проведите горизонтальные линии, касательные слева, перпендикулярные справа.
 \end{Exercise}
 
 \hspace*{-\leftmargini}\img{scale=1}{BSplineTangent}%
@@ -889,37 +888,37 @@ Remove the block constraint from exercise \vref{BSplineBlock}. Attach horizontal
 \hfill%
 \img{scale=1}{BSplineTangentPerpendicular}%
 
-The last action would be to add the block constraint again.
+Последним действием снова добавьте ограничение блока.
 
 
-\item [Tangent Constraint on the curve.] It is currently not       possible to create a tangent on the inner part of a B-spline. The same       holds for points lying on the curve.
+\item [Ограничение касательной на кривой.] В настоящее время невозможно создать касательную на внутренней части B-сплайна. То же верно и для точек, лежащих на кривой.
       
-      As a workaround you have to create two B-splines and connect them       tangentially. That doesn't work directly either so you have to add a       construction line.
+       В качестве обходного пути вы должны создать два B-сплайна и соединить их по касательной. Это тоже не работает напрямую, поэтому вам нужно добавить вспомогательную линию.
       
-      \paragraph{Warning:} You will not get automatically exactly the same       curve as with a single B-spline, but you can get very close.
+       \paragraph {Предупреждение:} Вы не получите автоматически точно такую же кривую, как с одним B-сплайном, но вы можете подойти очень близко.
 
 \begin{Exercise}
-Based on exercise \vref{BSplineBlock} add a tangent to the top of the B-spline.
+На основе упражнения \vref {BSplineBlock} добавьте касательную к вершине B-сплайна.
 
 \img{}{BSplineInnerTangentAll}
 \end{Exercise}
 
-There are two B-splines involved:
+Здесь задействованы два B-сплайна:
 
 \img{width=0.43\textwidth}{BSplineInnerTangentLeft}\hfill\raisebox{15ex}{and}\hfill\img{width=0.43\textwidth}{BSplineInnerTangentRight}
 
-There are different possibilities to add the tangent:
+Есть разные возможности добавить касательную:
 \begin{itemize}
-\item You can place the endpoint and the control point next to it on the       tangent. That's what I have done in the example.
-\item You can use tangent point-to-point constraints on the endpoints.
+\item Вы можете разместить конечную точку и контрольную точку рядом с ней на касательной. Это то, что я сделал в примере.
+\item Вы можете использовать ограничения касательной точка-точка для конечных точек.
 \end{itemize}
 
-\item [Point-on-Object on the curve.] Create this in an analogous way as the tangent.
-\item [Perpendicular on the curve.]   Create this in an analogous way as the tangent.
+\item [Точка на объекте на кривой.] Создайте его аналогично касательной.
+\item [Перпендикуляр на кривой.] Создайте его аналогично касательной.
 \end{description}
 
 \pagebreak[3]
-\section{Conical sections}
+\section{Сечение конуса}
 You find the conical section in the dropdown menu of the icon \icon{Sketcher_Conics}. Once you have selected this icon is replaced with the last chosen selection.
 
 \begin{tabular}{|l|l|}
