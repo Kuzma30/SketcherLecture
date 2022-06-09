@@ -111,7 +111,8 @@ Before working through this lecture you should make yourself familiar with how t
 
 \subsection{Create Sketch from Sketcher workbench} In Sketcher workbench you can create a sketch from the menu:\\ Sketcher\menu Create sketch, but you will probably rather use the icon \icon{Sketcher_NewSketch}. Depending on the previous selection different things will happen.
 
-\begin{itemize} \item If nothing was selected you will be asked about the orientation of the sketch:
+\begin{itemize} 
+	\item If nothing was selected you will be asked about the orientation of the sketch:
 	
 	\img{scale=0.8}{Orientation}
 	
@@ -119,20 +120,39 @@ Before working through this lecture you should make yourself familiar with how t
 	
 	\item If you have selected a flat face, then the sketch is attached to that face, i.e. it is like sketching on that face.
 	
-	\item If you need more sophisticated placement options see section \ref{SketchPlacement}. \end{itemize} After clicking the OK button we enter Sketcher's edit mode, in short we "enter Sketcher".
+	\item If you need more sophisticated placement options see section \ref{SketchPlacement}. 
+
+\end{itemize}  
+After clicking the OK button we enter Sketcher's edit mode, in short we "enter Sketcher".
 
 
 \subsection{Create Sketch from PartDesign workbench} In PartDesign workbench you have the same icon \icon{Sketcher_NewSketch}, but as in PartDesign everything happens inside of a body, when you click it here, the following things can happen:
 
-\begin{itemize} \item If you don't have a body in your document, a new body is created, activated, and a new sketch is created inside the body. \item If you have exactly one body in your document, the body is activated and a new sketch is created inside the body. \item If an activated body exists, a new sketch is created inside that body. This is independent from the number of bodies in the document. \item If more than one body exists and none is activated an error message is shown, asking to activate a body. \end{itemize} In addition to this behavior, the following can happen depending on a previously made selection:
 
-\begin{itemize} \item If nothing is selected, a new panel is opened and you have to select the orientation of the new sketch either in the panel or in the 3D view to the right by selecting one of the principal planes. In the image XZ plane is preselected:
+\begin{itemize} 
+	\item If you don't have a body in your document, a new body is created, activated, and a new sketch is created inside the body. 
+	\item If you have exactly one body in your document, the body is activated and a new sketch is created inside the body. 
+	\item If an activated body exists, a new sketch is created inside that body. This is independent from the number of bodies in the document. 
+	\item If more than one body exists and none is activated an error message is shown, asking to activate a body. 
+\end{itemize}  In addition to this behavior, the following can happen depending on a previously made selection:
+
+
+\begin{itemize} 
+	\item If nothing is selected, a new panel is opened and you have to select the orientation of the new sketch either in the panel or in the 3D view to the right by selecting one of the principal planes. In the image XZ plane is preselected:
 	
 	\img{width=0.45\textwidth}{Origin}
 	
-	At this early stage, leave all the checkboxes unchecked and click Ok. \item If a face or plane inside the active or the only body is selected, the new sketch is attached to that face, i.e. it is like sketching on that face. \item If a face from outside the activated (or the only) body is selected a question is raised how to link the face.
+	At this early stage, leave all the checkboxes unchecked and click Ok. 
+	\item If a face or plane inside the active or the only body is selected, the new sketch is attached to that face, i.e. it is like sketching on that face. 
+	\item If a face from outside the activated (or the only) body is selected a question is raised how to link the face.
 	
-	I don't really recommend that workflow, I prefer to create the ShapeBinder myself for better control of the faces included. \begin{itemize} \item The option "Make independent copy" creates an unlinked ShapeBinder to which the sketch is attached. \item The option "Make dependent copy" creates a linked ShapeBinder to which the sketch is attached. If you change the other object the ShapeBinder will follow. \item The option "Create crossreference" creates a forbidden link (message: {\em Links go out of the allowed scope}). I do not recommend to use this option at all. \end{itemize} \end{itemize}
+	I don't really recommend that workflow, I prefer to create the ShapeBinder myself for better control of the faces included. 
+\begin{itemize} 
+	\item The option "Make independent copy" creates an unlinked ShapeBinder to which the sketch is attached. 
+	\item The option "Make dependent copy" creates a linked ShapeBinder to which the sketch is attached. If you change the other object the ShapeBinder will follow. 
+	\item The option "Create crossreference" creates a forbidden link (message: {\em Links go out of the allowed scope}). I do not recommend to use this option at all. 
+\end{itemize}  
+\end{itemize} 
 
 You now enter Sketcher.
 
@@ -157,15 +177,26 @@ You now enter Sketcher.
 			\put(7,-7){Sketcher panel} \put(10,-4){\vector(0,1){3}} \end{overpic}%
 		\vspace{6ex} } }
 
-\begin{description} \item [3D view.] Sketches are edited in the 3D view. Nevertheless sketches are strictly 2D. \item [The Sketcher Panel.] At the left side you see the Sketcher panel in the Combo View. If necessary you can switch to the Tree View and back.
+\begin{description} 
+	\item [3D view.] Sketches are edited in the 3D view. Nevertheless sketches are strictly 2D. 
+	\item [The Sketcher Panel.] At the left side you see the Sketcher panel in the Combo View. If necessary you can switch to the Tree View and back.
 	
-	There are different regions (or "widgets") in the panel controlling and displaying additional information about the sketch. You can collapse or expand solver messages, edit controls, constraints and elements. \item [The Close button.] Located at the top, it ends the Sketcher editing session. \item [Solver messages.] Below the close button you see the solver messages showing "Empty sketch" until you add some elements to your sketch.
+	There are different regions (or "widgets") in the panel controlling and displaying additional information about the sketch. You can collapse or expand solver messages, edit controls, constraints and elements. 
+	\item [The Close button.] Located at the top, it ends the Sketcher editing session. 
+	\item [Solver messages.] Below the close button you see the solver messages showing "Empty sketch" until you add some elements to your sketch.
 	
-	The Solver Messages area is very important and I advise you \emph{not} to collapse it. Instead, pay almost constant attention to it. \item [The grid.]\label{GridSnap} For now open the "Edit controls" and uncheck the "Show grid" checkbox. Although the grid can be helpful when placing geometric elements, it is important to know this: \begin{itemize} \item In Sketcher geometric elements placed at grid intersections are never secured to the grid; they may move off the grid intersections if constraints are applied. \item Separate pieces of geometry that share a point at the same grid snap location are not secured to one another, and they may move apart unexpectedly until a Constraint is applied between those shared points. \end{itemize}
+	The Solver Messages area is very important and I advise you \emph{not} to collapse it. Instead, pay almost constant attention to it. 
+	\item [The grid.]\label{GridSnap} For now open the "Edit controls" and uncheck the "Show grid" checkbox. Although the grid can be helpful when placing geometric elements, it is important to know this: 
+\begin{itemize} 
+	\item In Sketcher geometric elements placed at grid intersections are never secured to the grid; they may move off the grid intersections if constraints are applied. 
+	\item Separate pieces of geometry that share a point at the same grid snap location are not secured to one another, and they may move apart unexpectedly until a Constraint is applied between those shared points. 
+\end{itemize} 
 	
 	If you have ”Grid snap” enabled it might {\em seem} that snapped points have their positions already defined by the grid intersection, when in fact they are free to move. So I prefer to have it switched off to avoid confusion.
 	
-	\item [The list of Constraints.] This will be discussed later in this section. Leave the checkboxes as they are, i.\,e. Filter set to All, "Hide Internal Alignment" checked, "Extended Information" unchecked. \item [The list of Elements.] This will also be discussed later in this section. \item [Sketcher Geometries tools.] They are used to create points, lines, arcs, and other geometries. You get the same list as a context menue if you click with the right mouse button on an empty spot in the 3D view:
+	\item [The list of Constraints.] This will be discussed later in this section. Leave the checkboxes as they are, i.\,e. Filter set to All, "Hide Internal Alignment" checked, "Extended Information" unchecked. 
+	\item [The list of Elements.] This will also be discussed later in this section. 
+	\item [Sketcher Geometries tools.] They are used to create points, lines, arcs, and other geometries. You get the same list as a context menue if you click with the right mouse button on an empty spot in the 3D view:
 	
 	\hspace*{-\leftmargini}\img{width=\textwidth}{GeomElements}
 	
@@ -179,7 +210,14 @@ You can think about it as how many x and y measures you need to lock every point
 
 \pagebreak[3] \begin{Exercise} Create a diagonal line where none of the endpoints lies on the X or Y axis. \end{Exercise}
 
-To do so \begin{itemize} \item Click the CreateLine icon \icon{Sketcher_CreateLine}. You see now near to the cursor a small red line symbol. \item Click where you want to place the first point. \item Move the mouse. \item Click where you want to place the second point. \item Click the right mouse button to leave the line creation mode. This behaviour can be configured in Preferences\menu Sketcher\menu General\menu Geometry Creation "Continue Mode". \end{itemize}
+To do so 
+\begin{itemize} 
+	\item Click the CreateLine icon \icon{Sketcher_CreateLine}. You see now near to the cursor a small red line symbol. 
+	\item Click where you want to place the first point. 
+	\item Move the mouse. 
+	\item Click where you want to place the second point. 
+	\item Click the right mouse button to leave the line creation mode. This behaviour can be configured in Preferences\menu Sketcher\menu General\menu Geometry Creation "Continue Mode". 
+\end{itemize} 
 
 Now solver messages and 3D view should look like this:
 
@@ -191,9 +229,16 @@ At the right side you see the line in the 3D view, at the left you see the solve
 
 \begin{Exercise} \label{ExerciseHorizontalDistance} Add a horizontal distance constraint to the left lower point. \end{Exercise}
 
-To do so \begin{itemize} \item Move the mouse over the left lower point until it is highlighted yellow. It is now as we say preselected, i.e. you \emph{can} select it. \item Click the left mouse button to select the point, it becomes dark green. \item Click the horizontal distance constraint icon \icon{Constraint_HorizontalDistance}. This creates a constraint between the origin and the selected point. The proposed value is the current distance. \item Enter the value which you want to have and confirm. In my case the current value was 24 which I am about to change to 25\,mm.
+To do so 
+\begin{itemize} 
+	\item Move the mouse over the left lower point until it is highlighted yellow. It is now as we say preselected, i.e. you \emph{can} select it. 
+	\item Click the left mouse button to select the point, it becomes dark green. 
+	\item Click the horizontal distance constraint icon \icon{Constraint_HorizontalDistance}. This creates a constraint between the origin and the selected point. The proposed value is the current distance. 
+	\item Enter the value which you want to have and confirm. In my case the current value was 24 which I am about to change to 25\,mm.
 	
-	\img{width=0.92\textwidth}{Horizontal} \item Confirm with Ok. \end{itemize}
+	\img{width=0.92\textwidth}{Horizontal} 
+	\item Confirm with Ok. 
+\end{itemize} 
 
 Looking at the solver messages you see that the DOF have changed from 4 to 3:
 
@@ -213,9 +258,19 @@ These simple constraints reduce the number of DOF by one, but there are more sop
 
 \begin{Exercise} \label{ExerciseCoincidence} Add a coincidence constraint between the right upper end of the line and the origin. \end{Exercise}
 
-To do so \begin{itemize} \item Select the right upper endpoint as you have done with the other point before, it turns dark green. \item Select the origin. You can do this by simply clicking as before, without holding any additional key. We call this "greedy selection". \item Click the coincidence constraint icon \icon{Constraint_PointOnPoint}. \end{itemize}
+To do so 
+\begin{itemize} 
+	\item Select the right upper endpoint as you have done with the other point before, it turns dark green. 
+	\item Select the origin. You can do this by simply clicking as before, without holding any additional key. We call this "greedy selection". 
+	\item Click the coincidence constraint icon \icon{Constraint_PointOnPoint}. 
+\end{itemize} 
 
-Now three things have happened: \begin{itemize} \item The right upper point has moved to the origin. \item The solver reports "Fully constrained sketch". This is good; you should always fully constrain your sketches. There are very few exceptions to this rule. \item The sketch turned from white to light green. \end{itemize}
+Now three things have happened: 
+\begin{itemize} 
+	\item The right upper point has moved to the origin. 
+	\item The solver reports "Fully constrained sketch". This is good; you should always fully constrain your sketches. There are very few exceptions to this rule. 
+	\item The sketch turned from white to light green. 
+\end{itemize} 
 
 This is how it looks like now:
 
@@ -234,19 +289,31 @@ This is how it looks like now:
 	
 	\img{width=0.56\textwidth}{AutoConstraintsOn} \end{Exercise}
 
-Now create another line in the following way: \begin{itemize} \item Click the CreateLine icon \icon{Sketcher_CreateLine} \item Move the mouse over the right upper point of the existing line. The point turns yellow (hard to see, due to the red constraint lines) and besides the line symbol there occurs an additional point near the cursor.
+Now create another line in the following way: 
+\begin{itemize} 
+	\item Click the CreateLine icon \icon{Sketcher_CreateLine} 
+	\item Move the mouse over the right upper point of the existing line. The point turns yellow (hard to see, due to the red constraint lines) and besides the line symbol there occurs an additional point near the cursor.
 	
-	\img{}{Auto1} \item Click left mouse button \item Move the cursor horizontally to the right \item Below the line appears a red marker indicating that a horizontal constraint can be applied.
+	\img{}{Auto1} 
+	\item Click left mouse button 
+	\item Move the cursor horizontally to the right 
+	\item Below the line appears a red marker indicating that a horizontal constraint can be applied.
 	
-	\img{}{Auto2} \item Click to create the line. \end{itemize}
+	\img{}{Auto2} 
+	\item Click to create the line. 
+\end{itemize} 
 
 The sketch has turned white again because it is no longer fully constrained and above the horizontal line you see a small horizontal red line indicating that this line has a horizontal constraint.
 
 \label{auto3} \img{}{Auto3}
 
-\begin{itemize} \item The solver reports 1 DOF remaining. \item The list of elements now shows two lines. Hover over the list entries and watch the corresponding elements turning yellow in 3D view. \item The list of constraints shows 5 constraints, the last two have been created automatically.
+
+\begin{itemize} 
+	\item The solver reports 1 DOF remaining. 
+	\item The list of elements now shows two lines. Hover over the list entries and watch the corresponding elements turning yellow in 3D view. \item The list of constraints shows 5 constraints, the last two have been created automatically.
 	
-	\img{}{ListConstraintsAuto} \end{itemize}
+	\img{}{ListConstraintsAuto} 
+\end{itemize} 
 
 \subsection{Auto Constraints Off} \vbox{ Delete the horizontal line, the sketch turns green again.
 	
@@ -258,7 +325,9 @@ The sketch has turned white again because it is no longer fully constrained and 
 
 The result looks almost the same, the only difference in 3D view is that the horizontal constraint indicator is missing. The difference shows in the DOF, the list of constraints, and, of course, in the behaviour:
 
-\begin{itemize} \item The solver reports 4 DOF. \item The list of constraints is identical to the state with only one line. \item Grab one of the endpoints and move it up and down. The other point will keep its position, horizontally and vertically. \end{itemize}
+
+\begin{itemize} \item The solver reports 4 DOF. \item The list of constraints is identical to the state with only one line. \item Grab one of the endpoints and move it up and down. The other point will keep its position, horizontally and vertically. 
+\end{itemize} 
 
 You can add the constraints manually thus leading to the same sketch as we had with auto constraints enabled.
 
@@ -266,7 +335,9 @@ You can add the constraints manually thus leading to the same sketch as we had w
 
 
 %\vspace{3ex}
-{\bf General rules:} You now know the very basic handling of Sketcher and should have learned the following {\em\begin{itemize} \item Adding a geometric element increases the number of DOF. \item Adding a constraint reduces the number of DOF. \end{itemize} }
+{\bf General rules:} You now know the very basic handling of Sketcher and should have learned the following {\em
+\begin{itemize} \item Adding a geometric element increases the number of DOF. \item Adding a constraint reduces the number of DOF. 
+\end{itemize}  }
 
 \newpage
 
@@ -336,9 +407,12 @@ Creation of circles comes in two flavors. As soon as the circle is created there
 	If you have auto constraints enabled you can select an existing point with a mouse click which will create a point-on-object constraint. \item To choose the alternative creation mode click the small triangle right of the create circle icon and choose \icon{Sketcher_Create3PointCircle}. Now you can click three points in 3D view which will all lie on the circle. This creation mode will now be the default during your FreeCAD session until it is changed again. \end{enumerate}
 
 
-\subsection*{Typical constraints} \begin{description} \item [Positioning the center] can be achieved by any method used for positioning a point, this includes, of course, coincidence, horizontal and vertical distance. \item [Radius/Diameter] Select the circle and apply a radius constraint \icon{Constraint_Radius}.
+\subsection*{Typical constraints} \begin{description} 
+\item [Positioning the center] can be achieved by any method used for positioning a point, this includes, of course, coincidence, horizontal and vertical distance. 
+\item [Radius/Diameter] Select the circle and apply a radius constraint \icon{Constraint_Radius}.
 	
-	If you want to use the diameter instead, select from the radius icon's drop down menu the diameter icon \icon{Constraint_Diameter}. The diameter is often used for circles, while the radius is more often used for arcs. \item [Equality] Select two circles, or a circle and an arc and click the icon \icon{Constraint_EqualLength}
+	If you want to use the diameter instead, select from the radius icon's drop down menu the diameter icon \icon{Constraint_Diameter}. The diameter is often used for circles, while the radius is more often used for arcs. 
+\item [Equality] Select two circles, or a circle and an arc and click the icon \icon{Constraint_EqualLength}
 	
 	\img{}{EqualCircle}
 	
@@ -346,17 +420,22 @@ Creation of circles comes in two flavors. As soon as the circle is created there
 	
 	Please note that equality between circle and a line is not possible, unless you use so called \emph{Expressions}, a subject out of scope here; see also the remark on arc length on page \pageref{arclength}.
 	
-	{\footnotesize Mathematical sidenote: To calculate the length of a circle was one of the most prominent challenges in mathematics since ancient times. Nowadays it is proven that it is not solvable with finite precision.} \item [Point-on-Object] If you want to fix a point onto the circle, e.g. the endpoint of a line, you can select the circle and the endpoint, and apply a point-on object constraint by clicking \icon{Constraint_PointOnObject}.
+	{\footnotesize Mathematical sidenote: To calculate the length of a circle was one of the most prominent challenges in mathematics since ancient times. Nowadays it is proven that it is not solvable with finite precision.} 
+\item [Point-on-Object] If you want to fix a point onto the circle, e.g. the endpoint of a line, you can select the circle and the endpoint, and apply a point-on object constraint by clicking \icon{Constraint_PointOnObject}.
 	
 	\img{}{PointOnCircle}
 	
-	Please note, that the sketch as it is shown here, can neither be padded nor pocketed for two reasons: The sketch is not a closed shape and it has this junction of three lines in one point. We call this situation a \emph{self-intersection}. \item [Tangency] There are usually two possibilities to create a tangency on a circle. Therefore you should move all circles, lines or arcs involved as close as reasonably possible to their respective final positions, \emph{before} you apply a tangency constraint.
+	Please note, that the sketch as it is shown here, can neither be padded nor pocketed for two reasons: The sketch is not a closed shape and it has this junction of three lines in one point. We call this situation a \emph{self-intersection}. 
+\item [Tangency] There are usually two possibilities to create a tangency on a circle. Therefore you should move all circles, lines or arcs involved as close as reasonably possible to their respective final positions, \emph{before} you apply a tangency constraint.
 	
-	Tangency can be applied in two different ways to a circle. \begin{itemize} \item The endpoint of a line or arc can lie on the circle. Then select the circle and the endpoint and apply the tangency constraint \icon{Constraint_Tangent}.
+	Tangency can be applied in two different ways to a circle. 
+\begin{itemize} 
+\item The endpoint of a line or arc can lie on the circle. Then select the circle and the endpoint and apply the tangency constraint \icon{Constraint_Tangent}.
 		
 		\img{}{TangencyCirclePoint}
 		
-		I should mention again, that this example can neither be padded nor pocketed due to the self-intersection and lack of closed shape. \item The circle touches another circle, arc or a line. Select the circle and the line or arc---Note the difference to the above; do not select a point!---and apply the tangency with \icon{Constraint_Tangent}.
+		I should mention again, that this example can neither be padded nor pocketed due to the self-intersection and lack of closed shape. 
+\item The circle touches another circle, arc or a line. Select the circle and the line or arc---Note the difference to the above; do not select a point!---and apply the tangency with \icon{Constraint_Tangent}.
 		
 		In this example I have done so twice, once on the X and once on the Y axis:
 		
@@ -364,7 +443,8 @@ Creation of circles comes in two flavors. As soon as the circle is created there
 		
 		This kind of tangency can even be applied between a line and a circle without them actually touching one another:
 		
-		\img{}{CircleTangentNoTouch} \end{itemize} \end{description}
+		\img{}{CircleTangentNoTouch} 
+\end{itemize}  \end{description}
 
 \pagebreak
 
@@ -378,7 +458,11 @@ To center the squares we use the symmetry constraint: select the left lower corn
 
 This flange cannot be padded in the way it is now, because there are intersections between the inner square and the small holes. We don't need the inner square for the pad anyway, it is needed only for the construction of the sketch. So we turn the inner square into construction lines:
 
-\begin{itemize} \item Select the four sides of the inner square. \item Click the toggle-construction-mode-icon \icon{Sketcher_AlterConstruction}. \end{itemize} Now the inner square has changed its color to blue indicating that these are construction lines, which don't contribute to any sketch-based features, such as pads or pockets.
+
+\begin{itemize} 
+\item Select the four sides of the inner square. 
+\item Click the toggle-construction-mode-icon \icon{Sketcher_AlterConstruction}. 
+\end{itemize}  Now the inner square has changed its color to blue indicating that these are construction lines, which don't contribute to any sketch-based features, such as pads or pockets.
 
 \img{width=0.8\textwidth}{FlangeSquareConstruction}
 
@@ -393,14 +477,22 @@ Close Sketcher and click the pad icon \icon{PartDesign_Pad}. This will create th
 
 An arc can be defined by the position of its center with 2 DOF, the radius with one DOF, and an angle for each of the arc's endpoints which sums up to 5 DOF.
 
-Like with circles the creation of arcs comes in two flavors. As soon as the arc is created there is no difference between the two methods. \begin{enumerate} \item The default method starts with the center and then adds the radius: After clicking \icon{Sketcher_CreateArc} click in the 3D view at the position where you want to have the center of the circle. Move the mouse and watch the radius follow the mouse. Click for the first point of the arc. Move the mouse again and click for the second point of the arc.
+Like with circles the creation of arcs comes in two flavors. As soon as the arc is created there is no difference between the two methods. \begin{enumerate} 
+\item The default method starts with the center and then adds the radius: After clicking \icon{Sketcher_CreateArc} click in the 3D view at the position where you want to have the center of the circle. Move the mouse and watch the radius follow the mouse. Click for the first point of the arc. Move the mouse again and click for the second point of the arc.
 	
-	If you have autoconstraints on you can select existing points which will create coincidence constraints. \item To choose the alternative creation mode click the small triangle right of the create arc icon and choose \icon{Sketcher_Create3PointArc}. Now the first and second click define start and end of the arc while the third click is an arbitrary point on the arc defining the radius. This creation mode will now be the default during your FreeCAD session until it is changed again. \end{enumerate}
+	If you have autoconstraints on you can select existing points which will create coincidence constraints. 
+\item To choose the alternative creation mode click the small triangle right of the create arc icon and choose \icon{Sketcher_Create3PointArc}. Now the first and second click define start and end of the arc while the third click is an arbitrary point on the arc defining the radius. This creation mode will now be the default during your FreeCAD session until it is changed again. \end{enumerate}
 
 
-\subsection*{Typical constraints} \begin{description} \item [Positioning the Center,] {\bf Radius, Equality, Point-on-Object} behave like they do with circles \item [Tangency] The two modes described for circles exist for arcs as well. But there is an additional, most important mode to create tangency on the endpoints, which is called a \emph{smooth joint} .
+\subsection*{Typical constraints} \begin{description} 
+\item [Positioning the Center,] {\bf Radius, Equality, Point-on-Object} behave like they do with circles 
+\item [Tangency] The two modes described for circles exist for arcs as well. But there is an additional, most important mode to create tangency on the endpoints, which is called a \emph{smooth joint} .
 	
-	Select one of the endpoints of the arc and the endpoint of a line or another arc. If you now apply a tangency constraint two things happen: \begin{itemize} \item the elements are made tangential \item the points are made coincident. \end{itemize} \end{description}
+	Select one of the endpoints of the arc and the endpoint of a line or another arc. If you now apply a tangency constraint two things happen: 
+\begin{itemize} 
+\item the elements are made tangential 
+\item the points are made coincident. 
+\end{itemize}  \end{description}
 
 \vbox{ \begin{Exercise} % comment for translators on the first mandatory space: it is inserted to
 		% slightly improve the clumsy linebreak at the end of the line
@@ -438,7 +530,17 @@ The polyline always starts with a straight line segment: click - move the mouse 
 
 Move the mouse again. After placing the first line segment, the Sketcher polyline tool has multiple modes that can be toggled with the M key. For example you can draw tangent or perpendicular arcs following a line or arc segment. Repeatedly pressing the M key toggles through the following different modes. The numbers of DOF are given ignoring auto constraints, which can reduce the DOF further e.g. by applying an additional horizontal constraint.
 
-\begin{itemize} \label{PolylineMKey} \item Without pressing the M key a line with only the coincidence constraint is added. This adds 2 DOF for the new endpoint. \item Press the M key: the new segment is a line which is perpendicular to the previous segment. This adds 1 DOF. \item Press the M key again: the new segment is a line which is tangential to the previous segment. This adds 1 DOF. \item Press the M key again: the new segment is an arc which is tangential to the previous segment. This adds 2 DOF. \item Press the M key again: the new segment is an arc which is perpendicular (left) to the previous segment. This adds 2 DOF. \item Press the M key again: the new segment is an arc which is perpendicular(right) to the previous segment. This adds 2 DOF. \item Press the M key again: You are again in the state where you started; the line is only connected with a coincidence to the previous segment. \item While in any of the arc modes, holding down the CTRL key (MacOS: CMD key) and moving the cursor causes the arc to snap by increments of 45 degrees, relative to the previously created polyline segment. In this case only 1 DOF is added instead of 2 because an angle constraint is automatically set. \end{itemize}
+
+\begin{itemize} \label{PolylineMKey} 
+\item Without pressing the M key a line with only the coincidence constraint is added. This adds 2 DOF for the new endpoint. 
+\item Press the M key: the new segment is a line which is perpendicular to the previous segment. This adds 1 DOF. 
+\item Press the M key again: the new segment is a line which is tangential to the previous segment. This adds 1 DOF. 
+\item Press the M key again: the new segment is an arc which is tangential to the previous segment. This adds 2 DOF. 
+\item Press the M key again: the new segment is an arc which is perpendicular (left) to the previous segment. This adds 2 DOF. 
+\item Press the M key again: the new segment is an arc which is perpendicular(right) to the previous segment. This adds 2 DOF. 
+\item Press the M key again: You are again in the state where you started; the line is only connected with a coincidence to the previous segment. 
+\item While in any of the arc modes, holding down the CTRL key (MacOS: CMD key) and moving the cursor causes the arc to snap by increments of 45 degrees, relative to the previously created polyline segment. In this case only 1 DOF is added instead of 2 because an angle constraint is automatically set. 
+\end{itemize} 
 
 \vbox{ \begin{Exercise} Create the following sketch using Polyline and the M key. All arcs including the 45\degree{} ones have the same radius. The long lines are equal. All short lines including the 45\degree{} ones at the right have the same length.
 		
@@ -488,11 +590,20 @@ Creating a slot starts with a click in the center of one half circle. The next c
 		
 		\img{width=0.85\textwidth}{slotExerciseOuter} \end{Exercise} This sketch is not yet fully constrained, it misses the overall positioning in x and y. }
 
-To create the sketch: \begin{itemize} \item Create rectangle and slot as before. \item Create a point and place it with a point-on-object constraint on one of the arcs. It is best to place it already near its final position. If you have autoconstraints enabled you can do this in one step.
+To create the sketch: 
+\begin{itemize} 
+\item Create rectangle and slot as before. 
+\item Create a point and place it with a point-on-object constraint on one of the arcs. It is best to place it already near its final position. If you have autoconstraints enabled you can do this in one step.
 	
-	\img{}{slotPointOnArc} \item Do the same for the other arc. \item Select the new point and the center of the arc and apply a horizontal constraint. The image shows the situation after having applied the constraint. I have selected the elements involved, they show in green.
+	\img{}{slotPointOnArc} 
+\item Do the same for the other arc. 
+\item Select the new point and the center of the arc and apply a horizontal constraint. The image shows the situation after having applied the constraint. I have selected the elements involved, they show in green.
 	
-	\img{}{slotPointOnArcAfter} \item Do the same for the other arc. \item Apply a horizontal distance constraint on the outer points. \item Apply the other constraints as before. \end{itemize}
+	\img{}{slotPointOnArcAfter} 
+\item Do the same for the other arc. 
+\item Apply a horizontal distance constraint on the outer points. 
+\item Apply the other constraints as before. 
+\end{itemize} 
 
 \subsection*{Tilted Slots} The predefined slots are either horizontal or vertical. This is sensible because most slots are oriented like this and they can be created with just two clicks. However, if you need a tilted slot it can be achieved by simply deleting the horizontal/vertical constraint. This will of course add another DOF. In the image I have added already an angular constraint:
 
@@ -505,7 +616,9 @@ Each control point is defined by a circle with 3 DOF.
 
 B-splines are curves which are used for smooth surfaces. They are determined by a set of control points, which themselves---except start and end---do not have to lie on the B-spline. Each control point has a weight, which determines how much the control point "attracts" the curve. B-splines often occur when you import Scalable Vector Graphics (SVG) files and apply Draft-to-Sketch.
 
-There are two variants of B-spline: \begin{description} \item [The open B-spline] \icon{Sketcher_CreateBSpline} has a start, which is the first control point and an end, which is the last control point. \item [The closed B-spline] \icon{Sketcher_Create_Periodic_BSpline} is created in the same way, but when creating ends, the B-spline's end is smoothly connected with the start. \end{description}
+There are two variants of B-spline: \begin{description} 
+\item [The open B-spline] \icon{Sketcher_CreateBSpline} has a start, which is the first control point and an end, which is the last control point. 
+\item [The closed B-spline] \icon{Sketcher_Create_Periodic_BSpline} is created in the same way, but when creating ends, the B-spline's end is smoothly connected with the start. \end{description}
 
 \vbox{\begin{Exercise} Create a B-spline with the following control points. The absolute distances between the points don't matter at the moment.
 		
@@ -515,7 +628,9 @@ Start at the left, add the upper control point and finally the right one. Finish
 
 You have two possibilities to influence the shape of the B-spline with the upper control point (of course, the same possibilities exist for the other points too).
 
-\begin{itemize} \item The position of the control point determines the direction and how much the B-spline is deviated: %You can move the control point around.
+
+\begin{itemize} 
+\item The position of the control point determines the direction and how much the B-spline is deviated: %You can move the control point around.
 	
 	{\newcommand{\scale}{0.54} \hspace*{-0.8\leftmargini}\img{scale=\scale}{BSplineMoveUp}%
 		\hfill%
@@ -525,11 +640,13 @@ You have two possibilities to influence the shape of the B-spline with the upper
 	
 	You see how the curve is attracted by the control point. The ratio between the control point, the curve, and the other points remains approximately constant.
 	
-	\item The size of the circles around the control points determines how much the curve is attracted. The bigger the circle the more is the B-spline attracted. An infinite circle would attract it up to the control point itself.
+	
+\item The size of the circles around the control points determines how much the curve is attracted. The bigger the circle the more is the B-spline attracted. An infinite circle would attract it up to the control point itself.
 	
 	Before changing the size of a single control point you have to remove the equality constraint.
 	
-	\img{}{BSplineBigCircle} \end{itemize}
+	\img{}{BSplineBigCircle} 
+\end{itemize} 
 
 \subsection*{Typical constraints}
 
@@ -537,7 +654,8 @@ B-splines support all constraints seen so far on the control circles.
 
 It is not (yet) possible to use constraints like tangency or point-on-object in the curve of a B-spline but only on its endpoints; however, below you find some techniques how to simulate this.
 
-\begin{description} \item [Block constraint.] While it is very sensible to use other than block constraints on the endpoints it might clutter the sketch with measures if you want to constrain all the control points in between.
+\begin{description} 
+\item [Block constraint.] While it is very sensible to use other than block constraints on the endpoints it might clutter the sketch with measures if you want to constrain all the control points in between.
 	
 	Here it is sensible to use the block constraint on the B-spline. Make sure you have applied all other constraints before, because once the block constraint is applied nothing can be changed on any point of the B-spline.\footnote{As of v. \currentVersion{} the Sketcher doesn't report such overconstraints.}
 	
@@ -547,7 +665,8 @@ It is not (yet) possible to use constraints like tangency or point-on-object in 
 	
 	Before applying the block constraint specify the overall length (55\,mm), and adjust the size of the bigger circle (without setting it as constraint).
 	
-	\item [Tangent and Perpendicular Constraint on the endpoints.]Arcs and lines---and with the help of a construction line even B-splines---can be connected at their endpoints using tangent or perpendicular constraints.
+	
+\item [Tangent and Perpendicular Constraint on the endpoints.]Arcs and lines---and with the help of a construction line even B-splines---can be connected at their endpoints using tangent or perpendicular constraints.
 	
 	\begin{Exercise} Remove the block constraint from exercise \vref{BSplineBlock}. Attach horizontal lines, tangential to the left, perpendicular to the right. \end{Exercise}
 	
@@ -563,7 +682,8 @@ It is not (yet) possible to use constraints like tangency or point-on-object in 
 	The last action would be to add the block constraint again.
 	
 	
-	\item [Tangent Constraint on the curve.] It is currently not possible to create a tangent on the inner part of a B-spline. The same holds for points lying on the curve.
+	
+\item [Tangent Constraint on the curve.] It is currently not possible to create a tangent on the inner part of a B-spline. The same holds for points lying on the curve.
 	
 	As a workaround you have to create two B-splines and connect them tangentially. That doesn't work directly either so you have to add a construction line.
 	
@@ -577,9 +697,15 @@ It is not (yet) possible to use constraints like tangency or point-on-object in 
 	
 	\img{width=0.43\textwidth}{BSplineInnerTangentLeft}\hfill\raisebox{15ex}{and}\hfill\img{width=0.43\textwidth}{BSplineInnerTangentRight}
 	
-	There are different possibilities to add the tangent: \begin{itemize} \item You can place the endpoint and the control point next to it on the tangent. That's what I have done in the example. \item You can use tangent point-to-point constraints on the endpoints. \end{itemize}
+	There are different possibilities to add the tangent: 
+\begin{itemize} 
+\item You can place the endpoint and the control point next to it on the tangent. That's what I have done in the example. 
+\item You can use tangent point-to-point constraints on the endpoints. 
+\end{itemize} 
 	
-	\item [Point-on-Object on the curve.] Create this in an analogous way as the tangent. \item [Perpendicular on the curve.]   Create this in an analogous way as the tangent. \end{description}
+	
+\item [Point-on-Object on the curve.] Create this in an analogous way as the tangent. 
+\item [Perpendicular on the curve.]   Create this in an analogous way as the tangent. \end{description}
 
 \pagebreak[3] \section{Conical sections} You find the conical section in the dropdown menu of the icon \icon{Sketcher_Conics}. Once you have selected this icon is replaced with the last chosen selection.
 
@@ -593,11 +719,25 @@ A hyperbola is again defined by two perpendicular lines---this time connected li
 
 A parabola is defined by a line between focus and vertex with 4 DOF and two angles for the endpoints. This sums up to 6 DOF.
 
-\subsection{Creating and using conical sections} Usage of conical sections is straight forward. There is one exception of special behaviour when using tangents which will be described below (see section \vref{ConicalTangent}). \begin{itemize} \item You can use the construction lines (see section \vref{ConstructionGeometry}) for further constraining your model. \item You can use the curve in the same way as was described for circles and arcs: \begin{itemize} \item add tangency constraints between curve and lines \item add point-to-point tangency between endpoints of conical arcs and other geometric elements \item add perpendicular constraints between endpoints of conical arcs and other geometric elements \end{itemize} \end{itemize}
+\subsection{Creating and using conical sections} Usage of conical sections is straight forward. There is one exception of special behaviour when using tangents which will be described below (see section \vref{ConicalTangent}). 
+\begin{itemize} 
+\item You can use the construction lines (see section \vref{ConstructionGeometry}) for further constraining your model. 
+\item You can use the curve in the same way as was described for circles and arcs: 
+\begin{itemize} 
+\item add tangency constraints between curve and lines 
+\item add point-to-point tangency between endpoints of conical arcs and other geometric elements 
+\item add perpendicular constraints between endpoints of conical arcs and other geometric elements 
+\end{itemize}  
+\end{itemize} 
 
 \subsection{Tangency and perpendicular on conical sections} \label{ConicalTangent} If you want to create a tangency constraint between a conical section and another curve of type conical section, circle or arc you do so in the same way as usual: Select both curves and apply the constraint. However, the effect is slightly different:
 
-\begin{itemize} \item An additional point is created; \item This point is placed on both curves with two point-on-object constraints; \item A tangency constraint is created. \end{itemize}
+
+\begin{itemize} 
+\item An additional point is created; 
+\item This point is placed on both curves with two point-on-object constraints; 
+\item A tangency constraint is created. 
+\end{itemize} 
 
 \img{scale=1}{ConicalTangent}
 
@@ -607,18 +747,30 @@ The same technique is used to create a perpendicular constraint between a conica
 
 \section{Construction Geometry} \label{ConstructionGeometry} \vbox{ Construction geometry can be used when the geometry won't be used for creating further features but only to construct the sketch itself. We have used it ourselves already in exercise \vref{ExerciseConstruction}, and it is generated automatically e.\,g. when creating a polygon, see section \vref{polygon}. }
 
-Construction geometry comes in blue color to distinguish it from what I will call here "real" or "normal" geometry, which comes in white. You have two possibilities to create construction geometry: \begin{itemize} \item By selecting a geometric element and clicking the toggle-construction-mode-icon \icon{Sketcher_AlterConstruction} you can toggle between construction and real geometry. That means you can also go the other way and turn construction geometry into real geometry. \item If nothing is selected and you click toggle-construction-mode-icon \icon{Sketcher_AlterConstruction}, all icons for creating geometry turn to blue and you enter construction mode. In this mode all geometric elements are construction elements.
+Construction geometry comes in blue color to distinguish it from what I will call here "real" or "normal" geometry, which comes in white. You have two possibilities to create construction geometry: 
+\begin{itemize} 
+\item By selecting a geometric element and clicking the toggle-construction-mode-icon \icon{Sketcher_AlterConstruction} you can toggle between construction and real geometry. That means you can also go the other way and turn construction geometry into real geometry. 
+\item If nothing is selected and you click toggle-construction-mode-icon \icon{Sketcher_AlterConstruction}, all icons for creating geometry turn to blue and you enter construction mode. In this mode all geometric elements are construction elements.
 	
-	To end this mode, hit the toggle-construction-mode-icon again. \end{itemize}
+	To end this mode, hit the toggle-construction-mode-icon again. 
+\end{itemize} 
 
 
 I frequently use construction geometry when I want to have equal distances to some outer border of a sketch
 
 \begin{Exercise} Create a non trivial sketch with an inner and outer border of equal distance between them. \end{Exercise} \hspace{\leftmargin}\img{width=0.78\textwidth}{ConstructionReady}
 
-To do so: \begin{itemize} \item Start with a fully constrained sketch of the outer border \item Add the inner border with the same structure. Your sketch will roughly look like this
+To do so: 
+\begin{itemize} 
+\item Start with a fully constrained sketch of the outer border 
+\item Add the inner border with the same structure. Your sketch will roughly look like this
 	
-	\img{width=0.75\textwidth}{ConstructionPrep} \item Switch to construction mode \item Add the construction lines. With autoconstraints on you can add horizontal, vertical and point-on-object constraints during construction. If some are missing, apply them after creation. \item Apply an equality constraint between all construction lines. \item Add a horizontal or vertical distance constraint to one of the construction lines. \end{itemize}
+	\img{width=0.75\textwidth}{ConstructionPrep} 
+\item Switch to construction mode 
+\item Add the construction lines. With autoconstraints on you can add horizontal, vertical and point-on-object constraints during construction. If some are missing, apply them after creation. 
+\item Apply an equality constraint between all construction lines. 
+\item Add a horizontal or vertical distance constraint to one of the construction lines. 
+\end{itemize} 
 
 Construction geometry is added to the list of elements like all other geometry as well. The corresponding icons have blue dots at the ends instead of red.
 
@@ -642,7 +794,17 @@ In this section I want to discuss the different constraints and how they are han
 
 While geometric elements add DOF to a model, constraints are doing the opposite: they reduce the number of DOF. Below I will say a constraint \emph{consumes} a certain number of DOF. This is something you should always have in mind. I am always watching the solver messages and how they change on application of a new constraint. This gives me some satisfaction seeing the approach towards zero, but it is of course more important, that I can intervene immediately if something goes wrong.
 
-\section{Selecting Constraints} This seems to be a simple task, but there are more possibilities beyond the obvious way. Whenever you select a constraint by any of the means below, the constraint will be selected in 3D view as well as in the list of constraints in the panel to the left. \begin{description} \item [Click on the constraint in 3D view] This is probably the most frequently used possibility. \item [Double click on a numerical value in 3D view] such as distance or radius. If you want to change the value of a measure, double click on the constraint and enter the new value. \item [List selection] Sometimes it is difficult to select an existing constraint in the 3D view. In the current 0.19 version it seems to be impossible to select one of multiple constraints if more than one is attached to a geometric element (on the Mac this seems to be slightly worse than on Ubuntu).\\ In that case you can select it from the list of constraints in the panel at the left side. This is the safest way to determine the last constraint added, as it is the last in the list. \item [Select constraints associated with a geometric element] If you have selected a geometric element, you can use the icon \icon{Sketcher_SelectConstraints} to select all the associated constraints including coincidences at the endpoints. At the same time the selection of the geometric element is discarded. \item [Select geometric elements associated with a constraint] If you have selected a constraint, you can use the icon \icon{Sketcher_SelectElementsAssociatedWithConstraints} to select all the associated geometric elements. At the same time the selection of the Constraint is discarded. \item [Box selection] This selection type is---as far as constraints are concerned---useful for selecting coincidence constraints. On the other hand it can be used to select endpoints of geometric elements which lie on top of each other, e.\,g. in order to apply a tangency or perpendicular constraint:\\ You can draw a rectangle while holding left mouse button down. Depending of the direction of the selection different things happen: \begin{itemize} \item From left to right all Elements, that are \emph{completely inside} of the selection rectangle, are selected. \item From right to left all Elements, that are at least partially inside of the rectangle are selected. \end{itemize}
+\section{Selecting Constraints} This seems to be a simple task, but there are more possibilities beyond the obvious way. Whenever you select a constraint by any of the means below, the constraint will be selected in 3D view as well as in the list of constraints in the panel to the left. \begin{description} 
+\item [Click on the constraint in 3D view] This is probably the most frequently used possibility. 
+\item [Double click on a numerical value in 3D view] such as distance or radius. If you want to change the value of a measure, double click on the constraint and enter the new value. 
+\item [List selection] Sometimes it is difficult to select an existing constraint in the 3D view. In the current 0.19 version it seems to be impossible to select one of multiple constraints if more than one is attached to a geometric element (on the Mac this seems to be slightly worse than on Ubuntu).\\ In that case you can select it from the list of constraints in the panel at the left side. This is the safest way to determine the last constraint added, as it is the last in the list. 
+\item [Select constraints associated with a geometric element] If you have selected a geometric element, you can use the icon \icon{Sketcher_SelectConstraints} to select all the associated constraints including coincidences at the endpoints. At the same time the selection of the geometric element is discarded. 
+\item [Select geometric elements associated with a constraint] If you have selected a constraint, you can use the icon \icon{Sketcher_SelectElementsAssociatedWithConstraints} to select all the associated geometric elements. At the same time the selection of the Constraint is discarded. 
+\item [Box selection] This selection type is---as far as constraints are concerned---useful for selecting coincidence constraints. On the other hand it can be used to select endpoints of geometric elements which lie on top of each other, e.\,g. in order to apply a tangency or perpendicular constraint:\\ You can draw a rectangle while holding left mouse button down. Depending of the direction of the selection different things happen: 
+\begin{itemize} 
+\item From left to right all Elements, that are \emph{completely inside} of the selection rectangle, are selected. 
+\item From right to left all Elements, that are at least partially inside of the rectangle are selected. 
+\end{itemize} 
 	
 	See exercise \vref{ExampleBoxSelection} for a box selection example. \end{description}
 
@@ -651,11 +813,15 @@ While geometric elements add DOF to a model, constraints are doing the opposite:
 Preferences\menu Sketcher\menu General\menu Constraint Creation "Continue Mode".\label{continueConstraints}
 
 
-\begin{itemize} \item You can apply a constraint as before in this lecture: Select one or---depending on the type of constraint---more geometric elements and then click the icon for the constraint. \item The other mode is similar to continuous creation mode of geometry: Without having selected any geometric element in the sketch click a constraint icon. As an example let's say you clicked the vertical constraint icon. You can now select subsequently all the lines which are supposed to have a vertical constraint.
+
+\begin{itemize} 
+\item You can apply a constraint as before in this lecture: Select one or---depending on the type of constraint---more geometric elements and then click the icon for the constraint. 
+\item The other mode is similar to continuous creation mode of geometry: Without having selected any geometric element in the sketch click a constraint icon. As an example let's say you clicked the vertical constraint icon. You can now select subsequently all the lines which are supposed to have a vertical constraint.
 	
 	For constraints that require selection of more than one geometric element like point-on-object the constraint is applied as soon as you have selected enough elements. With some constraints like symmetry the sequence of the selection is meaningful.
 	
-	To end continuous constraint mode click the right mouse button or hit the escape key or select something else from the geometric elements list. \end{itemize}
+	To end continuous constraint mode click the right mouse button or hit the escape key or select something else from the geometric elements list. 
+\end{itemize} 
 
 \section{The Solver} \subsection{Solving a Sketch} For the solver a sketch is a---possibly huge---system of equations. The solver tries to find a solution which in the best case is unique.
 
@@ -668,7 +834,12 @@ A sketch is said to be solved, if all constraints are fulfilled and there is no 
 Left and upper side are equal. The three short lines are equal.
 
 
-Now we will create a different solution based on the same set of constraints: \begin{itemize} \item Remove the equality constraint from the short horizontal line. In the image it is constraint number 17. \item Move the right end of the sketch to the left. Move it until the lower short vertical line is left of the upper short vertical line. \item Apply the equality constraint again, and you have the same set of constraints as before. \end{itemize}
+Now we will create a different solution based on the same set of constraints: 
+\begin{itemize} 
+\item Remove the equality constraint from the short horizontal line. In the image it is constraint number 17. 
+\item Move the right end of the sketch to the left. Move it until the lower short vertical line is left of the upper short vertical line. 
+\item Apply the equality constraint again, and you have the same set of constraints as before. 
+\end{itemize} 
 
 \img{}{unique2}
 
@@ -694,13 +865,15 @@ The left horizontal line has flipped its direction. If this happens to a sketch 
 
 \subsection{Solver Messages} Whenever you do something that changes the DOF, like adding or removing a geometric element or adding or removing a constraint, the solver recalculates the whole Sketch to determine a solution and responds with a certain message. Some of them are desired in the process of developing a sketch and some show error states.
 
-\subsubsection{Messages you want to see} \begin{description} \item [Under-constrained sketch] Let's recall the two lines example about autoconstraints from section \vref{auto3}:
+\subsubsection{Messages you want to see} \begin{description} 
+\item [Under-constrained sketch] Let's recall the two lines example about autoconstraints from section \vref{auto3}:
 	
 	\img{}{ConstraintsSolverUnder}
 	
 	You can click on the blue part in the solver message, here it says \textcolor{blue}{1 degree}. This will select elements in the sketch where additional constraints should be applied for further constraining. In this example the upper horizontal line will be selected.
 	
-	There cannot be any further recommendation about how to constrain the sketch, because it is up to you. Think about it and apply the appropriate constraint. In this case it could be a horizontal length or an equality constraint. Even a point-on-object constraint would be possible between the endpoint and the Y-axis, thus flipping the line by 180\degree. \item [\textcolor{darkGreen}{Fully constrained sketch}] in friendly green color. This is what you should always try to achieve!
+	There cannot be any further recommendation about how to constrain the sketch, because it is up to you. Think about it and apply the appropriate constraint. In this case it could be a horizontal length or an equality constraint. Even a point-on-object constraint would be possible between the endpoint and the Y-axis, thus flipping the line by 180\degree. 
+\item [\textcolor{darkGreen}{Fully constrained sketch}] in friendly green color. This is what you should always try to achieve!
 	
 	\img{}{ConstraintsSolverFull}
 	
@@ -710,7 +883,8 @@ The left horizontal line has flipped its direction. If this happens to a sketch 
 
 Please note: {\bf\em When the sketch is in such an error state it is no longer updated in 3D view. You cannot move the sketch or parts of it, further constraints which might well be correct don't show any consequences in the view until you have corrected the error.}
 
-The following is ordered by severeness, worst coming first: \begin{description} \item [Sketch unsolved] In the sketch below I had applied a symmetry constraint on the endpoints of the line and the Y-axis. This made the line horizontal and had left 2 DOF. Then I have added a (contradicting) vertical constraint on the line. This left the message as before, but added "Unsolved" in red. You should handle it by deleting the constraint added last, because the solver cannot give you any hints on the constraints involved.
+The following is ordered by severeness, worst coming first: \begin{description} 
+\item [Sketch unsolved] In the sketch below I had applied a symmetry constraint on the endpoints of the line and the Y-axis. This made the line horizontal and had left 2 DOF. Then I have added a (contradicting) vertical constraint on the line. This left the message as before, but added "Unsolved" in red. You should handle it by deleting the constraint added last, because the solver cannot give you any hints on the constraints involved.
 	
 	This shows once again the importance of always watching the solver messages.
 	
@@ -720,7 +894,8 @@ The following is ordered by severeness, worst coming first: \begin{description} 
 	
 	\img{}{ConstraintsSolverUndefined}
 	
-	\item [Sketch contains conflicting constraints] In this example
+	
+\item [Sketch contains conflicting constraints] In this example
 	
 	\img{}{ConstraintsSolverConflicting}
 	
@@ -732,7 +907,8 @@ The following is ordered by severeness, worst coming first: \begin{description} 
 	
 	In some cases it can be sensible to remove or replace some other constraint than the last one. In the example the 30\,mm constraint could be removed, after which the coincidence could be applied without errors.
 	
-	\item [Over-constrained sketch] This is a special form of the previous one, with the additional condition that there are more degrees of freedom consumed by the constraints than are added by the geometric elements. In the following example I have a fully and well constrained Sketch with one horizontal line. It's length is defined and it is symmetric to the origin.
+	
+\item [Over-constrained sketch] This is a special form of the previous one, with the additional condition that there are more degrees of freedom consumed by the constraints than are added by the geometric elements. In the following example I have a fully and well constrained Sketch with one horizontal line. It's length is defined and it is symmetric to the origin.
 	
 	\img{}{ConstraintsSolverOver1}
 	
@@ -741,33 +917,40 @@ The following is ordered by severeness, worst coming first: \begin{description} 
 	\img{}{ConstraintsSolverOver2}
 	
 	
-	\item [Sketch contains redundant constraints]You get this message when a constraint is implied by one or more of the other constraints. In the following example I had the line with a horizontal constraint. Then I selected both endpoints and the Y-axis and added a symmetry constraint. The symmetry implies the horizontal constraint. The solver detects this, and makes in this case a perfect proposal which I can follow by clicking on the blue "click to select" and delete it.
+	
+\item [Sketch contains redundant constraints]You get this message when a constraint is implied by one or more of the other constraints. In the following example I had the line with a horizontal constraint. Then I selected both endpoints and the Y-axis and added a symmetry constraint. The symmetry implies the horizontal constraint. The solver detects this, and makes in this case a perfect proposal which I can follow by clicking on the blue "click to select" and delete it.
 	
 	Please note that in this case it is not sensible to remove the last constraint added.
 	
 	\img{}{ConstraintsSolverRedundant}
 	
-	\item [(normal display)] showing DOF or even the "fully constrained" message. But yet it is over\-con\-strained. This is not too serious, and everything works as expected, but I recommend to avoid it nevertheless, because you usually could simplify the set of constraints, and simpler is always better, if the result is the same.
+	
+\item [(normal display)] showing DOF or even the "fully constrained" message. But yet it is over\-con\-strained. This is not too serious, and everything works as expected, but I recommend to avoid it nevertheless, because you usually could simplify the set of constraints, and simpler is always better, if the result is the same.
 	
 	These overconstraints occur when a constraint is added which consumes more than one DOF, and there is no other constraint which can be removed completely. The solver silently drops the redundant part of a constraint.
 	
 	As an example create a sketch in the way described below:
 	
 	%\img{}{ConstraintsSolverOverNoMessage}
-	\begin{itemize} \item Create an equilateral triangle and fix the length of a side. You have 3 DOF.
+	
+\begin{itemize} 
+\item Create an equilateral triangle and fix the length of a side. You have 3 DOF.
 		
 		\newcommand{\scale}{0.66}%valid inside itemize
 		\img{scale=\scale}{equiTriangle1}
 		
-		\item Add a symmetry constraint making two points symmetric to the x-axis. This consumes 2 DOF leaving 1 DOF.
+		
+\item Add a symmetry constraint making two points symmetric to the x-axis. This consumes 2 DOF leaving 1 DOF.
 		
 		\img{scale=\scale}{equiTriangle2}
 		
-		\item Create a coincidence constraint between the point positioned on the x-axis and the origin.
+		
+\item Create a coincidence constraint between the point positioned on the x-axis and the origin.
 		
 		\img{scale=\scale}{equiTriangle3}
 		
-		Coincidence consumes 2 DOF, so a redundancy could be expected; however, the solver detects this as correctly fully constrained. \end{itemize}
+		Coincidence consumes 2 DOF, so a redundancy could be expected; however, the solver detects this as correctly fully constrained. 
+\end{itemize} 
 	
 	As said before, you should always watch the solver messages in order to detect these issues. It should be noted that in these cases a different sequence of applying the constraints can lead to different results. If you create in the example above the coincidence first and then the symmetry you get an "unsolved" sketch.
 	
@@ -823,9 +1006,14 @@ The vertical constraint is usually applied to lines, and---as name and icon sugg
 
 Here are some remarks concerning the application of vertical constraints:
 
-\begin{itemize} \item After having created a rough outline of a sketch it can be sensible to enter continuous mode for applying vertical constraints. See section \vref{ApplyingConstraints} for details. \item You can select more than one line and apply vertical to all of them at once. Although this seems to require the same effort as the continuous mode there is an important difference: If you miss a line and click in the free area all previously selected lines are deselected. So be careful if you have lots of verticals or apply the constraint after selecting only some of the lines. \item Vertical constraint can be applied to points instead of lines. Select two or more points and apply the vertical constraint. This aligns the points vertically stacked, without needing any further construction elements.\\ This is frequently used if you want to access the topmost or bottommost point of an arc or circle.
+
+\begin{itemize} 
+\item After having created a rough outline of a sketch it can be sensible to enter continuous mode for applying vertical constraints. See section \vref{ApplyingConstraints} for details. 
+\item You can select more than one line and apply vertical to all of them at once. Although this seems to require the same effort as the continuous mode there is an important difference: If you miss a line and click in the free area all previously selected lines are deselected. So be careful if you have lots of verticals or apply the constraint after selecting only some of the lines. 
+\item Vertical constraint can be applied to points instead of lines. Select two or more points and apply the vertical constraint. This aligns the points vertically stacked, without needing any further construction elements.\\ This is frequently used if you want to access the topmost or bottommost point of an arc or circle.
 	
-	A horizontal distance measure of 0\,mm which has the same effect should be avoided. \end{itemize}
+	A horizontal distance measure of 0\,mm which has the same effect should be avoided. 
+\end{itemize} 
 
 \begin{Exercise} Create a slot according to the following image:
 	
@@ -846,13 +1034,18 @@ Select two or more lines and click the icon \icon{Constraint_Parallel}. This mak
 	
 	\img{width=0.6\textwidth}{Parallelogramm} \end{Exercise}
 
-There are two cases where you cannot or should not use parallel constraints. \begin{itemize} \item You should not use parallel on vertical or horizontal lines. Use the dedicated vertical and horizontal constraints instead \item You cannot use a parallel constraint on arcs or circles. If you want to have concentric circles you should make their centers coincident. \end{itemize}
+There are two cases where you cannot or should not use parallel constraints. 
+\begin{itemize} 
+\item You should not use parallel on vertical or horizontal lines. Use the dedicated vertical and horizontal constraints instead 
+\item You cannot use a parallel constraint on arcs or circles. If you want to have concentric circles you should make their centers coincident. 
+\end{itemize} 
 
 \section{Perpendicular} \begin{tabular}{|l|l|} \hline Icon: & \icon{Constraint_Perpendicular}\\ \hline \dofConsumed & 1 for line/line; see paragraph (\ref{PerpendicularLineLine}) below \\ & 2 for point/line; see paragraph (\ref{PerpendicularPointLine}) below \\ & 3 for point/point; see paragraph (\ref{PerpendicularPointPoint}) below \\ \hline \end{tabular}
 
 The perpendicular constraint comes---similar to the tangency in section \vref{Tangency}---in three different flavors, controlling different behaviour on the endpoints.
 
-\begin{enumerate}[(a)] \item \label{PerpendicularLineLine} For the basic variant select two lines and apply the perpendicular constraint. The following example shows, that the lines don't have to cross to be perpendicular:
+\begin{enumerate}[(a)] 
+\item \label{PerpendicularLineLine} For the basic variant select two lines and apply the perpendicular constraint. The following example shows, that the lines don't have to cross to be perpendicular:
 	
 	\begin{Exercise} Create two lines with considerable distance between them and apply the perpendicular constraint:
 		
@@ -866,7 +1059,8 @@ The perpendicular constraint comes---similar to the tangency in section \vref{Ta
 	
 	Remark: A point-on-object constraint between the center of the arc and the line would have the same effect.
 	
-	\item \label{PerpendicularPointLine} If we select a line and an endpoint of another line before applying the perpendicular constraint we get the same perpendicular arrangement as before, but now the endpoint is also constrained on the line:
+	
+\item \label{PerpendicularPointLine} If we select a line and an endpoint of another line before applying the perpendicular constraint we get the same perpendicular arrangement as before, but now the endpoint is also constrained on the line:
 	
 	\img{width=0.4\textwidth}{PerpendicularLinePoint3} \hfill \raisebox{1cm}{$\stackrel{\icon{Constraint_Perpendicular}}{\longrightarrow}$} \hfill \img{width=0.4\textwidth}{PerpendicularLinePoint4}
 	
@@ -879,7 +1073,8 @@ The perpendicular constraint comes---similar to the tangency in section \vref{Ta
 	
 	\img{}{PerpendicularCurvePoint}
 	
-	\item \label{PerpendicularPointPoint} If you select the endpoints of two lines or of an arc and a line or of two arcs and apply the perpendicular constraint the two lines\,/\,arcs are made perpendicular \emph{and} the selected points are made coincident. This is the type of perpendicular constraint that is created automatically with the polyline using the M-key, see section \vref{PolylineMKey}.
+	
+\item \label{PerpendicularPointPoint} If you select the endpoints of two lines or of an arc and a line or of two arcs and apply the perpendicular constraint the two lines\,/\,arcs are made perpendicular \emph{and} the selected points are made coincident. This is the type of perpendicular constraint that is created automatically with the polyline using the M-key, see section \vref{PolylineMKey}.
 	
 	\img{}{PerpendicularPointPoint1} \hfill \raisebox{1cm}{$\stackrel{\icon{Constraint_Perpendicular}}{\longrightarrow}$} \hfill \img{}{PerpendicularPointPoint2}
 	
@@ -889,13 +1084,18 @@ The perpendicular constraint comes---similar to the tangency in section \vref{Ta
 
 
 
-\subsubsection*{Things you should not or cannot do} \begin{itemize} \item You should \emph{not} use the perpendicular constraint to create vertical or horizontal constraints. Use always the simplest constraint possible, which is in case of horizontal lines the horizontal constraint (see section \vref{Horizontal}) and for vertical lines the vertical constraint (see section \vref{Vertical}). \item You cannot use a line-to-line perpendicular constraint on two circles or arcs. However, using a construction line and tangency you can well achieve this target. We will come back to this at the end of the section about tangency (see section \vref{ExercisePerpendicularArcs}). \end{itemize}
+\subsubsection*{Things you should not or cannot do} 
+\begin{itemize} 
+\item You should \emph{not} use the perpendicular constraint to create vertical or horizontal constraints. Use always the simplest constraint possible, which is in case of horizontal lines the horizontal constraint (see section \vref{Horizontal}) and for vertical lines the vertical constraint (see section \vref{Vertical}). 
+\item You cannot use a line-to-line perpendicular constraint on two circles or arcs. However, using a construction line and tangency you can well achieve this target. We will come back to this at the end of the section about tangency (see section \vref{ExercisePerpendicularArcs}). 
+\end{itemize} 
 
 \section{Tangency} \label{Tangency} Tangency comes in different flavors controlling different behaviour on the endpoints.
 
 \begin{tabular}{|l|l|} \hline Icon: & \icon{Constraint_Tangent}\\ \hline \dofConsumed & 1 (curve/curve) \\ & 2 (point/curve) \\ & 3 (point/point) \\ & 2 (line/line) \\ \hline \end{tabular}
 
-\begin{description} \newcommand{\height}{6.2cm} \item [Curve to curve, including line to curve] Take a line where one endpoint is fixed. There are 2 DOF left for the other endpoint. If the line touches a given circle, there is only 1 DOF left, because the point can be moved only in the fixed direction of the line. This results in 1 DOF for this curve/curve type of tangency.
+\begin{description} \newcommand{\height}{6.2cm} 
+\item [Curve to curve, including line to curve] Take a line where one endpoint is fixed. There are 2 DOF left for the other endpoint. If the line touches a given circle, there is only 1 DOF left, because the point can be moved only in the fixed direction of the line. This results in 1 DOF for this curve/curve type of tangency.
 	
 	Please note that the green color in the left image is \emph{not} signaling that it is fully constrained, it is the selection before applying the tangency constraint.
 	
@@ -906,15 +1106,18 @@ The perpendicular constraint comes---similar to the tangency in section \vref{Ta
 	
 	\img{height=5cm}{TangentNoTouch}
 	
-	\item [Point to curve.] If in the same situation the endpoint of the line should touch the circle, then nothing can be moved at all. This means that point/curve consumes 2 DOF.
+	
+\item [Point to curve.] If in the same situation the endpoint of the line should touch the circle, then nothing can be moved at all. This means that point/curve consumes 2 DOF.
 	
 	\img{height=\height}{TangentPointCurve1} \hfill \raisebox{2cm}{$\stackrel{\icon{Constraint_Tangent}}{\longrightarrow}$} \hfill \img{height=\height}{TangentPointCurve2}
 	
-	\pagebreak[4] \item [Point to point.] If you have a fixed arc and attach the endpoint of a tangent line to one of the arc's endpoints you have fixed the free moving point (2 DOF) and the direction (1 DOF). This means that point/point tangency consumes 3 DOF.
+	\pagebreak[4] 
+\item [Point to point.] If you have a fixed arc and attach the endpoint of a tangent line to one of the arc's endpoints you have fixed the free moving point (2 DOF) and the direction (1 DOF). This means that point/point tangency consumes 3 DOF.
 	
 	\img{height=5.8cm}{TangentPointPoint1} \hfill \raisebox{2cm}{$\stackrel{\icon{Constraint_Tangent}}{\longrightarrow}$} \hfill \img{height=5.8cm}{TangentPointPoint2}
 	
-	\item [Line to line] Assume one fixed line and a second line without any restrictions. If a tangency constraint is applied between the lines, they are made collinear, i.e. they now lie both on the same infinite line. This fixes both endpoints to lie on that line thus consuming 2 DOF.
+	
+\item [Line to line] Assume one fixed line and a second line without any restrictions. If a tangency constraint is applied between the lines, they are made collinear, i.e. they now lie both on the same infinite line. This fixes both endpoints to lie on that line thus consuming 2 DOF.
 	
 	\img{width=0.35\textwidth}{TangentlineLine1} \hfill \raisebox{1cm}{$\stackrel{\icon{Constraint_Tangent}}{\longrightarrow}$} \hfill \img{width=0.35\textwidth}{TangentlineLine2}
 	
@@ -929,7 +1132,14 @@ There is a curve/curve tangency of the inner circle and one of the triangle's li
 
 If you have closed the outer polyline while creating it, there is a coincidence constraint created where you actually want to have point to point tangency. To achieve this we have several possibilities:
 
-\begin{itemize} \item You select the coincidence using box selection and remove it before applying tangency. \item You select the coincidence in the panels list of constraints and remove it before applying tangency. \item If you have enabled automatic removal of redundant constraints, the coincidence will be removed automatically on creation of the point/point-tangency. \item If automatic removal of redundant constraints is not enabled, you can nevertheless select the endpoints using box selection and apply tangency. The solver notices the redundancy and will complain with an appropriate message. By clicking on the active part of the message you can select and remove the coincidence. \item Select the edges instead of the points and apply a curve/curve tangent constraint. The solver detects this and replaces the constraints appropriately. \end{itemize}
+
+\begin{itemize} 
+\item You select the coincidence using box selection and remove it before applying tangency. 
+\item You select the coincidence in the panels list of constraints and remove it before applying tangency. 
+\item If you have enabled automatic removal of redundant constraints, the coincidence will be removed automatically on creation of the point/point-tangency. 
+\item If automatic removal of redundant constraints is not enabled, you can nevertheless select the endpoints using box selection and apply tangency. The solver notices the redundancy and will complain with an appropriate message. By clicking on the active part of the message you can select and remove the coincidence. 
+\item Select the edges instead of the points and apply a curve/curve tangent constraint. The solver detects this and replaces the constraints appropriately. 
+\end{itemize} 
 
 Now that you know this you would of course have avoided this situation alltogether by not connecting the last point when creating the outer edge.
 
@@ -939,11 +1149,16 @@ As promised in the section about perpendicular constraints, we can now work thro
 
 \begin{Exercise} \label{ExercisePerpendicularArcs} Construct two arcs which have a perpendicular intersection \end{Exercise}
 
-To do so: \begin{itemize} \item Create the arcs \item Create a construction line with a point/line perpendicular constraint on one of the arcs and the endpoint of the line:
+To do so: 
+\begin{itemize} 
+\item Create the arcs 
+\item Create a construction line with a point/line perpendicular constraint on one of the arcs and the endpoint of the line:
 	
-	\img{}{PerpendicularCurveCurve1} \item Create a point/line tangent constraint on the other arc and the same endpoint of the line:
+	\img{}{PerpendicularCurveCurve1} 
+\item Create a point/line tangent constraint on the other arc and the same endpoint of the line:
 	
-	\img{}{PerpendicularCurveCurve2} \end{itemize}
+	\img{}{PerpendicularCurveCurve2} 
+\end{itemize} 
 
 \section{Equality} \begin{tabular}{|l|l|} \hline Icon: & \icon{Constraint_EqualLength}\\ \hline \dofConsumed & 1 \\ \hline \end{tabular}
 
@@ -965,7 +1180,8 @@ Making a point with its two DOF symmetric to a fixed point will remove both DOF;
 
 Symmetry comes in two flavors, the point-point-point variant and the point-line-point variant.
 
-\begin{description} \item [Point-point-point symmetry] This variant of symmetry arranges three points so that they lie on a (virtual) line and the outer points have equal distance to the point in the middle.
+\begin{description} 
+\item [Point-point-point symmetry] This variant of symmetry arranges three points so that they lie on a (virtual) line and the outer points have equal distance to the point in the middle.
 	
 	To apply symmetry select first both outer points and finally the point in the middle. It is good advice to arrange the sketch \emph{before} applying symmetry so that all points are near their final position!
 	
@@ -983,7 +1199,8 @@ Symmetry comes in two flavors, the point-point-point variant and the point-line-
 	
 	\img{}{SymmetryLinePoint1} \hspace{2em} \raisebox{1.6cm}{$\stackrel{\icon{Constraint_Symmetric}}{\longrightarrow}$} \hspace{2em} \img{}{SymmetryLinePoint2}
 	
-	\item [Point-line-point symmetry] This variant of symmetry arranges two points so that they are mirrored at the line. In this case the sequence of the selection doesn't matter:
+	
+\item [Point-line-point symmetry] This variant of symmetry arranges two points so that they are mirrored at the line. In this case the sequence of the selection doesn't matter:
 	
 	\img{}{SymmetryPointLinePoint1} \hspace{2em} \raisebox{2cm}{$\stackrel{\icon{Constraint_Symmetric}}{\longrightarrow}$} \hspace{2em} \img{}{SymmetryPointLinePoint2}
 	
@@ -1014,7 +1231,9 @@ The two remaining DOF are the horizontal and the vertical length.
 
 There are two possibilities of what can happen - depending on some yet unknown condition:
 
-\pagebreak[4] \begin{itemize} \item The solver shows 1 DOF after applying symmetry
+\pagebreak[4] 
+\begin{itemize} 
+\item The solver shows 1 DOF after applying symmetry
 	
 	\begin{tabular}{@{}c} \img{scale=0.85}{SymmetryPatho1}\\ $\downarrow$ \ \raisebox{1ex}{\iconSmall{Constraint_Symmetric}}\\[2ex] \img{scale=0.85}{SymmetryPatho2} \end{tabular}
 	
@@ -1024,11 +1243,13 @@ There are two possibilities of what can happen - depending on some yet unknown c
 	
 	If the horizontal constraint is removed again, the DOF are shown correctly as 2.
 	
-	\item After applying the symmetry constraint the solver shows 2 DOF
+	
+\item After applying the symmetry constraint the solver shows 2 DOF
 	
 	\begin{tabular}{@{}c} \img{scale=0.84}{SymmetryPatho1}\\ $\downarrow$ \ \raisebox{1ex}{\iconSmall{Constraint_Symmetric}}\\[2ex] \img{scale=0.84}{SymmetryPatho3} \end{tabular}
 	
-	which again can be seen as surprising, because it means that symmetry consumes only one DOF. \end{itemize} In both cases the solver is smart and silently drops part of a constraint. It doesn't show a redundancy warning, because none of the other constraints could be removed without loosing DOF.
+	which again can be seen as surprising, because it means that symmetry consumes only one DOF. 
+\end{itemize}  In both cases the solver is smart and silently drops part of a constraint. It doesn't show a redundancy warning, because none of the other constraints could be removed without loosing DOF.
 
 In many cases this works well, but I have seen quite some cases where it caused problems. So I would strongly recommend to avoid such constraining. In the example given here it would be better not to use symmetry at all, but e.g. a horizontal constraint instead. This reduces the DOF as expected by 1:
 
@@ -1053,7 +1274,12 @@ You apply it to lines, circles and arcs, not to points. That means you cannot se
 
 \paragraph{Warning:} The block constraint looks intriguing if you want to fully constrain a sketch, but in most cases it is not advised to use it for common engineering tasks. You should not use it simply because you are lazy. Here are some use cases where the block constraint is sensible:
 
-\begin{itemize} \item You have traced an image with tens if not hundreds of points and want to fix them. \item You have a complicated B-spline with many control points which are not related. \item You want to move some points of your sketch and other things should not move yet. Then you apply some block constraints, move the elements, \emph{and remove the block constraints again.} \end{itemize}
+
+\begin{itemize} 
+\item You have traced an image with tens if not hundreds of points and want to fix them. 
+\item You have a complicated B-spline with many control points which are not related. 
+\item You want to move some points of your sketch and other things should not move yet. Then you apply some block constraints, move the elements, \emph{and remove the block constraints again.} 
+\end{itemize} 
 
 \section{Horizontal Distance} \begin{tabular}{|l|l|} \hline Icon: & \icon{Constraint_HorizontalDistance}\\ \hline \dofConsumed & 1 \\ \hline \end{tabular}
 
@@ -1061,13 +1287,18 @@ The horizontal distance fixes a point in one direction, thus consuming 1 DOF.
 
 The horizontal distance constraint can either fix the horizontal distance between two points or it can fix the x-coordinate.
 
-\begin{itemize} \item Applied to two points it fixes the horizontal distance between the points, independent from their position in the plane:
+
+\begin{itemize} 
+\item Applied to two points it fixes the horizontal distance between the points, independent from their position in the plane:
 	
 	\img{}{HDist1} \hspace{2em} \raisebox{1cm}{$\stackrel{\icon{Constraint_HorizontalDistance}}{\longrightarrow}$} \hspace{2em} \img{}{HDist2}
 	
-	It is possible but in this case hardly sensible to set it to a negative value. \item Applied to a line is the same as applying it to the endpoints of the line. \item Applied to a single point it sets the x-coordinate to the origin. If the value is negative, the point is left of the origin.
+	It is possible but in this case hardly sensible to set it to a negative value. 
+\item Applied to a line is the same as applying it to the endpoints of the line. 
+\item Applied to a single point it sets the x-coordinate to the origin. If the value is negative, the point is left of the origin.
 	
-	\img{}{HDist3} \hspace{2em} \raisebox{2cm}{$\stackrel{\icon{Constraint_HorizontalDistance}}{\longrightarrow}$} \hspace{2em} \img{}{HDist4} \end{itemize}
+	\img{}{HDist3} \hspace{2em} \raisebox{2cm}{$\stackrel{\icon{Constraint_HorizontalDistance}}{\longrightarrow}$} \hspace{2em} \img{}{HDist4} 
+\end{itemize} 
 
 \subsection*{Avoid horizontal distances of zero length} It is possible to align things vertically by applying a horizontal distance of 0. Although there is no solver message warning you should avoid this. Use a vertical constraint \icon{Constraint_Vertical} instead. For one it is recommended to prefer geometric constraints, second it keeps your sketch cleaner without the measure.
 
@@ -1090,7 +1321,10 @@ It can be sensible to use the lock constraint if you have created the sketch wit
 
 The lock constraint is applied to a selection of points. Depending on the number of selected points the behaviour is slightly different:
 
-\begin{description} \item [One point selected] The lock constraint creates a horizontal and a vertical distance constraint to the origin. \item [Two points selected] A horizontal and a vertical distance constraint between these two points is created. (This is in fact a special variant of the following case.) \item [Three or more points selected] A horizontal and a vertical distance constraint between each of these points and the last point is created.
+\begin{description} 
+\item [One point selected] The lock constraint creates a horizontal and a vertical distance constraint to the origin. 
+\item [Two points selected] A horizontal and a vertical distance constraint between these two points is created. (This is in fact a special variant of the following case.) 
+\item [Three or more points selected] A horizontal and a vertical distance constraint between each of these points and the last point is created.
 	
 	The behaviour is as if you had created all of these lock constraints separately, which you can see if you use the undo function. \end{description}
 
@@ -1098,13 +1332,16 @@ The lock constraint is applied to a selection of points. Depending on the number
 
 Consider a line with one point fixed, it has two DOF remaining. Applying a length constraint reduces this to 1 DOF (which can be consumed by a horizontal \emph{or} vertical distance). Thus the length constraint consumes 1 DOF.
 
-The length constraint comes in three different variants, two of them being rather similar \begin{description} \item [Line Length.] It can fix the length of a line, as we have seen in section \ref{LineLength} \vpageref{LineLength}. \vspace{-0.5ex}
+The length constraint comes in three different variants, two of them being rather similar \begin{description} 
+\item [Line Length.] It can fix the length of a line, as we have seen in section \ref{LineLength} \vpageref{LineLength}. \vspace{-0.5ex}
 	
-	\img{scale=1}{LengthLine1} \hspace{2em} \raisebox{1cm}{$\stackrel{\icon{Constraint_Length}}{\longrightarrow}$} \hspace{2em} \img{scale=1}{LengthLine2} \pagebreak[3] \vspace{-1.5ex} \item [Distance between points.] Select two arbitrary points and fix the distance between them:
+	\img{scale=1}{LengthLine1} \hspace{2em} \raisebox{1cm}{$\stackrel{\icon{Constraint_Length}}{\longrightarrow}$} \hspace{2em} \img{scale=1}{LengthLine2} \pagebreak[3] \vspace{-1.5ex} 
+\item [Distance between points.] Select two arbitrary points and fix the distance between them:
 	
 	\img{scale=1}{LengthPointPoint1} \hspace{2em} \raisebox{1cm}{$\stackrel{\icon{Constraint_Length}}{\longrightarrow}$} \hspace{2em} \img{scale=1}{LengthPointPoint2}
 	
-	\item [Distance from point to line.] If you select a line and a point, this constraint fixes the orthogonal distance between line and point, i.\,e. the distance between the point and its projection on the line. Thus it fixes the minimal distance between line and point. As we have seen before, the projection point can lie on the infinite prolongation of the line.
+	
+\item [Distance from point to line.] If you select a line and a point, this constraint fixes the orthogonal distance between line and point, i.\,e. the distance between the point and its projection on the line. Thus it fixes the minimal distance between line and point. As we have seen before, the projection point can lie on the infinite prolongation of the line.
 	
 	\img{}{LengthLinePoint1} \hspace{2em} \raisebox{1cm}{$\stackrel{\icon{Constraint_Length}}{\longrightarrow}$} \hspace{2em} \img{}{LengthLinePoint2} \end{description}
 
@@ -1126,7 +1363,8 @@ After creating a line segment, whichever of the two endpoints was created first 
 
 There are different modes for this constraint:
 
-\begin{description} \item [Single Line mode.] Select a line and apply the angle constraint. This fixes the angle between the line and the X-axis.
+\begin{description} 
+\item [Single Line mode.] Select a line and apply the angle constraint. This fixes the angle between the line and the X-axis.
 	
 	While it is usually irrelevant in which way you create a line, here it is: for two seemingly identical lines you can get different angles.
 	
@@ -1138,13 +1376,15 @@ There are different modes for this constraint:
 		
 		\img{}{AngleXAxis} \end{Exercise}
 	
-	\item [Line-Line mode.] The most frequently used variant is to select two lines and define with the angle constraint the angle between them.
+	
+\item [Line-Line mode.] The most frequently used variant is to select two lines and define with the angle constraint the angle between them.
 	
 	Again it depends on the orientation of the angle where it is actually applied:
 	
 	\img{}{AngleLineLine}
 	
-	\item [Line-Point-Line mode.] If you select two lines and an additional point before applying an angle constraint, this point will become the vertex of the angle and the lines are the rays. To achieve this one or two point-on-object constraints are generated in addition to the angle between the lines. This assures that the vertex lies in fact on both lines. \begin{Exercise} Create a sketch with two lines and a point according to the following image.
+	
+\item [Line-Point-Line mode.] If you select two lines and an additional point before applying an angle constraint, this point will become the vertex of the angle and the lines are the rays. To achieve this one or two point-on-object constraints are generated in addition to the angle between the lines. This assures that the vertex lies in fact on both lines. \begin{Exercise} Create a sketch with two lines and a point according to the following image.
 		
 		
 		Select both lines and the point and apply an angle constraint with an angle of 30\degree
@@ -1153,7 +1393,8 @@ There are different modes for this constraint:
 	
 	{\bf Warning:} Applying this constraint consumes usually 3 DOF, one for the angle and two for the point-on-object constraints. If one of the points happens to be the endpoint of one of the lines, only 2 DOF are consumed.
 	
-	\item [Single Arc mode] If you select only an arc line and apply an angle constraint, the angle between one endpoint of the arc, the center and the other endpoint is fixed. For a given radius this fixes the arc length. The following exercise creates a 3/4 circle:
+	
+\item [Single Arc mode] If you select only an arc line and apply an angle constraint, the angle between one endpoint of the arc, the center and the other endpoint is fixed. For a given radius this fixes the arc length. The following exercise creates a 3/4 circle:
 	
 	\begin{Exercise} Create an arc. Select it and apply an angle of 270\degree{}.
 		
@@ -1168,7 +1409,8 @@ There are different modes for this constraint:
 	
 	\[ \alpha = \frac {l * 360\degree}{2 \pi r} \]
 	
-	\item [Arc-Arc mode.] Similar to Line-Point-Line mode  you can combine two arcs and a point or an arc, a line, and a point. This means that Line-Point-Line mode can be viewed as a special form of this more general mode.
+	
+\item [Arc-Arc mode.] Similar to Line-Point-Line mode  you can combine two arcs and a point or an arc, a line, and a point. This means that Line-Point-Line mode can be viewed as a special form of this more general mode.
 	
 	\begin{Exercise} Create a sketch with two arcs which are connected with a coincidence constraint. Let the arcs cross at an angle of 60\degree. In the following image the vertex of the angle is an endpoint of one of the arcs.
 		
@@ -1184,7 +1426,15 @@ There are different modes for this constraint:
 	% first have to create a point on the circle.
 \end{description}
 
-\subsubsection*{Dos and Don'ts with Angles} \begin{itemize} \item Don't use angles with multiples of 90\degree; use geometric constraints instead. \begin{itemize} \item For an angle of 90\degree{} or 270\degree{} use the perpendicular constraint. \item For an angle of 180\degree{} use the tangent constraint. \end{itemize} \item However, if you have a flipping sketch as shown in section \vref{Flip} you can improve robustness, due to the fact that the angle constraint respects the direction of the lines as if they are rays. \end{itemize}
+\subsubsection*{Dos and Don'ts with Angles} 
+\begin{itemize} 
+\item Don't use angles with multiples of 90\degree; use geometric constraints instead. 
+\begin{itemize} 
+\item For an angle of 90\degree{} or 270\degree{} use the perpendicular constraint. 
+\item For an angle of 180\degree{} use the tangent constraint. 
+\end{itemize}  
+\item However, if you have a flipping sketch as shown in section \vref{Flip} you can improve robustness, due to the fact that the angle constraint respects the direction of the lines as if they are rays. 
+\end{itemize} 
 
 \section{Further Dos and Don'ts with Constraints} \label{SolverRecommendations} Now that you know about the different constraints, you should not only aim at fully constrained sketches, you should create good fully constrained sketches. Some advice was already given for some of the constraints above, here are some additional recommendations.
 
@@ -1195,9 +1445,21 @@ There are several things to consider. There is what I would like to call the ext
 
 The other side to consider is the internal view: Which constraints are friendly to the solver, i.\,e. which lead to reliable solutions.The solver does not solve its internal equation system algebraically, but numerically. That means a sketch is fully constrained if the deviations are very very small. Nevertheless there are rounding errors due to the finite precision, and in rare cases these can lead to difficulties in later modelling steps.
 
-\subsubsection*{Preferred constraints} \begin{itemize} \item Coincidence \item Horizontal and vertical constraint. \item Point to Point tangency. \item Point on line \item Horizontal and vertical length. \end{itemize}
+\subsubsection*{Preferred constraints} 
+\begin{itemize} 
+\item Coincidence 
+\item Horizontal and vertical constraint. 
+\item Point to Point tangency. 
+\item Point on line 
+\item Horizontal and vertical length. 
+\end{itemize} 
 
-\subsubsection*{Constraints for subordinate use} It is by no way wrong to use these constraints. But you should not use them, if you can use one of the preferred constraints instead. \begin{itemize} \item Length \item Edge/Edge Tangency \item Symmetry \end{itemize}
+\subsubsection*{Constraints for subordinate use} It is by no way wrong to use these constraints. But you should not use them, if you can use one of the preferred constraints instead. 
+\begin{itemize} 
+\item Length 
+\item Edge/Edge Tangency 
+\item Symmetry 
+\end{itemize} 
 
 \subsubsection*{Don't make your sketch too complicated!} Instead of putting everything possible into one sketch, you should consider to split it into several sketches. As an example take a sketch with some holes and cutouts and a complicated outline, which you want to pad. Instead of modeling all in one sketch you can model the outline in the first sketch, pad it, model the cutouts in another sketch and make a pocket.
 
@@ -1207,15 +1469,24 @@ As a rule of thumb it is recommended (thanks Normand!) to use not more than 100 
 
 \begin{Exercise} We will show how to get the square root of 2, which is known to be the diagonal length of a square with side length 1. \end{Exercise}
 
-\begin{itemize} \item Draw a square with side length 1.
+
+\begin{itemize} 
+\item Draw a square with side length 1.
 	
-	\img{scale=0.5}{driven1} \item Select diagonal points and start as if you want to create a length dimension. The sketch was fully constrained, so the solver shows an error message. But if you check the Reference box, the error will vanish and the dimension will be shown in blue instead of red.
+	\img{scale=0.5}{driven1} 
+\item Select diagonal points and start as if you want to create a length dimension. The sketch was fully constrained, so the solver shows an error message. But if you check the Reference box, the error will vanish and the dimension will be shown in blue instead of red.
 	
 	\img{scale=0.5}{driven2}
 	
-	Confirm and you will permanently see the length of the diagonal even if you change the length of the sides. \end{itemize}
+	Confirm and you will permanently see the length of the diagonal even if you change the length of the sides. 
+\end{itemize} 
 
-There are three ways to create a driven dimension: \begin{itemize} \item You can do it in the way described in the previous exercise. \item You can select an existing dimension and click the toggle \icon{Sketcher_ToggleConstraint}. This can also be used if you want to switch from a driven constraint to a real ("driving") constraint. \item Without having anything selected click the same toggle icon \icon{Sketcher_ToggleConstraint}. The dimensional constraints icons will turn blue \img{}{drivenAllBlue} and all dimensions created in this mode will be driven constraints. \end{itemize}
+There are three ways to create a driven dimension: 
+\begin{itemize} 
+\item You can do it in the way described in the previous exercise. 
+\item You can select an existing dimension and click the toggle \icon{Sketcher_ToggleConstraint}. This can also be used if you want to switch from a driven constraint to a real ("driving") constraint. 
+\item Without having anything selected click the same toggle icon \icon{Sketcher_ToggleConstraint}. The dimensional constraints icons will turn blue \img{}{drivenAllBlue} and all dimensions created in this mode will be driven constraints. 
+\end{itemize} 
 
 \vbox{It is well known that the angle between two adjacent lines in a square is 90\degree{}. But how about a pentagon? \begin{Exercise} Create a regular pentagon with an outer radius of 10. Find the angle between two adjacent edges and find the radius of the incircle.
 		
@@ -1233,15 +1504,34 @@ On the one hand external geometry can reference elements of other objects, such 
 	
 	\img{width=0.4\textwidth}{ExternalBlock}\hfill \raisebox{2cm}{$\longrightarrow$} \hfill \img{width=0.4\textwidth}{ExternalBlockTarget} }
 
-\begin{itemize} \item Preparations: Create a block as shown in the left image. Place it so that the face in front lies in one of the principal planes.
+
+\begin{itemize} 
+\item Preparations: Create a block as shown in the left image. Place it so that the face in front lies in one of the principal planes.
 	
 	I have placed the sketch of mine in the XZ plane and have checked the "Reverse" box of the pad.
 	
-	\img{scale=0.5}{ExternalBlockSketch} \item Create a new sketch in the same plane as the front of the block. \item Don't close the still empty sketch. In the Combo view switch from Task tab to Model tab, in order to view the history tree. \item Make the pad invisible and the sketch visible, the tree should look like this:\\ \img{}{ExternalBlockTree}
+	\img{scale=0.5}{ExternalBlockSketch} 
+\item Create a new sketch in the same plane as the front of the block. 
+\item Don't close the still empty sketch. In the Combo view switch from Task tab to Model tab, in order to view the history tree. 
+\item Make the pad invisible and the sketch visible, the tree should look like this:\\ \img{}{ExternalBlockTree}
 	
-	The sketch named "SketchBlock" in the above picture is used to create the Pad named "PadBlock". The sketch we actually are still editing is Sketch009. In your model it will probably be named Sketch001. \item Switch back from Model tab to Tasks tab, now showing the well known Sketcher panel again. \item In 3D view you can see the SketchBlock's sketch. The lines are slighly thinner than those in the current sketch, you cannot change the SketchBlock geometry. \item Select the external geometry tool \icon{Sketcher_External}. \item Select the upper line, it will turn magenta.\\[1ex] \img{scale=0.8}{ExternalSelect}\\ You could now directly select more elements, which is not necessary here. Instead of selecting the line, you could have selected the endpoints only. \item Model the strips. Please note, that the strips cover more than they have to remove.\\[1ex] \img{scale=0.85}{ExternalFinalSketch}
+	The sketch named "SketchBlock" in the above picture is used to create the Pad named "PadBlock". The sketch we actually are still editing is Sketch009. In your model it will probably be named Sketch001. 
+\item Switch back from Model tab to Tasks tab, now showing the well known Sketcher panel again. 
+\item In 3D view you can see the SketchBlock's sketch. The lines are slighly thinner than those in the current sketch, you cannot change the SketchBlock geometry. 
+\item Select the external geometry tool \icon{Sketcher_External}. 
+\item Select the upper line, it will turn magenta.\\[1ex] \img{scale=0.8}{ExternalSelect}\\ You could now directly select more elements, which is not necessary here. Instead of selecting the line, you could have selected the endpoints only. 
+\item Model the strips. Please note, that the strips cover more than they have to remove.\\[1ex] \img{scale=0.85}{ExternalFinalSketch}
 	
-	\begin{itemize} \item Both strips have the same width of 5\,mm. \item The right side of the right strip is fixed with the point-on-object constraint using the endpoint of the external geometry. \item The bottom line of the right strip is fixed by a point-on-object constraint on the X-axis. \item The left upper line is horizontal \item both upper lines line are aligned with a tangency constraint. \end{itemize} \item Close the Sketcher and apply the pocket with a depth of 5\,mm. \end{itemize}
+	
+\begin{itemize} 
+\item Both strips have the same width of 5\,mm. 
+\item The right side of the right strip is fixed with the point-on-object constraint using the endpoint of the external geometry. 
+\item The bottom line of the right strip is fixed by a point-on-object constraint on the X-axis. 
+\item The left upper line is horizontal 
+\item both upper lines line are aligned with a tangency constraint. 
+\end{itemize}  
+\item Close the Sketcher and apply the pocket with a depth of 5\,mm. 
+\end{itemize} 
 
 \subsubsection*{Identification of external geometry} The list of elements as described in section \ref{ListOfElements1} \vpagerefrange{ListOfElements1}{ListOfElements2} contains all geometric elements, including external geometry. These external geometry elements are always last in the list. The dots at the end of the icons in the list have magenta color -- the same color as used for the external elements in 3D view. In the image you see that the last three elements are references to external geometry: a line, an arc, and another line.
 
@@ -1276,7 +1566,9 @@ Validate Sketch
 hide constraints
 
 
-Merks"atze: \item Watch the solver messages on every constraint you add \item In case of an error message remove the last constraint
+Merks"atze: 
+\item Watch the solver messages on every constraint you add 
+\item In case of an error message remove the last constraint
 
 reference geometry
 
